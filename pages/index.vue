@@ -9,6 +9,7 @@
 </template>
 
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
 #top-title {
   display: flex;
   flex-direction: column;

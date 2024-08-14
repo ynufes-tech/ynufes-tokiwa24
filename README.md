@@ -73,3 +73,12 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## サイトの breakpoint
+
+- sm(スマホサイズ) ~480px
+- md(ミドルサイズ) ~768px
+- lg(タブレットサイズ) ~1000px
+- xl(ラージサイズ) ~1200px
+
+1200px~をデフォルトとする。

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
 </style>
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 interface Lantern {
   id: number;
@@ -14,7 +14,10 @@ interface Lantern {
 }
 
 const lanterns = ref<Lantern[]>([]);
-const images = ['@/assets/images/lantern1.webp', '@/assets/images/lantern2.webp'];
+const images = [
+  "@/assets/images/lantern1.webp",
+  "@/assets/images/lantern2.webp",
+];
 
 function createLantern() {
   const id = Date.now() + Math.random(); // ユニークなIDを生成
@@ -22,7 +25,7 @@ function createLantern() {
   const style = {
     left: `${Math.random() * 100}vw`,
     animationDuration: `${8 + Math.random() * 4}s`,
-    backgroundImage: `url(${image})`
+    backgroundImage: `url(${image})`,
   };
   lanterns.value.push({ id, style });
 
@@ -33,7 +36,7 @@ function createLantern() {
 }
 
 function removeLantern(id: number) {
-  lanterns.value = lanterns.value.filter(lantern => lantern.id !== id);
+  lanterns.value = lanterns.value.filter((lantern) => lantern.id !== id);
 }
 
 function checkLanterns() {

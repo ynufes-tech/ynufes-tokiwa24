@@ -5,21 +5,24 @@
     <div class="title-container">
       <img id="top-title" src="@/assets/images/yumeakari.png" />
     </div>
+    <div class="date">
+      <p>From 2024.11.01 Fri</p>
+      <p>&emsp;&emsp;&emsp;&nbsp;2024.11.02 Sat</p>
+      <p>&nbsp;&nbsp;To&emsp;&nbsp;&nbsp;2024.11.03 Sun</p>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-// .title-conteinar{
-//   margin-left: 10000rem;
-// }
+
 #top-title {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   //align-items: center;
   //justify-content: center;
-  height: min(25vh,25vw);
+  height: min(25vh, 25vw);
   margin-top: calc(15vh + 6vw);
   margin-left: 20vw;
   @include xl {
@@ -35,7 +38,17 @@
     margin-left: 8vw;
   }
   margin-right: auto;
-  font-size: min(10em, 15vw);
-  //transform: translateX(-70%);
+}
+.date {
+  font-size: min(2.8rem, 5vw);
+  box-sizing: border-box;
+  margin: min(5rem, 5vw) auto 0;
+  width: min(70vw, 30em);
+  letter-spacing: 0.1125em;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 0.45em;
+  transform: translateX(13%);
 }
 </style>

@@ -15,9 +15,9 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  height: min(25vh,25vw);
   margin-top: 25vh;
-  margin-left: auto;
+  margin-left: 40vw;
   margin-right: auto;
   font-size: min(10em, 15vw);
   transform: translateX(-70%);

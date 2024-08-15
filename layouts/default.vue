@@ -14,41 +14,29 @@ interface Lantern {
 }
 
 const lanterns = ref<Lantern[]>([]);
-const images = [
-  "@/assets/images/lantern1.webp",
-  "@/assets/images/lantern2.webp",
-];
+const images = ["/images/lantern1.webp", "/images/lantern2.webp"];
 
 function createLantern() {
-  const id = Date.now() + Math.random(); // ユニークなIDを生成
-  const image = images[Math.floor(Math.random() * images.length)]; // 画像をランダムに選択
+  const id = Date.now() + Math.random();
+  const image = images[Math.floor(Math.random() * images.length)];
   const style = {
     left: `${Math.random() * 100}vw`,
     animationDuration: `${8 + Math.random() * 4}s`,
+    //animationDelay: `${Math.random() * 5}s`, // ランダムな遅延を追加
     backgroundImage: `url(${image})`,
   };
   lanterns.value.push({ id, style });
-
-  setTimeout(() => {
-    removeLantern(id);
-    createLantern();
-  }, (8 + Math.random() * 4) * 1000);
-}
-
-function removeLantern(id: number) {
-  lanterns.value = lanterns.value.filter((lantern) => lantern.id !== id);
 }
 
 function checkLanterns() {
-  if (lanterns.value.length < 5) {
+  while (lanterns.value.length < 10) {
+    // ランタンの数を2倍に増やす
     createLantern();
   }
 }
 
 onMounted(() => {
-  for (let i = 0; i < 5; i++) {
-    createLantern();
-  }
+  checkLanterns();
   setInterval(checkLanterns, 1000);
 });
 </script>
@@ -60,7 +48,8 @@ onMounted(() => {
         id="background-img"
         src="@/assets/images/home-background-image.webp"
       />
-      <div class="container">
+      <!-- ランタンのコンテナ -->
+      <div class="lantern-container">
         <div
           v-for="lantern in lanterns"
           :key="lantern.id"
@@ -72,10 +61,20 @@ onMounted(() => {
   </div>
 </template>
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
 .layout-root {
   font-family: "Sawarabi Mincho", sans-serif;
   color: #000000;
   position: relative;
+}
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 #background-img {
   background-size: cover;
@@ -88,20 +87,30 @@ onMounted(() => {
   right: 0;
   z-index: -100;
 }
-.container {
-  position: relative;
+.lantern-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: black;
+  pointer-events: none; /* ランタンがクリックやタッチを妨げないようにする */
+  z-index: -99;
 }
 
 .lantern {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
+  width: 5vw;
+  height: 7vw;
+  @include sm {
+    width: 10vw;
+    height: 14vw;
+  }
   background-size: cover;
   animation: moveUp linear infinite;
+  animation-delay: var(--animation-delay); /* 遅延を適用 */
 }
 
 @keyframes moveUp {
@@ -116,8 +125,8 @@ onMounted(() => {
     opacity: 1;
   }
   100% {
-    transform: translateY(-100px);
-    opacity: 0;
+    transform: translateY(-120px); /* 画面上部を少し超えるように修正 */
+    opacity: 0; /* フェードアウト */
   }
 }
 </style>

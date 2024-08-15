@@ -16,6 +16,11 @@
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
 
+.page-root {
+  position: relative;
+  z-index: 10; /* コンテンツを最前面に配置 */
+}
+
 #top-title {
   display: flex;
   flex-direction: column;
@@ -25,6 +30,7 @@
   height: min(25vh, 25vw);
   margin-top: calc(15vh + 6vw);
   margin-left: 20vw;
+  //z-index: 100;
   @include xl {
     margin-left: 15vw;
   }
@@ -50,5 +56,9 @@
   text-align: center;
   line-height: 0.45em;
   transform: translateX(13%);
+  //z-index: 100;
+  @include sm {
+    margin-top: 38vw;
+  }
 }
 </style>

@@ -46,7 +46,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/seiryo24:latest
+          tags: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/tokiwa24:latest
           context: .
           file: ./cloudrun/Dockerfile
 

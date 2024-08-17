@@ -30,13 +30,13 @@ jobs:
         id: delete-cloudrun-service
         continue-on-error: true
         run: |
-          gcloud run services delete seiryo24-stg-pr-${{ github.event.number }} --region=asia-northeast1 --quiet
+          gcloud run services delete tokiwa24-stg-pr-${{ github.event.number }} --region=asia-northeast1 --quiet
 
       - name: Delete from Artifact Registry
         id: delete-artifact-registry
         continue-on-error: true
         run: |
-          gcloud artifacts docker images delete asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/seiryo24-pr-${{ github.event.number }} --quiet
+          gcloud artifacts docker images delete asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/tokiwa24-pr-${{ github.event.number }} --quiet
 
       - name: Notify Failure on Pull Request
         if: ${{ steps.delete-cloudrun-service.outcome != 'success' || steps.delete-artifact-registry.outcome != 'success' }}

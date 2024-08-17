@@ -46,7 +46,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/seiryo24-pr-${{ github.event.number }}:latest
+          tags: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/tokiwa24-pr-${{ github.event.number }}:latest
           context: .
           file: ./cloudrun/Dockerfile
 
@@ -54,13 +54,13 @@ jobs:
         id: deploy
         uses: google-github-actions/deploy-cloudrun@v2
         with:
-          service: seiryo24-stg-pr-${{ github.event.number }}
+          service: tokiwa24-stg-pr-${{ github.event.number }}
           region: "asia-northeast1"
-          image: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/seiryo24-pr-${{ github.event.number }}:latest
+          image: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/tokiwa24-pr-${{ github.event.number }}:latest
 
       - name: Make CloudRun accessible
         run: |
-          gcloud run services add-iam-policy-binding seiryo24-stg-pr-${{ github.event.number }} --region=asia-northeast1 --member=allUsers --role=roles/run.invoker
+          gcloud run services add-iam-policy-binding tokiwa24-stg-pr-${{ github.event.number }} --region=asia-northeast1 --member=allUsers --role=roles/run.invoker
 
       - name: Post comments
         env:

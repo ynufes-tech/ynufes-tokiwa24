@@ -42,6 +42,7 @@ onMounted(() => {
 </script>
 <template>
   <div class="layout-root">
+    <Header />
     <slot />
     <div class="background-container">
       <img
@@ -75,6 +76,7 @@ onMounted(() => {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -100;
 }
 #background-img {
   background-size: cover;

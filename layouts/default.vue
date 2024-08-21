@@ -59,8 +59,7 @@ onMounted(() => {
         ></div>
       </div>
     </div>
-    <FloatingButton />
-    
+    <!-- <FloatingButton /> -->
   </div>
 </template>
 <style lang="scss" scoped>

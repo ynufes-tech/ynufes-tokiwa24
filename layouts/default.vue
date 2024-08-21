@@ -29,7 +29,7 @@ function createLantern() {
 }
 
 function checkLanterns() {
-  while (lanterns.value.length < 10) {
+  while (lanterns.value.length < 7) {
     // ランタンの数を2倍に増やす
     createLantern();
   }
@@ -45,10 +45,7 @@ onMounted(() => {
     <Header />
     <slot />
     <div class="background-container">
-      <img
-        id="background-img"
-        src="@/assets/images/home-background-image.webp"
-      />
+      <div class="background-img" />
       <!-- ランタンのコンテナ -->
       <div class="lantern-container">
         <div
@@ -78,8 +75,10 @@ onMounted(() => {
   bottom: 0;
   right: 0;
   z-index: -100;
+  overflow: hidden;
 }
-#background-img {
+.background-img {
+  background-image: url(~/assets/images/home-background-image.webp);
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -89,6 +88,9 @@ onMounted(() => {
   bottom: 0;
   right: 0;
   z-index: -100;
+  @include sm {
+    background-image: url(~/assets/images/mobile-background-image.webp);
+  }
 }
 .lantern-container {
   position: fixed;

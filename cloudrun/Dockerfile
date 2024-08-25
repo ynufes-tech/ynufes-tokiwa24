@@ -9,7 +9,7 @@ WORKDIR /app
 COPY ./ ./
 #ynu-fes...の下を/appの下にコピー
 
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 RUN yarn build
 

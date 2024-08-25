@@ -1,4 +1,4 @@
-FROM node:20-slim as builder
+FROM node:20-slim AS builder
 #nodeのイメージをベースにする
 
 ENV BASE_URL=/24/tokiwa/
@@ -9,11 +9,11 @@ WORKDIR /app
 COPY ./ ./
 #ynu-fes...の下を/appの下にコピー
 
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 RUN yarn build
 
-FROM node:20-slim as production
+FROM node:20-slim AS production
 
 ENV BASE_URL=/24/tokiwa/
 

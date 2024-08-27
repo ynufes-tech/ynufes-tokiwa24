@@ -29,12 +29,9 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  //align-items: center;
-  //justify-content: center;
   height: min(25vh, 25vw);
   margin-top: calc(15vh + 6vw);
   margin-left: 20vw;
-  //z-index: 100;
   @include xl {
     margin-left: 15vw;
   }
@@ -60,15 +57,11 @@
   text-align: center;
   line-height: 0.45em;
   transform: translateX(13%);
-  //z-index: 100;
   @include sm {
     margin-top: 38vw;
   }
 }
-.in-production{
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
+.in-production {
   line-height: 0.45em;
   text-align: center;
   font-size: 2rem;

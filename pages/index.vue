@@ -10,6 +10,10 @@
       <p>&emsp;&emsp;&emsp;&nbsp;2024.11.02 Sat</p>
       <p>&nbsp;&nbsp;To&emsp;&nbsp;&nbsp;2024.11.03 Sun</p>
     </div>
+    <div class="in-production">
+      <p>このサイトはただいま制作中です。</p>
+      <p>常盤祭に関する最新情報は随時公開されていきます。</p>
+    </div>
   </div>
 </template>
 
@@ -25,12 +29,9 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  //align-items: center;
-  //justify-content: center;
   height: min(25vh, 25vw);
   margin-top: calc(15vh + 6vw);
   margin-left: 20vw;
-  //z-index: 100;
   @include xl {
     margin-left: 15vw;
   }
@@ -56,9 +57,25 @@
   text-align: center;
   line-height: 0.45em;
   transform: translateX(13%);
-  //z-index: 100;
   @include sm {
     margin-top: 38vw;
+  }
+}
+.in-production {
+  line-height: 0.45em;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 4rem;
+  @include lg {
+    font-size: 1.8rem;
+    margin-top: 6rem;
+  }
+  @include md {
+    font-size: 1.2rem;
+    margin-top: 8rem;
+  }
+  @include sm {
+    font-size: 0.93rem;
   }
 }
 </style>

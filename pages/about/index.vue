@@ -9,7 +9,7 @@ useHead({
 
 <template>
  <div class="page-root">
-        <PageTitle :title="'ABOUT'" :sub-title="'常盤祭について'" />
+        <PageTitle title="ABOUT" sub-title="常盤祭について" />
         <div class="box">
            <p>常盤祭は、毎年11月に開催される横浜国立大学の大学祭です。</p>
            <p>
@@ -78,7 +78,7 @@ useHead({
   }
 }
 
-*p {
+p {
   font-size: 30px;
   @include md {
     font-size: 20px;

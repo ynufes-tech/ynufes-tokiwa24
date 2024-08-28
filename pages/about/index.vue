@@ -48,13 +48,7 @@ useHead({
   padding: 1% 4%;
   opacity: 70%;
   border-radius: 2rem;
-  margin: 22rem 8vw 0;
-  @include md {
-    margin-top: 18rem;
-  }
-  @include sm {
-    margin-top: 15rem;
-  }
+  margin: 0 8vw;
 }
 .date-box {
   display: flex;

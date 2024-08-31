@@ -25,6 +25,7 @@ const props = defineProps({
   text-align: left; /* テキストも左揃え */
   padding-top: 125px;
   padding-left: 10vw;
+  height: calc(8vh + 8.5vw);
   z-index: 1000;
   @include md {
     padding-top: 100px;

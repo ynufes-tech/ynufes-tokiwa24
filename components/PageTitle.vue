@@ -19,53 +19,72 @@ const props = defineProps({
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
 .page-title {
-  margin: 0 auto;
-  position: absolute;
-  top: 125px;
-  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 左揃え */
+  text-align: left; /* テキストも左揃え */
+  padding-top: 125px;
+  padding-left: 10vw;
+  height: calc(8vh + 8.5vw);
   z-index: 1000;
-  //background-color: rgba(0, 0, 0, 0.7); /* 背景色を追加 */
-
   @include md {
-    top: 100px;
+    padding-top: 100px;
+    padding-left: 10vw;
   }
   @include sm {
-    top: 90px;
+    padding-top: 90px;
+    padding-left: 4vw;
   }
   > h1 {
-    display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-    margin: 0 auto;
-    font-size: 150px;
-    font-weight: 700;
+    margin: 0;
+    font-size: 138px;
+    letter-spacing: -3px;
     width: fit-content;
     color: rgba(226, 181, 197, 0.6); /* 色を60%にぼやかす */
-    //opacity: 0.4;
     font-weight: 400;
     z-index: 1000;
+    @include xl {
+      font-size: 110px;
+    }
+    @include lg {
+      font-size: 88px;
+    }
     @include md {
-      font-size: 94px;
+      font-size: 58px;
     }
     @include sm {
-      font-size: 64px;
+      font-size: 50px;
     }
   }
   > h2 {
-    margin: 0 auto;
-    font-size: 40px;
+    align-self: flex-start;
+    margin: 0;
+    font-size: 38px;
     color: #ffffff;
-    position: absolute;
-    top: 53%;
-    left: 6%;
-    width: fit-content;
+    position: relative;
+    top: -2.46em;
+    left: 3rem;
     font-weight: 300;
     z-index: 1000;
+    @include xl {
+      font-size: 30px;
+      top: -2.4em;
+      left: 2rem;
+    }
+    @include lg {
+      font-size: 25px;
+      top: -2.41em;
+      left: 2rem;
+    }
     @include md {
-      font-size: 28px;
+      font-size: 19px;
+      top: -2.3em;
+      left: 1.5rem;
     }
     @include sm {
-      font-size: 18px;
+      font-size: 15px;
+      top: -2.3em;
+      left: 1rem;
     }
   }
 }

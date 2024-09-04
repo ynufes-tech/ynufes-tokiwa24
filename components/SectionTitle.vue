@@ -14,6 +14,8 @@ const props = defineProps({
   </div>
 </template>
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
+
 .section-title-wrapper{
   display: flex;
 }
@@ -24,6 +26,12 @@ const props = defineProps({
   justify-content: left;
   text-decoration: underline;
   margin-left: 2em;
+  @include sm {
+    height: 3.5em;
+    h2{
+      font-size: 16px;
+    }
+  }
 }
 
 </style>

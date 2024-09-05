@@ -12,8 +12,15 @@
     </div>
     <div class="in-production">
       <p>このサイトはただいま制作中です。</p>
-      <p>常盤祭に関する最新情報は随時公開されていきます。</p>
+      <p>常盤祭に関する最新情報は随時公開されます。</p>
     </div>
+    <!-- <div class="table-units">
+      <TableOfContents
+          :title="'ABOUT'"
+          :sub-title="'大学祭について'"
+          :page-link="'/about'"
+        />
+    </div> -->
   </div>
 </template>
 

@@ -78,7 +78,7 @@ p{
   margin-top: 5vh;
 }
 .horizontal-maps{
-  width: 60vw;
+  width: 50vw;
   margin-left: 5vw;
   @include sm{
     width: 80vw;
@@ -86,7 +86,7 @@ p{
   }
 }
 .vertical-maps{
-  width: 40vw;
+  width: 25vw;
   margin-left: 10vw;
   @include sm{
     width: 60vw;

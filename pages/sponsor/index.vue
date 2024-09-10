@@ -50,6 +50,7 @@
         <p>○○○○</p>
         <p>○○○○</p>
       </div>
+      <FloatingButton />
     </div>
 
 </template>

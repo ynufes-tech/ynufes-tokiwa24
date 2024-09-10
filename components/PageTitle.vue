@@ -36,15 +36,11 @@ const props = defineProps({
     padding-left: 4vw;
   }
   > h1 {
-    //   display: flex;
-    // flex-direction: column;
-    // box-sizing: border-box;
     margin: 0;
     font-size: 138px;
     letter-spacing: -3px;
     width: fit-content;
     color: rgba(226, 181, 197, 0.6); /* 色を60%にぼやかす */
-    //opacity: 0.4;
     font-weight: 400;
     z-index: 1000;
     @include xl {
@@ -61,16 +57,13 @@ const props = defineProps({
     }
   }
   > h2 {
-    //margin: 0 auto;
     align-self: flex-start;
     margin: 0;
     font-size: 38px;
     color: #ffffff;
     position: relative;
-    //top: 53%;
     top: -2.46em; /* h1との高さを調整 */
     left: 3rem;
-    //width: 100vw;
     font-weight: 300;
     z-index: 1000;
     @include xl {

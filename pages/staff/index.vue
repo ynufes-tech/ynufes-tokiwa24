@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Staff | 24常盤祭に関するお問い合わせ",
+  meta: [
+    { name: "description", content: "24常盤祭に関するお問い合わせ方法についてご案内します" },
+  ],
+});
+</script>
 
 <template>
   <div class="page-root">

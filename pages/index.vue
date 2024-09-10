@@ -1,4 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  layout: "home",
+});
+useHead({
+  title: "Top | 24常盤祭公式HP~夢灯~",
+  meta: [
+    {
+      name: "description",
+      content:
+        "11/1,2,3に開催される24常盤祭 公式HPです!! 最新情報を随時更新していきます!!",
+    },
+  ],
+});
+</script>
 
 <template>
   <div class="page-root">

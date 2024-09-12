@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 <template>
   <div class="table-of-contents">
-    <NuxtLink :to="props.pageLink" @click="toggle">
+    <NuxtLink :to="props.pageLink">
       <div class="table-box">
         <div class="text-box">
           <h1>{{ props.title }}</h1>
@@ -34,17 +34,10 @@ const props = defineProps({
   flex-direction: column;
   box-sizing: border-box;
   font-weight: 100;
-  //line-height: 2.5rem;
   > a {
     text-decoration: none;
     color: inherit;
   }
-  // @include md {
-  //   line-height: 1.5rem;
-  // }
-  // @include sm {
-  //   line-height: 1rem;
-  // }
 }
 .table-box {
   width: 300px;
@@ -55,52 +48,21 @@ const props = defineProps({
   background-image: url(~/assets/images/monochrome-line.webp);
   background-size: contain;
 }
-// .table-box::before,
-// .table-box::after {
-//   content: "";
-//   width: 3px;
-//   height: 40px;
-//   background-color: #77bcff;
-// }
-// .table-box::before {
-//   margin-right: 30px;
-//   transform: rotate(-35deg);
-// }
-// .table-box::after {
-//   margin-left: 30px;
-//   transform: rotate(35deg);
-// }
 .text-box {
-  //margin: auto 0;
   justify-content: center;
-  //text-align: center;
   padding-top: 7rem;
 }
 h1 {
   font-size: 1.8rem;
-  //letter-spacing: 0.135em;
   text-align: center;
   justify-content: center;
   border-bottom: solid 1.5px #000;
   margin: 0 30px;
-  // @include md {
-  //   font-size: 2rem;
-  // }
-  // @include sm {
-  //   font-size: 1.5rem;
-  // }
 }
 h2 {
   margin-top: 0.4rem;
   font-size: 1.8rem;
-  //letter-spacing: 0.06em;
   text-align: center;
   justify-content: center;
-  // @include md {
-  //   font-size: 1.2rem;
-  // }
-  // @include sm {
-  //   font-size: 0.8rem;
-  // }
 }
 </style>

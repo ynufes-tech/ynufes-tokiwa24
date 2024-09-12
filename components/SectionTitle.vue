@@ -16,10 +16,10 @@ const props = defineProps({
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
 
-.section-title-wrapper{
+.section-title-wrapper {
   display: flex;
 }
-.section-title{
+.section-title {
   border-radius: 2em;
   height: 5em;
   text-align: center;
@@ -28,10 +28,9 @@ const props = defineProps({
   margin-left: 2em;
   @include sm {
     height: 3.5em;
-    h2{
+    h2 {
       font-size: 16px;
     }
   }
 }
-
 </style>

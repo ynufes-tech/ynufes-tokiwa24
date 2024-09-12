@@ -1,7 +1,4 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: "home",
-});
 useHead({
   title: "Top | 24常盤祭公式HP~夢灯~",
   meta: [

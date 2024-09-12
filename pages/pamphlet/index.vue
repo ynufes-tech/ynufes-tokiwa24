@@ -26,13 +26,17 @@ useHead({
         
             <div class="box">
                 <div class="about">
-                    <p>"下のボタンから電子版パンフレットをダウンロードいただけます。"</p>
+                    <p>下のボタンから電子版パンフレットをダウンロードいただけます。</p>
                 </div>
-                <div class="download-button">
+                <div class="download">
                     <p>通常版（ーーMB）</p>
-                    <WhiteButton text="ダウンロード" link="https://www.ynu.ac.jp/access/train_front.html"/>
+                    <div class="download-button">
+                      <WhiteButton text="ダウンロード" link=""/>
+                    </div>
                     <p>軽量版（ーーMB）</p>
-                    <WhiteButton text="ダウンロード" link="https://www.ynu.ac.jp/access/train_front.html"/>
+                    <div class="download-button">
+                      <WhiteButton text="ダウンロード" link=""/>
+                    </div>
                 </div>
             </div>
 
@@ -47,95 +51,63 @@ useHead({
 .page-root {
   display: flex;
   flex-direction: column;
-  font-weight: 500;
 }
 
 .big-box{
+  display: flex;
   position: relative;
   top: 0px;
-  padding-left: 8%;
-  width: 84%;
+  padding-left: 10%;
+  width: 90%;
+
 
   @include md {
-    top: 0px;
-  }
-  @include sm {
-    top: 0px;
+    flex-direction: column;
   }
 }
 
 .picture-holder{
-  width: 100%;
-  padding-left: 5%;
+  width: 45%;
 
   img {
     width: 100%;
+  }
+  @include md {
+    flex-direction: column;
+    width: 90%;
+    top: 0px;
   }
 }
 
 .about{
   display: flex;
-  justify-content: flex-end;
   width: fit-content;
-}
-
-.download-button{
-  display: flex;
-  justify-content: center;
-  font-size: 27px;
+  justify-content: end;
+ 
   @include md {
+    display: flex;
     flex-direction: column;
-    width: 50vw;
+    padding-left: 0%;
   }
 }
 
-.button-contents {
-  border-radius: 2em;
-  border: solid 1.5px #333333;
-  width: 15em;
-  height: 3em;
+.download{
   display: flex;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  background-color: white;
- @include sm {
-   height: 2em;
+  flex-direction: column;
+  padding-left: 35%;
+  @include md {
+    font-size: 10px;
   }
-
-&:hover {
-  background-color: #333333;
-  color: #fff;
-}
-
-.button-text {
-  padding-top: 1em;
-  transition: 0.5s;
-  text-decoration: none;
-  color: #333333;
-  font-weight: bold;
-  @include sm {
-    font-size: 12px;
-    padding-top: 0.5em;
-  }
-  &:active {
-    padding-top: 1.3em;
-  }
-
-  &:hover {
-    color: #fff;
-  }
-}
 }
 
 p {
-    font-size: 30px;
+    font-size: 21px;
 
     @include md {
-      font-size: 20px;
+      font-size: 14px;
     }
     @include sm {
-      font-size: 12px;
+      font-size: 6px;
     }
  }
 

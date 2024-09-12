@@ -53,7 +53,7 @@ const props = defineProps({
       font-size: 58px;
     }
     @include sm {
-      font-size: 30px;
+      font-size: 47px;
     }
   }
   > h2 {

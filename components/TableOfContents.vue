@@ -69,10 +69,10 @@ const props = defineProps({
   margin-left: 30px;
   transform: rotate(35deg);
 }
-.text-box{
-    margin: 0;
-    justify-content: center;
-    text-align: center;
+.text-box {
+  margin: 0;
+  justify-content: center;
+  text-align: center;
 }
 h1 {
   font-size: 1.5rem;

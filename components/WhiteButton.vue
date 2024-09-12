@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 <template>
   <div class="white-button-wrapper">
-    <a class=white-button :href="link">
+    <a class="white-button" :href="link">
       <h2>{{ props.text }}</h2>
     </a>
   </div>
@@ -20,13 +20,13 @@ const props = defineProps({
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
 
-.white-button-wrapper{
+.white-button-wrapper {
   display: flex;
-  @include sm{
+  @include sm {
     justify-content: center;
   }
 }
-.white-button{
+.white-button {
   border-radius: 2em;
   height: 5em;
   text-decoration: none;
@@ -35,12 +35,11 @@ const props = defineProps({
   @include sm {
     height: 3.5em;
   }
-  h2{
+  h2 {
     margin: 1em 1em;
     @include sm {
       font-size: 16px;
     }
   }
 }
-
 </style>

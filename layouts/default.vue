@@ -66,15 +66,15 @@ onMounted(() => {
   color: #000000;
   position: relative;
   font-size: 24px;
-    @include lg {
-      font-size: 22px;
-    }
-    @include md {
-      font-size: 20px;
-    }
-    @include sm {
-      font-size: 17px;
-    }
+  @include lg {
+    font-size: 22px;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 17px;
+  }
 }
 
 p {

@@ -34,9 +34,18 @@ const props = defineProps({
   flex-direction: column;
   box-sizing: border-box;
   font-weight: 100;
+  border-bottom: none;
+  margin: 5rem 2rem 0;
+  @include md {
+    margin-top: 2rem;
+  }
   > a {
     text-decoration: none;
     color: inherit;
+  }
+  &:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
   }
 }
 .table-box {
@@ -64,5 +73,8 @@ h2 {
   font-size: 1.8rem;
   text-align: center;
   justify-content: center;
+}
+hr {
+  display: none;
 }
 </style>

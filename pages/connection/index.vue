@@ -2,7 +2,7 @@
 
 <template>
     <div class="page-root">
-        <PageTitle title="CONNECTION" sub-title="他大学の学祭HP"/>
+        <PageTitleCnct title="CONNECTION" sub-title="他大学の学祭HP"/>
         <div class="inner-connection-page">
             <div class="connection-about">
              <p>横浜国立大学と繋がりがある大学の学園祭をご紹介させていただきます。</p>

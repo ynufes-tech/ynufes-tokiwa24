@@ -41,7 +41,7 @@ useHead({
             </div>
 
         </div>
-        
+      <FloatingButton />   
     </div>
 </template>
 
@@ -56,30 +56,40 @@ useHead({
 .big-box{
   display: flex;
   position: relative;
-  top: 0px;
+  top: 0;
   padding-left: 10%;
   width: 90%;
 
-
   @include md {
+    width: 100%;
     flex-direction: column;
+    padding: 0 2em;
+    box-sizing: border-box;
   }
 }
 
 .picture-holder{
-  width: 45%;
+  width: max(50%, 500px);
 
   img {
+    display: flex;
+    margin: 0 auto;
     width: 100%;
+    max-width: 450px;
   }
+
   @include md {
     flex-direction: column;
-    width: 90%;
-    top: 0px;
+    width: 100%;
+    top: 0;
+    img{
+      max-width: 350px;
+    }
   }
 }
 
 .about{
+  padding: 0 1em;
   display: flex;
   width: fit-content;
   justify-content: end;
@@ -87,14 +97,16 @@ useHead({
   @include md {
     display: flex;
     flex-direction: column;
-    padding-left: 0%;
+    padding: 0;
   }
 }
 
 .download{
+  font-size: 16px;
   display: flex;
   flex-direction: column;
-  padding-left: 35%;
+  align-items: center;
+
   @include md {
     font-size: 10px;
   }
@@ -104,10 +116,7 @@ p {
     font-size: 21px;
 
     @include md {
-      font-size: 14px;
-    }
-    @include sm {
-      font-size: 6px;
+      font-size: 16px;
     }
  }
 

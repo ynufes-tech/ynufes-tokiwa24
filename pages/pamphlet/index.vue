@@ -2,15 +2,12 @@
 import WhiteButton from "~/components/WhiteButton.vue";
 
 useHead({
-    title: "常盤祭パンフレット | 24常盤祭公式HP~夢灯~",
-    meta: [
-      {
-        name: "description",
-        content: "常盤祭パンフレットのダウンロードはこちらから!!",
-      },
-    ],
-  });
-  </script>
+  title: "Pamphlet | 24常盤祭のパンフレット紹介",
+  meta: [
+    { name: "description", content: "24常盤祭のパンフレットをご紹介します" },
+  ],
+});
+</script>
 
 <template>
     <div class="page-root">

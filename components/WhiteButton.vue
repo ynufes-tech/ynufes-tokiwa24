@@ -29,5 +29,4 @@ const props = defineProps({
   padding: 0 3em;
   box-sizing: border-box;
 }
-
 </style>

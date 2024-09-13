@@ -1,4 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Top | 24常盤祭公式HP~夢灯~",
+  meta: [
+    {
+      name: "description",
+      content:
+        "11/1,2,3に開催される24常盤祭 公式HPです!! 最新情報を随時更新していきます!!",
+    },
+  ],
+});
+</script>
 
 <template>
   <div class="page-root">
@@ -16,10 +27,25 @@
     </div>
     <!-- <div class="table-units">
       <TableOfContents
-          :title="'ABOUT'"
-          :sub-title="'大学祭について'"
-          :page-link="'/about'"
-        />
+        title="ABOUT"
+        sub-title="大学祭について"
+        page-link="/about"
+      />
+      <TableOfContents
+        title="ACCESS"
+        sub-title="アクセス"
+        page-link="/access"
+      />
+      <TableOfContents
+        title="STAFF"
+        sub-title="お問い合わせ"
+        page-link="/staff"
+      />
+      <TableOfContents
+        title="CONNECTION"
+        sub-title="他大学の大学祭情報"
+        page-link="/connection"
+      />
     </div> -->
   </div>
 </template>
@@ -84,5 +110,25 @@
   @include sm {
     font-size: 0.93rem;
   }
+}
+.table-units {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 1200px;
+  @include md {
+    width: 80%;
+  }
+  @include sm {
+    width: 97%;
+  }
+}
+hr {
+  display: none;
+}
+.table-units hr {
+  display: none;
 }
 </style>

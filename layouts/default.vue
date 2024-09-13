@@ -65,6 +65,26 @@ onMounted(() => {
   font-family: "Sawarabi Mincho", sans-serif;
   color: #000000;
   position: relative;
+  font-size: 24px;
+  @include lg {
+    font-size: 22px;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 17px;
+  }
+}
+
+p {
+  font-size: 24px;
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 17px;
+  }
 }
 .background-container {
   width: 100vw;

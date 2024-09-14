@@ -45,7 +45,7 @@ const props = defineProps({
   }
   &:hover {
     transform: translateY(-10px);
-    transition: 0.3s;
+    transition: transform 0.3s ease;
   }
 }
 .table-box {

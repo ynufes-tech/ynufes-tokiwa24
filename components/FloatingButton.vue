@@ -1,57 +1,54 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+function goClick() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+</script>
 
 <template>
   <div class="floating-button">
-    <a href="#">
+    <a href="#" @click.prevent="goClick">
       <img
         src="~/assets/images/FloatingButton.webp"
         class="floating-button-img"
-        onclick="goClick()"
         alt="トップに戻るボタン"
-    /></a>
+      />
+    </a>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import "assets/scss/_breakpoint.scss";
+
 .floating-button-img {
   display: block;
-  width: 100px; //大きさを決める
+  width: 100px;
   box-sizing: border-box;
   padding-top: 30px;
   text-align: center;
   opacity: 0.5;
-  position: fixed; //画面の中でも位置を固定
-  bottom: -15px; //めっちゃ下側に置く
-  right: 20px; //めっちゃ右側に置く
-  z-index: 10000; //他のものと重なったときに上に表示されるように
+  position: fixed;
+  bottom: -15px;
+  right: 20px;
+  z-index: 10000;
 }
-.floating-button-img::before {
-  content: "";
-  display: block;
-  width: 25%;
-  height: 25%;
-  top: 25%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
-  transform: rotate(-45deg);
-}
+
 .floating-button-img:hover {
   opacity: 1;
+  transition: transform 0.3s ease;
+  transform: translateY(-7px);
 }
+
 @include md {
   .floating-button-img {
-    width: 60px; //スマホ版だと少し小さくなる
+    width: 60px;
     opacity: 1;
     border: none;
     background: none;
     bottom: 1px;
     right: 10px;
-  }
-  .floating-button-img::before {
-    bottom: 0;
   }
 }
 </style>

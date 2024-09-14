@@ -5,6 +5,7 @@
       <NuxtLink class="header-icon" to="/">
         <img src="~/assets/images/tokiwa24_logo.webp" class="header-img" />
       </NuxtLink>
+      <NaviMenu />
     </div>
   </div>
 </template>
@@ -19,6 +20,7 @@
   width: fit-content;
   align-items: center;
   position: fixed;
+
   top: 3%;
   left: 5%;
   .header-icon {

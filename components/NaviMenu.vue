@@ -25,24 +25,8 @@ const toggle = () => {
           <li><NuxtLink to="/" @click="toggle">TOP</NuxtLink></li>
           <li><NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink></li>
           <li><NuxtLink to="/events" @click="toggle">ACCESS</NuxtLink></li>
+          <li><NuxtLink to="/map" @click="toggle">STAFF</NuxtLink></li>
           <li><NuxtLink to="/map" @click="toggle">CONNECTION</NuxtLink></li>
-          <li>
-            <NuxtLink to="/pamphlet" @click="toggle">パンフレット</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/time-schedule" @click="toggle"
-              >タイムテーブル</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink to="/sponsors" @click="toggle"
-              >ご協賛企業・個人一覧</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink to="/faq" @click="toggle">FAQ - よくある質問</NuxtLink>
-          </li>
-          <li><NuxtLink to="/access" @click="toggle">アクセス</NuxtLink></li>
         </ul>
       </nav>
     </div>

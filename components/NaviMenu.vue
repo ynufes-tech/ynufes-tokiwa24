@@ -12,7 +12,7 @@ const toggle = () => {
     <!-- メニューが展開されていないときのみボタンを表示 -->
     <img
       v-if="!showMenu"
-      src="~/assets/images/Menu-button.webp"
+      src="~/assets/images/menu-button.webp"
       alt="Menu Button"
       class="menu-button"
       @click="toggle"

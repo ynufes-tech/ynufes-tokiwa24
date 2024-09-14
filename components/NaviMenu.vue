@@ -24,9 +24,9 @@ const toggle = () => {
         <ul class="nav-list">
           <li><NuxtLink to="/" @click="toggle">TOP</NuxtLink></li>
           <li><NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink></li>
-          <li><NuxtLink to="/events" @click="toggle">ACCESS</NuxtLink></li>
-          <li><NuxtLink to="/map" @click="toggle">STAFF</NuxtLink></li>
-          <li><NuxtLink to="/map" @click="toggle">CONNECTION</NuxtLink></li>
+          <li><NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink></li>
+          <li><NuxtLink to="/staff" @click="toggle">STAFF</NuxtLink></li>
+          <li><NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink></li>
         </ul>
       </nav>
     </div>

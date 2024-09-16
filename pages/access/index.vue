@@ -45,7 +45,7 @@
         <SectionTitle sectionTitle="羽沢横浜国大駅からお越しの方" />
         <img
           class="horizontal-maps"
-          src="~/assets/images/access-images/mitsusawakamityo.webp"
+          src="~/assets/images/access-images/hazawayokohamakokudai.webp"
           alt="羽沢横浜国大駅周辺地図"
         />
         <div class="button-wrapper">

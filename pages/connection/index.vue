@@ -5,7 +5,7 @@
         <PageTitleCnct title="CONNECTION" sub-title="他大学の学祭HP"/>
         <div class="inner-connection-page">
             <div class="connection-about">
-             <p>横浜国立大学と繋がりがある大学の学園祭をご紹介させていただきます。</p>
+             <p>他大学の学園祭をご紹介させていただきます。</p>
             </div>
             <div class="connection-content">
                 <div class="big-box">
@@ -40,15 +40,15 @@
 
 .inner-connection-page {
   position: relative;
-  top: 0px;
+  top: 0;
   padding-left: 8%;
   width: 84%;
 
   @include md {
-    top: 0px;
+    top: 0;
   }
   @include sm {
-    top: 0px;
+    top: 0;
   }
 }
 
@@ -74,7 +74,7 @@
   width: min(80vw, 120vh);
   margin: 2rem auto 0;
   background-color: #eee;
-  padding: 0% 4%;
+  padding: 0 4%;
   opacity: 70%;
   border-radius: 2rem;
   justify-content: space-between;
@@ -86,7 +86,7 @@
 }
 .child-title{
   font-size: 28px;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.247);
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.247);
   @include md {
     font-size: 22px;
   }

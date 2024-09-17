@@ -10,11 +10,13 @@ useHead({
 <template>
   <div class="page-root">
     <PageTitle title="STAFF" sub-title="大学祭に関するお問い合わせ" />
-    <p>常盤祭に興味を持っていただきありがとうございます</p>
+    <p>常盤祭に興味を持っていただきありがとうございます。</p>
     <p>お問い合わせに関しましては、メールにてお願いします。</p>
     <div class="box">
       <p>メールでのお問い合わせ</p>
-      <p>メールアドレス：<u>24seiryo.soumu@gmail.com</u></p>
+      <p>メールアドレス：<u>24tokiwa.soumu@gmail.com</u></p>
+      <p>※HPに関するお問い合わせは以下までお願いします。</p>
+      <p>メールアドレス：<u>24ynufes.tech@gmail.com</u></p>
       <p>
         お問い合わせいただく場合、本文にお名前とお問い合わせ内容の記入を忘れずにお願いします。
       </p>

@@ -24,6 +24,7 @@ useHead({
         </NuxtLink>
       </div>
     </div>
+    <FloatingButton />
   </div>
 </template>
 
@@ -34,8 +35,9 @@ useHead({
 .inner-events-page {
   position: relative;
   top: 20%;
-  left: 20%;
-  width: 60%;
+  left: 10%;
+  width: 80%;
+  margin-bottom: 5em;
   @include md {
     top: 20%;
   }

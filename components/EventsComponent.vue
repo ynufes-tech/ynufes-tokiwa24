@@ -30,12 +30,12 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
       <div class="card-script">
         <p class="event-name">{{ props.eventData.e_name }}</p>
         <p>{{ props.eventData.o_name }}</p>
-        <!--        <p>-->
-        <!--          {{ genreToString(props.eventData.e_genre) }}-->
-        <!--        </p>-->
-        <!--        <p>-->
-        <!--          {{ placeToString(props.eventData.area) + props.eventData.p_name }}-->
-        <!--        </p>-->
+        <p>
+          {{ props.eventData.genre }}
+        </p>
+        <p>
+          {{ props.eventData.place}}
+        </p>
       </div>
     </div>
   </div>
@@ -76,6 +76,7 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
     height: 75px;
   }
 }
+
 .card-script {
   position: absolute;
   width: 160px;
@@ -109,6 +110,7 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
     }
   }
 }
+
 .project-icon {
   width: 150px;
   height: 120px;

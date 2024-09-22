@@ -47,18 +47,21 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
 .project-card {
   position: absolute;
   background-color: rgba(#f6f6f6, 0.5);
-  width: 25svw;
-  min-width: 300px;
-  max-width: 400px;
+  width: 30svw;
   height: 35svh;
   min-height: 275px;
   max-height: 300px;
   border: 2px solid #f6f6f6;
+  @include lg {
+    width: 45svw;
+  }
   @include md {
-    min-width: 180px;
-    max-width: 300px;
+    width: 31svw;
     max-height: 256px;
     min-height: 160px;
+  }
+  @include sm {
+    width: 45svw;
   }
 }
 

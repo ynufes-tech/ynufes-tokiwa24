@@ -35,36 +35,48 @@ useHead({
 .inner-events-page {
   position: relative;
   top: 20%;
-  left: 10%;
+  left: 5%;
   width: 80%;
   margin-bottom: 5em;
   @include md {
     top: 20%;
+    left: 3%;
   }
   @include sm {
     top: 20%;
+    left: 5%;
   }
 }
 .events-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 75svw;
+  width: 90svw;
+  @include md {
+    width: 95svw;
+  }
+  @include sm {
+    width: 90svw;
+  }
 
   .events-elements {
-    width: 25svw;
-    min-width: 300px;
-    max-width: 400px;
+    width: 30svw;
     height: 35svh;
     min-height: 275px;
     max-height: 300px;
     text-decoration: none;
     color: #333333;
+    @include lg {
+      width: 45svw;
+    }
     @include md {
-      min-width: 180px;
-      max-width: 300px;
+      width: 31svw;
       max-height: 256px;
       min-height: 160px;
+    }
+    @include sm {
+      width: 45svw;
+
     }
   }
 }

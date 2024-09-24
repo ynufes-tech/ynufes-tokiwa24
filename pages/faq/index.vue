@@ -65,18 +65,17 @@ useHead({
     flex-direction: column; 
     
   }
-  @include md {
-    margin-bottom: 0;
-    font-size: 24px; 
-  }
+
 }
 .q-num {
   margin-right: 2rem; 
   font-size: 28px; 
+  @include md {
+margin-bottom: 0;
+font-size: 24px;
 }
-.p-box{
-  font-size: 28px
 }
+
 p {
   margin-top: 0;        
   margin-bottom: 2.5vw; 

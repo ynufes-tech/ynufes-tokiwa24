@@ -56,8 +56,6 @@ useHead({
 .page-root {
   position: relative;
   z-index: 10; /* コンテンツを最前面に配置 */
-  <PamphletButton />
-}
 
 #top-title {
   display: flex;

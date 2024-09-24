@@ -25,6 +25,7 @@ useHead({
       <p>このサイトはただいま制作中です。</p>
       <p>常盤祭に関する最新情報は随時公開されます。</p>
     </div>
+    <Swiper />
     <!-- <div class="table-units">
       <TableOfContents
         title="ABOUT"

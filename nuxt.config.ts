@@ -22,4 +22,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => /^(swiper|swiper-slide|swiper-container)$/.test(tag),
+    },
+  },
 });

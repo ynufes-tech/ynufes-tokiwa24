@@ -14,16 +14,19 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
       </p>
     </div>
     <div class="chairman-sec">
-      <h1>委員長メッセージ</h1>
-      <div class="chairman-box">
+      <h1 id="chairman-headline">委員長メッセージ</h1>
+      <hr />
+      <div class="chairman-frame">
         <img
           alt="chairman"
           class="chairman-img"
           src="~/assets/images/chairman-tmp.webp"
         />
-        <p>
-          あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
-        </p>
+        <div class="chairman-message">
+          <p>
+            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+          </p>
+        </div>
       </div>
     </div>
     <h1 id="the-seven-departments">7つの部局について</h1>
@@ -32,38 +35,45 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         <OverlapHeadline title="Planning" sub-title="企画部" />
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            こんにちは！企画部です！<br />
+            私たちは大学祭の花火企画やステージ企画、子供向けの図書館企画の企画・制作・運営を行っています！<br />
+            大学祭当日野外音楽堂などのステージや図書館にお越しいただき、本部企画を楽しんでください！<br />
+            本部企画一覧にて企画を紹介しているので是非ご覧ください！
           </p>
         </div>
       </div>
       <div class="img-box">
         <img
+          id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/plan1.webp"
         />
         <img
+          id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/plan2.webp"
         />
       </div>
     </div>
     <div class="departments-wrapper">
       <div class="img-box">
         <img
+          id="left-img"
           alt="紹介画像"
           class="departments-img"
           src="~/assets/images/rectangle-tmp.webp"
         />
         <img
+          id="right-img"
           alt="紹介画像"
           class="departments-img"
           src="~/assets/images/rectangle-tmp.webp"
         />
       </div>
       <div class="box">
-        <OverlapHeadline title="Planning" sub-title="企画部" />
+        <OverlapHeadline title="Editional" sub-title="編集部" />
         <div class="frame">
           <p>
             あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
@@ -71,97 +81,73 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         </div>
       </div>
     </div>
+    <OverlapHeadline
+      id="exception-headline"
+      title="Peace Preservation"
+      sub-title="会場部"
+    />
     <div class="departments-wrapper">
       <div class="box">
-        <OverlapHeadline title="Planning" sub-title="企画部" />
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            会場部は、来場者の皆様の安全を守るために、大学祭の会場設営に携わったり、当日は様々な場所を巡回・パトロールしています。当日、なにかお困りのことなどございましたら、気兼ねなくお声がけください。
           </p>
         </div>
       </div>
       <div class="img-box">
         <img
+          id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/pp1.webp"
         />
         <img
+          id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/pp2.webp"
         />
       </div>
     </div>
     <div class="departments-wrapper">
       <div class="img-box">
+        <!-- <img
+          id="right-img"
+          alt="紹介画像"
+          class="departments-img"
+          src="~/assets/images/departments-img/equip1.JPG"
+        /> -->
+        <!-- <img
+          id="left-img"
+          alt="紹介画像"
+          class="departments-img"
+          src="~/assets/images/departments-img/equip2.JPG"
+        /> -->
         <img
+          id="left-img"
           alt="紹介画像"
           class="departments-img"
           src="~/assets/images/rectangle-tmp.webp"
         />
         <img
+          id="left-img"
           alt="紹介画像"
           class="departments-img"
           src="~/assets/images/rectangle-tmp.webp"
         />
       </div>
       <div class="box">
-        <OverlapHeadline title="Planning" sub-title="企画部" />
+        <OverlapHeadline title="Equipment" sub-title="物品部" />
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="departments-wrapper">
-      <div class="box">
-        <OverlapHeadline title="Planning" sub-title="企画部" />
-        <div class="frame">
-          <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
-          </p>
-        </div>
-      </div>
-      <div class="img-box">
-        <img
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
-        />
-        <img
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
-        />
-      </div>
-    </div>
-    <div class="departments-wrapper">
-      <div class="img-box">
-        <img
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
-        />
-        <img
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
-        />
-      </div>
-      <div class="box">
-        <OverlapHeadline title="Planning" sub-title="企画部" />
-        <div class="frame">
-          <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            物品部は企業とやり取りをして、テントや消火器をはじめとする団体の企画に必要な物品の管理をする部局です。直前期以外には団体に貸し出すテントの天幕を洗う活動をしています。表に立って活動することはあまりありませんが、学祭を支える縁の下の力持ちとして、円滑な運営や準備に尽力しています。
           </p>
         </div>
       </div>
     </div>
     <div class="departments-wrapper">
       <div class="box">
-        <OverlapHeadline title="Planning" sub-title="企画部" />
+        <OverlapHeadline title="Technology" sub-title="技術部" />
         <div class="frame">
           <p>
             あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
@@ -170,17 +156,81 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
       </div>
       <div class="img-box">
         <img
+          id="left-img"
           alt="紹介画像"
           class="departments-img"
           src="~/assets/images/rectangle-tmp.webp"
         />
         <img
+          id="right-img"
           alt="紹介画像"
           class="departments-img"
           src="~/assets/images/rectangle-tmp.webp"
         />
       </div>
     </div>
+    <div class="departments-wrapper">
+      <div class="img-box">
+        <!-- <img
+          id="left-img"
+          alt="紹介画像"
+          class="departments-img"
+          src="~/assets/images/departments-img/acc1.JPG"
+        /> -->
+        <img
+          id="right-img"
+          alt="紹介画像"
+          class="departments-img"
+          src="~/assets/images/rectangle-tmp.webp"
+        />
+        <img
+          id="right-img"
+          alt="紹介画像"
+          class="departments-img"
+          src="~/assets/images/departments-img/acc2.webp"
+        />
+      </div>
+      <div class="box">
+        <OverlapHeadline title="Accounting" sub-title="経理部" />
+        <div class="frame">
+          <p>
+            こんにちは！経理部です✨<br />
+            経理部は、大学祭の運営に必要なお金を管轄するとても重要な部局です💰<br />
+            私たちは、予算の作成や資金管理、決算の取りまとめなどを通じて、大学祭が円滑に運営されるようサポートしています！<br />
+            当日は来場者の皆様と直接関わる機会はありませんが、ぜひ楽しんでいただけたら嬉しいです！
+          </p>
+        </div>
+      </div>
+    </div>
+    <OverlapHeadline
+      id="exception-headline"
+      title="General Affairs"
+      sub-title="総務部"
+    />
+    <div class="departments-wrapper">
+      <div class="box">
+        <div class="frame">
+          <p>
+            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+          </p>
+        </div>
+      </div>
+      <div class="img-box">
+        <img
+          id="right-img"
+          alt="紹介画像"
+          class="departments-img"
+          src="~/assets/images/rectangle-tmp.webp"
+        />
+        <img
+          id="left-img"
+          alt="紹介画像"
+          class="departments-img"
+          src="~/assets/images/rectangle-tmp.webp"
+        />
+      </div>
+    </div>
+    <FloatingButton />
   </div>
 </template>
 
@@ -191,16 +241,75 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
   flex-direction: column;
   box-sizing: border-box;
 }
+p {
+  margin: 0;
+}
+.intro {
+  margin: 0 15vw;
+  @include md {
+    margin: 0 8vw;
+  }
+}
+#chairman-headline {
+  margin-left: 20vw;
+  margin-bottom: 0;
+}
+hr {
+  margin-top: 0;
+  margin-right: 20vw;
+  border: solid 1px #000000;
+}
 .chairman-img {
   width: 300px;
+  height: auto;
+  margin-left: 5vw;
+  margin-right: 2vw;
 }
-.chairman-box {
+.chairman-frame {
   display: flex;
+  margin: 0 12vw;
+  justify-content: space-between;
+}
+.chairman-message {
+  width: 60%;
+}
+#the-seven-departments {
+  text-align: center;
+  //transform: translateX(10vw);
+  //margin-right: 20rem;
 }
 .departments-wrapper {
   display: flex;
+  margin: 0 10vw;
+  padding-left: 2vw;
+  margin-bottom: 5rem;
+}
+#exception-headline {
+  margin-left: 10vw;
+}
+.box {
+  margin-right: 2rem;
 }
 .departments-img {
-  width: 200px;
+  width: 300px;
+  margin: 1rem;
+}
+.frame {
+  background-color: #eee;
+  opacity: 60%;
+  border-radius: 2rem;
+  width: 35vw;
+  margin: 0;
+  padding: 1rem;
+}
+.img-box {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin-top: 1rem;
+  padding-left: 3rem;
+}
+#right-img {
+  margin: 0 auto 0;
 }
 </style>

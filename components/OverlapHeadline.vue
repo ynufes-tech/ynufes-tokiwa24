@@ -27,12 +27,6 @@ const props = defineProps({
   height: 8.8rem;
   padding: 0;
   z-index: 1000;
-  @include md {
-    
-  }
-  @include sm {
-    
-  }
   > h1 {
     margin: 0;
     padding: 0;
@@ -43,16 +37,16 @@ const props = defineProps({
     font-weight: 400;
     z-index: 1000;
     @include xl {
-      font-size: 90px;
+      font-size: 85px;
     }
     @include lg {
-      font-size: 88px;
+      font-size: 70px;
     }
     @include md {
-      font-size: 58px;
+      font-size: 70px;
     }
     @include sm {
-      font-size: 50px;
+      font-size: 60px;
     }
   }
   > h2 {
@@ -67,23 +61,23 @@ const props = defineProps({
     z-index: 1000;
     @include xl {
       font-size: 30px;
-      top: -2.4em;
+      top: -2.2em;
       left: 2rem;
     }
     @include lg {
       font-size: 25px;
-      top: -2.41em;
+      top: -2.2em;
       left: 2rem;
     }
     @include md {
-      font-size: 19px;
+      font-size: 24px;
       top: -2.3em;
       left: 1.5rem;
     }
     @include sm {
-      font-size: 15px;
-      top: -2.3em;
-      left: 1rem;
+      font-size: 22px;
+      top: -2.2em;
+      left: 1.5rem;
     }
   }
 }

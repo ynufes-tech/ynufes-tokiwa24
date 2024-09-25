@@ -6,7 +6,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
   <div class="page-root">
     <PageTitle title="ABOUT US" sub-title="大学祭実行委員会について" />
     <div class="intro">
-      <p>
+      <p id="first">
         横浜国立大学大学祭実行委員会は、年に二回の大学祭を企画・運営している組織です。
       </p>
       <p>
@@ -57,7 +57,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         />
       </div>
     </div>
-    <div class="departments-wrapper">
+    <div class="departments-wrapper" id="reverse">
       <div class="img-box">
         <img
           id="left-img"
@@ -81,7 +81,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         </div>
       </div>
     </div>
-    <OverlapHeadline
+    <OverlapHeadlinePP
       id="exception-headline"
       title="Peace Preservation"
       sub-title="会場部"
@@ -109,31 +109,19 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         />
       </div>
     </div>
-    <div class="departments-wrapper">
+    <div class="departments-wrapper" id="reverse">
       <div class="img-box">
-        <!-- <img
+        <img
           id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/departments-img/equip1.JPG"
-        /> -->
-        <!-- <img
-          id="left-img"
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/departments-img/equip2.JPG"
-        /> -->
-        <img
-          id="left-img"
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/equip1.webp"
         />
         <img
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/equip2.webp"
         />
       </div>
       <div class="box">
@@ -169,19 +157,13 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         />
       </div>
     </div>
-    <div class="departments-wrapper">
+    <div class="departments-wrapper" id="reverse">
       <div class="img-box">
-        <!-- <img
+        <img
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/departments-img/acc1.JPG"
-        /> -->
-        <img
-          id="right-img"
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/acc1.webp"
         />
         <img
           id="right-img"
@@ -202,7 +184,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         </div>
       </div>
     </div>
-    <OverlapHeadline
+    <OverlapHeadlinePP
       id="exception-headline"
       title="General Affairs"
       sub-title="総務部"
@@ -244,6 +226,9 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
 p {
   margin: 0;
 }
+#first {
+  margin-bottom: 1rem;
+}
 .intro {
   margin: 0 15vw;
   @include md {
@@ -264,31 +249,66 @@ hr {
   height: auto;
   margin-left: 5vw;
   margin-right: 2vw;
+  @include md {
+    margin: 1rem auto;
+  }
 }
 .chairman-frame {
   display: flex;
   margin: 0 12vw;
   justify-content: space-between;
+  @include md {
+    margin: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
+h1 {
+  @include md {
+    font-size: 30px;
+  }
 }
 .chairman-message {
-  width: 60%;
+  width: 100%;
+  text-align: center;
 }
 #the-seven-departments {
   text-align: center;
-  //transform: translateX(10vw);
+  transform: translateX(10vw);
   //margin-right: 20rem;
 }
 .departments-wrapper {
   display: flex;
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
   margin: 0 10vw;
+  @include lg {
+    margin: 0 8vw;
+  }
+  @include md {
+    margin: 0 4vw 3rem;
+    padding: 0;
+  }
   padding-left: 2vw;
   margin-bottom: 5rem;
+}
+#reverse {
+  @include md {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 #exception-headline {
   margin-left: 10vw;
 }
 .box {
   margin-right: 2rem;
+  @include lg {
+    margin-right: 0;
+  }
 }
 .departments-img {
   width: 300px;
@@ -301,6 +321,13 @@ hr {
   width: 35vw;
   margin: 0;
   padding: 1rem;
+  @include lg {
+    margin-right: 1rem;
+  }
+  @include md {
+    margin: -2.8rem auto 0;
+    width: 85vw;
+  }
 }
 .img-box {
   display: flex;
@@ -308,8 +335,24 @@ hr {
   width: 35vw;
   margin-top: 1rem;
   padding-left: 3rem;
+  @include lg {
+    padding-left: 0;
+    margin-right: 4rem;
+  }
+  @include md {
+    margin-left: 7vw;
+  }
+  @include md {
+    margin-left: 0;
+  }
 }
 #right-img {
   margin: 0 auto 0;
+  @include md {
+    margin-left: 25vw;
+  }
+  @include sm {
+    margin-left: 13vw;
+  }
 }
 </style>

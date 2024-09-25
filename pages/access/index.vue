@@ -5,6 +5,9 @@
     <PageTitle title="ACCESS" sub-title="大学までのアクセス" />
     <div class="page-wrapper">
       <div class="page-contents">
+        <div class="contents">
+          <h2>大学推奨ルートでの来場をお願いいたします。</h2>
+        </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.2531241828697!2d139.58826227605002!3d35.473280572655035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601859679ea21c77%3A0x28d72ba15dae9e6c!2sYokohama%20National%20University!5e0!3m2!1sen!2sjp!4v1710676695264!5m2!1sen!2sjp"
           width="600"
@@ -125,5 +128,10 @@ p {
   @include sm {
     margin: 1em 5vw 3em;
   }
+}
+.contents{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.3em;
 }
 </style>

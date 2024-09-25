@@ -23,7 +23,8 @@ const props = defineProps({
   flex-direction: column;
   //align-items: flex-start; /* 左揃え */
   text-align: left; /* テキストも左揃え */
-  height: calc(8vh + 8.5vw);
+  //height: calc(8vh + 8.5vw);
+  height: 8.8rem;
   padding: 0;
   z-index: 1000;
   @include md {
@@ -34,10 +35,11 @@ const props = defineProps({
   }
   > h1 {
     margin: 0;
+    padding: 0;
     font-size: 100px;
     letter-spacing: -3px;
     width: fit-content;
-    color: rgba(224, 224, 224, 0.5); /* 色を50%にぼやかす */
+    color: rgba(224, 224, 224, 0.4); /* 色を40%にぼやかす */
     font-weight: 400;
     z-index: 1000;
     @include xl {
@@ -59,7 +61,7 @@ const props = defineProps({
     font-size: 38px;
     color: #ffffff;
     position: relative;
-    top: -2.46em; /* h1との高さを調整 */
+    top: -2.1em; /* h1との高さを調整 */
     left: 3rem;
     font-weight: 300;
     z-index: 1000;

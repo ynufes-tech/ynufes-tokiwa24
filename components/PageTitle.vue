@@ -40,7 +40,7 @@ const props = defineProps({
     font-size: 138px;
     letter-spacing: -3px;
     width: fit-content;
-    color: rgba(226, 181, 197, 0.6); /* 色を60%にぼやかす */
+    color: rgba(226, 181, 197, 0.4); /* 色を40%にぼやかす */
     font-weight: 400;
     z-index: 1000;
     @include xl {

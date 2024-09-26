@@ -24,6 +24,9 @@ useHead({
     <div class="in-production">
       <p>このサイトはただいま制作中です。</p>
       <p>常盤祭に関する最新情報は随時公開されます。</p>
+      <div class="banner-holder">
+        <Banner />
+      </div>
     </div>
     <!-- <div class="table-units">
       <TableOfContents
@@ -47,7 +50,7 @@ useHead({
         page-link="/connection"
       />
     </div> -->
-  <MapButton />
+<!--  <MapButton />-->
   </div>
 </template>
 
@@ -64,7 +67,7 @@ useHead({
   flex-direction: column;
   box-sizing: border-box;
   height: min(25vh, 25vw);
-  margin-top: calc(15vh + 6vw);
+  margin-top: calc(9vh + 6vw);
   margin-left: 20vw;
   @include xl {
     margin-left: 15vw;
@@ -131,5 +134,10 @@ hr {
 }
 .table-units hr {
   display: none;
+}
+.banner-holder {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 </style>

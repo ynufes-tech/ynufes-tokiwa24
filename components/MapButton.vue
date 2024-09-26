@@ -40,4 +40,8 @@
       right: 20px;
     }
   }
+
+.map-button:hover {
+  transform: scale(1.1);
+}
 </style>

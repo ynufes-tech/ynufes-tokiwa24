@@ -1,34 +1,29 @@
-
 <script lang="ts" setup></script>
 
 <template>
   <div class="sns-area">
-
     <div class="sns-field">
       <a
-          id="sns-x"
-          href="https://x.com/ynu_fes"
-          rel="noopener noreferrer"
-          target="_blank"
+        id="sns-x"
+        href="https://x.com/ynu_fes"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <img alt="x" src="~/assets/images/x-white.webp" />
       </a>
       <a
-          id="sns-ins"
-          href="https://www.instagram.com/ynu_fes"
-          rel="noopener noreferrer"
-          target="_blank"
+        id="sns-ins"
+        href="https://www.instagram.com/ynu_fes"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        <img
-            alt="instagram"
-            src="~/assets/images/instagram-logo.webp"
-        />
+        <img alt="instagram" src="~/assets/images/instagram-logo.webp" />
       </a>
       <a
-          id="sns-f"
-          href="https://www.facebook.com/ynufes"
-          rel="noopener noreferrer"
-          target="_blank"
+        id="sns-f"
+        href="https://www.facebook.com/ynufes"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <img alt="facebook" src="~/assets/images/facebook-logo.webp" />
       </a>
@@ -39,8 +34,7 @@
 <style lang="scss" scoped>
 .sns-area {
   width: 320px;
-  height: 320px;
-margin: 0 auto;
+  margin: 0 auto;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -60,31 +54,26 @@ margin: 0 auto;
     margin: 5px auto;
     gap: 30px;
     margin-bottom: 30px;
-
     img {
       transition: all 0.2s ease-in-out;
       aspect-ratio: 1;
     }
-
     #sns-f img {
       width: 55px;
     }
-
     #sns-x {
       width: 55px;
+      height: 55px;
       margin: 2.5px;
       border-radius: 50%;
       background: black;
-
       img {
         width: 35px;
         padding: 10px;
       }
     }
-
     #sns-ins {
       width: 60px;
-
       img {
         width: 50px;
         padding: 5px;

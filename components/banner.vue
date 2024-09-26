@@ -2,8 +2,8 @@
 
 </script>
 <template>
-    <a href="https://www.instagram.com/p/DAUeEJBB73c/?igsh=MThtcXhqMWQxcDF2Yg==" class="banner">
-     <img src="assets/images/idol-bannerv2.png" class="banner-image" alt="idol-event-link">
+    <a href="https://www.instagram.com/p/DAUeEJBB73c/" class="banner">
+     <img src="assets/images/idol-banner.webp" class="banner-image" alt="idol-event-link">
     </a>
 </template>
 <style>

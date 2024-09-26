@@ -47,7 +47,7 @@ useHead({
         page-link="/connection"
       />
     </div> -->
-  <MapButton />
+<!--  <MapButton />-->
   </div>
 </template>
 

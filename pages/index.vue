@@ -47,6 +47,7 @@ useHead({
         page-link="/connection"
       />
     </div> -->
+    <SNS />
   </div>
 </template>
 

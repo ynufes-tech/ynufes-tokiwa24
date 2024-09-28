@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'; // ルートからidを取得
-import events from 'assets/data/events.json'; // イベントデータ
+import events from '~/public/events.json'; // イベントデータ
 const route = useRoute();
 const id = parseInt(route.params.id);
 const event = events.find(e => e.id === id);
+const showNoImage = function (e: any) {
+  e.target.src = "./assts/images/noimage.webp";
+  e.target.onerror = null;
+};
 </script>
 
 <template>

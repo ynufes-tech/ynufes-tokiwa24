@@ -37,9 +37,9 @@ jobs:
           password: ${{ steps.auth.outputs.access_token }}
           registry: asia-northeast1-docker.pkg.dev
 
-      - name: Download events.json from external URL
-          run: |
-            curl "${{ secrets.EVENTS_URL }}" -o ./assets/data/events.json
+      - name: Download events.json from external url
+        run: |
+          curl "${{ secrets.EVENTS_URL }}" -o ./assets/data/events.json
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import events from "assets/data/events.json";
+import events from "public/events.json";
 
 useHead({
   title: "Events | 24常盤祭公式HP~夢灯~",

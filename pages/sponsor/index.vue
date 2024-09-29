@@ -10,7 +10,7 @@ useHead({
 <template>
     <div class="page-root">
       <PageTitle title="SPONSOR" sub-title="協賛企業一覧" />
-      <p>「24常盤祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。
+      <!-- <p>「24常盤祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。
         この場をお借りいたしまして、心より感謝申し上げます。</p>
       <p>ご協賛いただきました企業を以下に掲載させていただきます。</p>
 
@@ -56,7 +56,10 @@ useHead({
         <p>○○○○</p>
         <p>○○○○</p>
       </div>
-      <FloatingButton />
+      <FloatingButton /> -->
+      <div class="prepare">
+        <h1>準備中</h1>
+      </div>
     </div>
 
 </template>
@@ -73,5 +76,10 @@ p{
 }
 .sponsor-box {
   margin-top: 3%;
+}
+.prepare{
+  display: flex;
+  justify-content: center;
+  margin-top: 8vw;
 }
 </style>

@@ -10,7 +10,7 @@ useHead({
 <template>
     <div class="page-root">
       <PageTitle title="DECO" sub-title="装飾品紹介" />
-        <div class="inner-deco-page">
+        <!-- <div class="inner-deco-page">
             <div class="deco-about">
                 <p>常盤祭を彩る装飾品をご紹介させていただきます。</p>
             </div>
@@ -126,7 +126,10 @@ useHead({
                 </div>
             </div>
         </div>
-        <FloatingButton />
+        <FloatingButton /> -->
+        <div class="prepare">
+            <h1>準備中</h1>
+        </div>
     </div>
 </template>
 
@@ -233,5 +236,9 @@ p {
         font-size: 18px;
     }
 }
-
+.prepare{
+  display: flex;
+  justify-content: center;
+  margin-top: 8vw;
+}
 </style>

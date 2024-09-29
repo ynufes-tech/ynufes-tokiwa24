@@ -22,4 +22,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  router: {
+    base: '/24/tokiwa/'
+  }
 });

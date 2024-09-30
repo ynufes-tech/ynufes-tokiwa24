@@ -39,6 +39,14 @@ const showNoImage = function (e: any) {
           <div class="section-title-holder">
             <SectionTitle section-title="各種リンク"/>
           </div>
+          <div class="sns-holder">
+            <SnsIconX v-if="event?.x_id" :link="event.x_id"/>
+            <SnsIconIns v-if="event?.ins_id" :link="event.ins_id"/>
+            <SnsIconFac v-if="event?.fac_id" :link="event.fac_id"/>
+          </div>
+          <div class="hp-holder">
+            <a v-if="event?.hp_id" :href="event?.hp_id || ''">公式HP:{{event?.hp_id}}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -70,5 +78,21 @@ const showNoImage = function (e: any) {
 .description-holder{
   width: 80vw;
   padding-bottom: 2em;
+}
+.sns-holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  width: 30vw;
+  @include lg{
+    width: 50vw;
+  }
+  .project-icon{
+    width: 100%;
+  }
+}
+.hp-holder{
+
 }
 </style>

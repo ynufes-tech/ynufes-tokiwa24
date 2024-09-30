@@ -8,10 +8,10 @@
     "o=description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "https://x.com/PROJECT_ARTENT",
+    "ins_id": "https://instagram.com/project_artent",
+    "fac_id": "a",
+    "hp_id": "a"
   },
   {
     "id": 901,
@@ -22,10 +22,10 @@
     "o=description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 902,
@@ -36,10 +36,10 @@
     "o=description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 903,
@@ -50,10 +50,10 @@
     "o=description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 904,
@@ -64,10 +64,10 @@
     "o=description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 905,
@@ -78,10 +78,10 @@
     "o=description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 906,
@@ -92,9 +92,9 @@
     "o=description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   }
 ]

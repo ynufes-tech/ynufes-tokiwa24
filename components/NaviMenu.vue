@@ -27,6 +27,8 @@ const toggle = () => {
           <li><NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink></li>
           <li><NuxtLink to="/staff" @click="toggle">STAFF</NuxtLink></li>
           <li><NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink></li>
+          <li><NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink></li>
+          <li><NuxtLink to="/sponsor" @click="toggle">SPONSOR</NuxtLink></li>
         </ul>
       </nav>
     </div>
@@ -103,7 +105,7 @@ const toggle = () => {
   padding: 2rem 1rem 0 1.5rem; /* 上部余白を追加し、左右の余白を調整 */
   margin: 0;
   @include md {
-    padding: 2rem 0rem 0 0rem;
+    padding: 2rem 0 0 0;
   }
 }
 
@@ -112,7 +114,7 @@ const toggle = () => {
   padding-right: 10px;
   padding-left: 20px;
   @include md {
-    padding-right: 0px;
+    padding-right: 0;
     padding-left: 5px;
   }
   &:hover {

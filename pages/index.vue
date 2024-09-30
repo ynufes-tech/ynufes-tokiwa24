@@ -23,12 +23,12 @@ useHead({
     </div>
     <div class="in-production">
       <p>このサイトはただいま制作中です。</p>
-      <p>常盤祭に関する最新情報は随時公開されます。</p>
+      <p>常盤祭に関する最新情報は随時更新します。</p>
       <div class="banner-holder">
         <Banner />
       </div>
     </div>
-    <!-- <div class="table-units">
+    <div class="table-units">
       <TableOfContents
         title="ABOUT"
         sub-title="大学祭について"
@@ -49,9 +49,20 @@ useHead({
         sub-title="他大学の大学祭情報"
         page-link="/connection"
       />
-    </div> -->
+      <TableOfContents
+          title="EVENTS"
+          sub-title="企画一覧"
+          page-link="/events"
+      />
+      <TableOfContents
+          title="SPONSOR"
+          sub-title="ご協賛団体一覧"
+          page-link="/sponsor"
+      />
+    </div>
     <SNS />
-<!--  <MapButton />-->
+  <MapButton />
+    <FloatingButton/>
   </div>
 </template>
 

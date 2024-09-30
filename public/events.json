@@ -5,13 +5,13 @@
     "e_name": "E_Name1",
     "icon-url": "Icon-url",
     "e_description": "EventDescription",
-    "o=description": "OrganizationDescription",
+    "o_description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "https://x.com/PROJECT_ARTENT",
+    "ins_id": "https://instagram.com/project_artent",
+    "fac_id": "a",
+    "hp_id": "a"
   },
   {
     "id": 901,
@@ -19,13 +19,13 @@
     "e_name": "E_Name2",
     "icon-url": "Icon-url",
     "e_description": "EventDescription",
-    "o=description": "OrganizationDescription",
+    "o_description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 902,
@@ -33,13 +33,13 @@
     "e_name": "E_Name3",
     "icon-url": "Icon-url",
     "e_description": "EventDescription",
-    "o=description": "OrganizationDescription",
+    "o_description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 903,
@@ -47,13 +47,13 @@
     "e_name": "E_Name4",
     "icon-url": "Icon-url",
     "e_description": "EventDescription",
-    "o=description": "OrganizationDescription",
+    "o_description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 904,
@@ -61,13 +61,13 @@
     "e_name": "E_Name5",
     "icon-url": "Icon-url",
     "e_description": "EventDescription",
-    "o=description": "OrganizationDescription",
+    "o_description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 905,
@@ -75,13 +75,13 @@
     "e_name": "E_Name6",
     "icon-url": "Icon-url",
     "e_description": "EventDescription",
-    "o=description": "OrganizationDescription",
+    "o_description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   },
   {
     "id": 906,
@@ -89,12 +89,12 @@
     "e_name": "E_Name7",
     "icon-url": "Icon-url",
     "e_description": "EventDescription",
-    "o=description": "OrganizationDescription",
+    "o_description": "OrganizationDescription",
     "genre": "Genre",
     "place": "Place",
-    "x_path": "X-path",
-    "instagram_path": "Instagram-path",
-    "facebook_path": "Facebook-path",
-    "website-path": "Website-path"
+    "x_id": "X-path",
+    "ins_id": "Instagram-path",
+    "fac_id": "Facebook-path",
+    "hp_id": "Website-path"
   }
 ]

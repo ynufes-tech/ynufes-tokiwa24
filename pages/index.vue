@@ -50,6 +50,7 @@ useHead({
         page-link="/connection"
       />
     </div> -->
+    <SNS />
 <!--  <MapButton />-->
   </div>
 </template>

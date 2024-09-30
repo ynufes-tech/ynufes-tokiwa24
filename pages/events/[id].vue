@@ -47,6 +47,7 @@ const showNoImage = function (e: any) {
           <div class="hp-holder">
             <a v-if="event?.hp_id" :href="event?.hp_id || ''">公式HP:{{event?.hp_id}}</a>
           </div>
+          <BackToEvents/>
         </div>
       </div>
     </div>

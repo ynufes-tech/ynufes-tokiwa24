@@ -30,10 +30,10 @@ const showNoImage = function (e: any) {
             <p>{{ event?.e_description || '企画が見つかりません' }}</p>
           </div>
           <SubTitle :sub-title="`${event?.o_name || '企画が見つかりません'}`"/>
-          <div class="section-title-holder">
+          <div class="section-title-holder" v-if="event?.o_description">
             <SectionTitle section-title="団体説明"/>
           </div>
-          <div class="description-holder">
+          <div class="description-holder" v-if="event?.o_description">
             <p>{{ event?.o_description || '' }}</p>
           </div>
           <div class="section-title-holder">
@@ -64,17 +64,22 @@ const showNoImage = function (e: any) {
   display: flex;
   flex-direction: row;
   text-align: left;
-  width: 100vw;
+  width: 90vw;
+  margin-left: -2em;
 }
 .icon-holder{
   padding-bottom: 2em;
   width: 30vw;
-  @include lg{
-    width: 50vw;
-  }
   .project-icon{
     width: 100%;
   }
+  @include lg{
+    width: 50vw;
+  }
+  @include md{
+    padding-bottom: 1em;
+  }
+
 }
 .description-holder{
   width: 80vw;
@@ -86,14 +91,14 @@ const showNoImage = function (e: any) {
   justify-content: space-around;
   padding-bottom: 1em;
   width: 30vw;
-  @include lg{
-    width: 50vw;
-  }
   .project-icon{
     width: 100%;
   }
-}
-.hp-holder{
-
+  @include lg{
+    width: 50vw;
+  }
+  @include md{
+    padding-bottom: 1em;
+  }
 }
 </style>

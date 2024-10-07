@@ -14,6 +14,7 @@ const showNoImage = function (e: any) {
       <div class="id-page">
         <PageTitle :title="`EVENT`" :sub-title=" event?.e_name || 'イベントが見つかりません' "/>
         <div class="id-page-contents">
+          <GenreComponent :genreTitle="test"/>
           <div class="icon-holder">
             <img
                 :src="`https://storage.googleapis.com/tokiwa24-assets/icos/${id}.webp`"

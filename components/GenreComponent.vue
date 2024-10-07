@@ -20,7 +20,6 @@ const props = defineProps({
   display: flex;
   flex-direction: row;
   justify-content: start;
-  width: 80vw;
   .genre-title{
     background-color: #f6f6f6;
     border-radius: 0.3em;

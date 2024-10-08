@@ -5,7 +5,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
 <template>
   <div class="page-root">
     <PageTitle title="ABOUT US" sub-title="大学祭実行委員会について" />
-    <!-- <div class="intro">
+    <div class="intro">
       <p id="first">
         横浜国立大学大学祭実行委員会は、年に二回の大学祭を企画・運営している組織です。
       </p>
@@ -20,11 +20,11 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         <img
           alt="chairman"
           class="chairman-img"
-          src="~/assets/images/chairman-tmp.webp"
+          src="~/assets/images/departments-img/chairman-img.webp"
         />
         <div class="chairman-message">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            皆さま、2024常盤祭にご来場いただき誠にありがとうございます。今年のテーマは『夢灯』です。常盤祭に関わる皆さまが、夢を灯す光を見つけられるよう、実行委員一同、準備を重ねてまいりました。2024常盤祭が、皆さまにとって笑顔あふれる特別な3日間となるよう、全力でおもてなしさせていただきます。どうぞ最後までお楽しみください！
           </p>
         </div>
       </div>
@@ -212,10 +212,10 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         />
       </div>
     </div>
-    <FloatingButton /> -->
+    <FloatingButton />
     <div class="prepare">
-        <h1>準備中</h1>
-      </div>
+      <h1>準備中</h1>
+    </div>
   </div>
 </template>
 
@@ -358,7 +358,7 @@ h1 {
     margin-left: 13vw;
   }
 }
-.prepare{
+.prepare {
   display: flex;
   justify-content: center;
   margin-top: 8vw;

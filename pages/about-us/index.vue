@@ -5,7 +5,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
 <template>
   <div class="page-root">
     <PageTitle title="ABOUT US" sub-title="大学祭実行委員会について" />
-    <div class="intro">
+    <!-- <div class="intro">
       <p id="first">
         横浜国立大学大学祭実行委員会は、年に二回の大学祭を企画・運営している組織です。
       </p>
@@ -212,7 +212,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         />
       </div>
     </div>
-    <FloatingButton />
+    <FloatingButton /> -->
     <div class="prepare">
       <h1>準備中</h1>
     </div>
@@ -323,6 +323,7 @@ h1 {
   border-radius: 2rem;
   width: 35vw;
   margin: 0;
+  margin-top: 1rem;
   padding: 1rem;
   @include lg {
     margin-right: 1rem;
@@ -355,7 +356,7 @@ h1 {
     margin-left: 25vw;
   }
   @include sm {
-    margin-left: 13vw;
+    margin-left: 8vw;
   }
 }
 .prepare {

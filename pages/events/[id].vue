@@ -14,6 +14,10 @@ const showNoImage = function (e: any) {
       <div class="id-page">
         <PageTitle :title="`EVENT`" :sub-title=" event?.e_name || 'イベントが見つかりません' "/>
         <div class="id-page-contents">
+          <div class="id-tag-holder">
+            <GenreComponent :genreTitle="`#${event?.genre || 'ジャンルが見つかりません'}`"/>
+            <GenreComponent :genreTitle="`${event?.place || '企画場所が見つかりません'}`"/>
+          </div>
           <div class="icon-holder">
             <img
                 :src="`https://storage.googleapis.com/tokiwa24-assets/icos/${id}.webp`"
@@ -99,6 +103,16 @@ const showNoImage = function (e: any) {
   }
   @include md{
     padding-bottom: 1em;
+  }
+}
+.id-tag-holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 80vw;
+  margin-bottom: 1em;
+  .genre-component{
+    margin-right: 2em;
   }
 }
 </style>

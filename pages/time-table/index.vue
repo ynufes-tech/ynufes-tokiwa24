@@ -17,24 +17,17 @@ if (place) {
 }
 const changePlace = (id: number) => {
   useRouter().push({
-    path: "/time-schedule",
+    path: "/time-table",
     query: { place: String(id) },
   });
   placeId.value = id;
 };
-
-// const { gtag } = useGtag();
-
-// gtag("event", "screen_view", {
-//   app_name: useRuntimeConfig().public.app_name,
-//   screen_name: "TimeSchedule",
-// });
 </script>
 
 <template>
   <div class="page-root">
     <div>
-      <PageTitle title="TIME TABLE" sub-title="タイムスケジュール" />
+      <PageTitleCnct title="TIME TABLE" sub-title="タイムテーブル" />
 
       <p class="select-button-description">
         タイムスケジュールを表示する場所を選択してください

@@ -132,7 +132,7 @@ useHead({
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
-  width: 70%;
+  width: 85%;
   max-width: 1200px;
   @include md {
     width: 80%;

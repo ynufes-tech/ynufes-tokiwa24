@@ -56,10 +56,17 @@ const props = defineProps({
   background: rgba(255, 255, 255, 0.5);
   background-image: url(~/assets/images/monochrome-line.webp);
   background-size: contain;
+  @include md {
+    width: 200px;
+    height: 200px;
+  }
 }
 .text-box {
   justify-content: center;
-  padding-top: 7rem;
+  padding-top: 9.5rem;
+  @include md {
+    padding-top: 6rem;
+  }
 }
 h1 {
   font-size: 1.8rem;
@@ -67,12 +74,18 @@ h1 {
   justify-content: center;
   border-bottom: solid 1.5px #000;
   margin: 0 30px;
+  @include md {
+    font-size: 1.6rem;
+  }
 }
 h2 {
   margin-top: 0.4rem;
   font-size: 1.8rem;
   text-align: center;
   justify-content: center;
+  @include md {
+    font-size: 1.6rem;
+  }
 }
 hr {
   display: none;

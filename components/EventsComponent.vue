@@ -98,6 +98,7 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
   > p {
     font-size: 16px;
     margin: 4px 0;
+    word-wrap: break-word;
     @include md {
       font-size: 10px;
       margin: 1px 0;

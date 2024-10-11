@@ -22,4 +22,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  modules: ['nuxt-gtag'],
+
+  gtag: {
+    id: 'G-0DCQSG7Y00'
+  }
 });

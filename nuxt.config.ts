@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     baseURL: process.env.BASE_URL ? process.env.BASE_URL : "/",
+    runtimeConfig: {
+      baseURL: process.env.BASE_URL ? process.env.BASE_URL : "/",
+    },
     head: {
       meta: [
         { charset: "utf-8" },

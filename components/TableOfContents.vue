@@ -38,6 +38,7 @@ const props = defineProps({
   margin: 5rem 2rem 0;
   @include md {
     margin-top: 2rem;
+    margin: 2rem 1rem 0;
   }
   > a {
     text-decoration: none;
@@ -56,10 +57,18 @@ const props = defineProps({
   background: rgba(255, 255, 255, 0.5);
   background-image: url(~/assets/images/monochrome-line.webp);
   background-size: contain;
+  @include md {
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+  }
 }
 .text-box {
   justify-content: center;
   padding-top: 7rem;
+  @include md {
+    padding-top: 3.1rem;
+  }
 }
 h1 {
   font-size: 1.8rem;
@@ -67,12 +76,18 @@ h1 {
   justify-content: center;
   border-bottom: solid 1.5px #000;
   margin: 0 30px;
+  @include md {
+    font-size: 0.85rem;
+  }
 }
 h2 {
   margin-top: 0.4rem;
   font-size: 1.8rem;
   text-align: center;
   justify-content: center;
+  @include md {
+    font-size: 0.9rem;
+  }
 }
 hr {
   display: none;

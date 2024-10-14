@@ -1,6 +1,3 @@
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
-</style>
 <script setup lang="ts">
 import {ref, onMounted} from "vue";
 

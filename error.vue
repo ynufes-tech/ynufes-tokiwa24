@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import HeaderComponent from '~/components/HeaderComponent.vue'
+
 useHead({
   title: "error-page",
 });
@@ -6,7 +8,7 @@ useHead({
 <template>
     <NuxtLayout>
       <div class="error">
-        <Header />
+        <HeaderComponent />
         <!-- <PageTitle title="ERROR" sub-title="エラーコード：404" /> -->
         <div class="inner-error-page">
             <h1 id="main-404">404</h1>

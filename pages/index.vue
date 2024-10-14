@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import BannerComponent from '~/components/BannerComponent.vue'
+
 useHead({
   title: "Top | 24常盤祭公式HP~夢灯~",
   meta: [
@@ -25,7 +27,7 @@ useHead({
       <p>このサイトはただいま制作中です。</p>
       <p>常盤祭に関する最新情報は随時更新します。</p>
       <div class="banner-holder">
-        <Banner />
+        <BannerComponent />
       </div>
     </div>
     <div class="table-units">

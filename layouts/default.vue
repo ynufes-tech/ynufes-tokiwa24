@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {ref, onMounted} from "vue";
+import HeaderComponent from '~/components/HeaderComponent.vue'
 
 interface Lantern {
   id: number;
@@ -42,7 +43,7 @@ onMounted(() => {
 </script>
 <template>
   <div class="layout-root">
-    <Header/>
+    <HeaderComponent/>
     <slot/>
     <div class="background-container">
       <div class="background-img"/>

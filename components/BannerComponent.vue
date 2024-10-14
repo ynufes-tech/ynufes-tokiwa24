@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 <template>
     <a href="https://www.instagram.com/p/DAUeEJBB73c/" class="banner">
      <img src="assets/images/idol-banner.webp" class="banner-image" alt="idol-event-link"/>

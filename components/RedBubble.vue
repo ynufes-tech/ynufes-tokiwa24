@@ -16,11 +16,16 @@ const props = defineProps({
     type: String,
     required: true,
   },
-})
+  imagePath: {
+    type: String,
+    required: true, // 画像パスのプロップを追加
+  },
+});
 </script>
 
 <template>
   <div class="white-bubble">
+    <img :src="props.imagePath" alt="Bubble Image" class="bubble-image" />
     <h1>{{ props.title }}</h1>
     <p>{{ props.mainscript }}</p>
     <p>{{ props.place }}</p>
@@ -31,6 +36,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
 .white-bubble {
+  position: relative;
   height: 500px;
   width: 500px;
   border-radius: 50%;
@@ -52,11 +58,19 @@ const props = defineProps({
     height: 340px;
     width: 340px;
   }
+  .bubble-image {
+    position: absolute;
+    top: 200px; /* 少し上に移動 */
+    left: 500px; /* 左に移動 */
+    width: 150px; /* 画像のサイズを調整 */
+    z-index: 100; /* 重なりを確実に上に */
+  }
   > h1 {
     margin: 20px auto;
     font-size: 25px;
     padding-top: 70px;
     width: 460px;
+    z-index: 2;
     @include md {
       font-size: 22px;
       width: 380px;
@@ -74,6 +88,7 @@ const props = defineProps({
     margin: 15px auto;
     width: 380px;
     padding: 0 30px;
+    z-index: 2;
     //white-space: pre-wrap;
     @include md {
       width: 340px;

@@ -220,7 +220,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .page-root {
   display: flex;
   flex-direction: column;

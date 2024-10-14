@@ -2,8 +2,8 @@
 function goClick() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
-  });
+    behavior: 'smooth',
+  })
 }
 </script>
 
@@ -20,7 +20,7 @@ function goClick() {
 </template>
 
 <style lang="scss" scoped>
-@import "assets/scss/_breakpoint.scss";
+@import 'assets/scss/_breakpoint.scss';
 
 .floating-button-img {
   display: block;

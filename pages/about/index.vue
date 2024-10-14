@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: "About | 24常盤祭公式HP~夢灯~",
+  title: 'About | 24常盤祭公式HP~夢灯~',
   meta: [
-    { name: "description", content: "24常盤祭についての情報を掲載しています" },
+    { name: 'description', content: '24常盤祭についての情報を掲載しています' },
   ],
-});
+})
 </script>
 
 <template>
@@ -34,7 +34,7 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .page-root {
   display: flex;

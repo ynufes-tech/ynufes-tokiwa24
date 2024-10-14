@@ -1,59 +1,59 @@
 <script setup lang="ts">
-import {ref, onMounted} from "vue";
+import { ref, onMounted } from 'vue'
 import HeaderComponent from '~/components/HeaderComponent.vue'
 
 interface Lantern {
-  id: number;
+  id: number
   style: {
-    left: string;
-    animationDuration: string;
-    backgroundImage: string;
-  };
+    left: string
+    animationDuration: string
+    backgroundImage: string
+  }
 }
 
-const lanterns = ref<Lantern[]>([]);
-const images = ["images/lantern1.webp", "images/lantern2.webp"];
+const lanterns = ref<Lantern[]>([])
+const images = ['images/lantern1.webp', 'images/lantern2.webp']
 
-const conf = useRuntimeConfig();
+const conf = useRuntimeConfig()
 
 function createLantern() {
-  const id = Date.now() + Math.random();
-  const image = images[Math.floor(Math.random() * images.length)];
+  const id = Date.now() + Math.random()
+  const image = images[Math.floor(Math.random() * images.length)]
   // URLを用いてbaseURLを追加
   const style = {
     left: `${Math.random() * 100}vw`,
     animationDuration: `${8 + Math.random() * 4}s`,
     //animationDelay: `${Math.random() * 5}s`, // ランダムな遅延を追加
     backgroundImage: `url(${conf.app.baseURL}${image})`,
-  };
-  lanterns.value.push({id, style});
+  }
+  lanterns.value.push({ id, style })
 }
 
 function checkLanterns() {
   while (lanterns.value.length < 7) {
     // ランタンの数を2倍に増やす
-    createLantern();
+    createLantern()
   }
 }
 
 onMounted(() => {
-  checkLanterns();
-  setInterval(checkLanterns, 1000);
-});
+  checkLanterns()
+  setInterval(checkLanterns, 1000)
+})
 </script>
 <template>
   <div class="layout-root">
-    <HeaderComponent/>
-    <slot/>
+    <HeaderComponent />
+    <slot />
     <div class="background-container">
-      <div class="background-img"/>
+      <div class="background-img" />
       <!-- ランタンのコンテナ -->
       <div class="lantern-container">
         <div
-            v-for="lantern in lanterns"
-            :key="lantern.id"
-            :style="lantern.style"
-            class="lantern"
+          v-for="lantern in lanterns"
+          :key="lantern.id"
+          :style="lantern.style"
+          class="lantern"
         />
       </div>
     </div>
@@ -61,10 +61,10 @@ onMounted(() => {
   </div>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .layout-root {
-  font-family: "Sawarabi Mincho", sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
   color: #000000;
   position: relative;
   font-size: 24px;

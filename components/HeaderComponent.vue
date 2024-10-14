@@ -10,7 +10,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .header-component {
   display: flex;
   z-index: 10000;

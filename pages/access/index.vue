@@ -76,7 +76,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 img {
   background-color: #ffffff;
@@ -129,7 +129,7 @@ p {
     margin: 1em 5vw 3em;
   }
 }
-.contents{
+.contents {
   display: flex;
   justify-content: center;
   padding-bottom: 0.3em;

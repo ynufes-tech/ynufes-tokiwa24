@@ -12,7 +12,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 <template>
   <div class="table-of-contents">
@@ -28,7 +28,7 @@ const props = defineProps({
   <hr size="1px" color="#333333" />
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .table-of-contents {
   display: flex;
   flex-direction: column;

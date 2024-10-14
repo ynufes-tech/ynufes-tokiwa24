@@ -1,39 +1,47 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="page-root">
-        <PageTitleCnct title="CONNECTION" sub-title="他大学の学祭HP"/>
-        <div class="inner-connection-page">
-            <div class="connection-about">
-             <p>他大学の学園祭をご紹介させていただきます。</p>
-            </div>
-            <div class="connection-content">
-                <div class="big-box">
-                  <div class="box">
-                   <p class="child-title">■東京学芸大学&emsp;小金井祭</p>
-                   <p>【開催日程】<br/>2024年&emsp;11/2(土)-11/4(月)</p>
-                   <p>【公式HP】<br/><a href="https://www.koganeisai.com">ホーム | 第72回小金井祭<br/>(koganeisai.com)</a></p>
-                  </div>
-                  <div class="box">
-                   <p class="child-title">■静岡大学&emsp;静大祭</p>
-                   <p>【開催日程】<br/>2024年&emsp;11/1(金)-11/3(日)</p>
-                   <p>【公式HP】<br/><a href="https://shizudaisai.jp/24/summer/">静大祭in静岡キャンパス<br/>(shizudaisai.jp)</a></p>
-                  </div>   
-               </div>
-            </div>
-        </div>    
-        <FloatingButton />      
+  <div class="page-root">
+    <PageTitleCnct title="CONNECTION" sub-title="他大学の学祭HP" />
+    <div class="inner-connection-page">
+      <div class="connection-about">
+        <p>他大学の学園祭をご紹介させていただきます。</p>
+      </div>
+      <div class="connection-content">
+        <div class="big-box">
+          <div class="box">
+            <p class="child-title">■東京学芸大学&emsp;小金井祭</p>
+            <p>【開催日程】<br />2024年&emsp;11/2(土)-11/4(月)</p>
+            <p>
+              【公式HP】<br /><a href="https://www.koganeisai.com"
+                >ホーム | 第72回小金井祭<br />(koganeisai.com)</a
+              >
+            </p>
+          </div>
+          <div class="box">
+            <p class="child-title">■静岡大学&emsp;静大祭</p>
+            <p>【開催日程】<br />2024年&emsp;11/1(金)-11/3(日)</p>
+            <p>
+              【公式HP】<br /><a href="https://shizudaisai.jp/24/summer/"
+                >静大祭in静岡キャンパス<br />(shizudaisai.jp)</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <FloatingButton />
+  </div>
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
-.page-root{
+.page-root {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  > p{
+  > p {
     margin: 1rem 14vw;
   }
 }
@@ -65,11 +73,11 @@
   }
 }
 
-.box{
+.box {
   margin: 1rem;
 }
 
-.big-box{
+.big-box {
   display: flex;
   width: min(80vw, 120vh);
   margin: 2rem auto 0;
@@ -84,7 +92,7 @@
     width: 50vw;
   }
 }
-.child-title{
+.child-title {
   font-size: 28px;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.247);
   @include md {

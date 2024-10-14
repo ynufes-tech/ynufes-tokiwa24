@@ -3,7 +3,7 @@ import events from '~/public/events.json'; // イベントデータ
 const route = useRoute();
 const id = parseInt(route.params.id);
 const event = events.find(e => e.id === id);
-const showNoImage = function (e: any) {
+const showNoImage = function (e: SyntheticEvent<HTMLDivElement>) {
   e.target.src = "./assts/images/noimage.webp";
   e.target.onerror = null;
 };

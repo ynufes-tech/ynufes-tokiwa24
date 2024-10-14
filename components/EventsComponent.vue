@@ -9,7 +9,7 @@ const props = defineProps<{
     // p_name: string;
   };
 }>();
-const showNoImage = function (e: any) {
+const showNoImage = function (e: SyntheticEvent<HTMLDivElement>) {
   e.target.src = "./assts/images/noimage.webp";
   e.target.onerror = null;
 };

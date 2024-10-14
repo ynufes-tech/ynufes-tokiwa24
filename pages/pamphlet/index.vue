@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WhiteButton from "~/components/WhiteButton.vue";
+// import WhiteButton from "~/components/WhiteButton.vue";
 
 useHead({
   title: "Pamphlet | 24常盤祭のパンフレット紹介",

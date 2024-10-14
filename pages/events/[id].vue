@@ -15,8 +15,8 @@ const showNoImage = function (e: any) {
         <PageTitle :title="`EVENT`" :sub-title=" event?.e_name || 'イベントが見つかりません' "/>
         <div class="id-page-contents">
           <div class="id-tag-holder">
-            <GenreComponent :genreTitle="`#${event?.genre || 'ジャンルが見つかりません'}`"/>
-            <GenreComponent :genreTitle="`${event?.place || '企画場所が見つかりません'}`"/>
+            <GenreComponent :genre-title="`#${event?.genre || 'ジャンルが見つかりません'}`"/>
+            <GenreComponent :genre-title="`${event?.place || '企画場所が見つかりません'}`"/>
           </div>
           <div class="icon-holder">
             <img
@@ -34,10 +34,10 @@ const showNoImage = function (e: any) {
             <p>{{ event?.e_description || '企画が見つかりません' }}</p>
           </div>
           <SubTitle :sub-title="`${event?.o_name || '企画が見つかりません'}`"/>
-          <div class="section-title-holder" v-if="event?.o_description">
+          <div v-if="event?.o_description" class="section-title-holder">
             <SectionTitle section-title="団体説明"/>
           </div>
-          <div class="description-holder" v-if="event?.o_description">
+          <div v-if="event?.o_description" class="description-holder">
             <p>{{ event?.o_description || '' }}</p>
           </div>
           <div class="section-title-holder">

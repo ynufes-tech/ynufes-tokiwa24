@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import OverlapHeadline from "~/components/OverlapHeadline.vue";
+// import OverlapHeadline from "~/components/OverlapHeadline.vue";
 </script>
 
 <template>

@@ -17,11 +17,11 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           class="university-map"
-        ></iframe>
+        />
         <div class="subtitle-wrapper">
-          <Sub-title subTitle="電車でのアクセス" />
+          <Sub-title sub-title="電車でのアクセス" />
         </div>
-        <SectionTitle sectionTitle="三ツ沢上駅からお越しの方" />
+        <SectionTitle section-title="三ツ沢上駅からお越しの方" />
         <img
           class="horizontal-maps"
           src="~/assets/images/access-images/mitsusawakamityo.webp"
@@ -33,7 +33,7 @@
             link="https://www.ynu.ac.jp/access/train_front.html"
           />
         </div>
-        <SectionTitle sectionTitle="和田町駅からお越しの方" />
+        <SectionTitle section-title="和田町駅からお越しの方" />
         <img
           class="vertical-maps"
           src="~/assets/images/access-images/wadamachi.webp"
@@ -45,7 +45,7 @@
             link="https://www.ynu.ac.jp/access/train_south.html"
           />
         </div>
-        <SectionTitle sectionTitle="羽沢横浜国大駅からお越しの方" />
+        <SectionTitle section-title="羽沢横浜国大駅からお越しの方" />
         <img
           class="horizontal-maps"
           src="~/assets/images/access-images/hazawayokohamakokudai.webp"
@@ -58,9 +58,9 @@
           />
         </div>
         <div class="subtitle-wrapper">
-          <SubTitle subTitle="バスでのアクセス" />
+          <SubTitle sub-title="バスでのアクセス" />
         </div>
-        <SectionTitle sectionTitle="横浜駅から約20分" />
+        <SectionTitle section-title="横浜駅から約20分" />
         <p>
           相鉄バスと横浜市営バスは大学内へ乗り入れを行っています。
           （※平日のみ運行）

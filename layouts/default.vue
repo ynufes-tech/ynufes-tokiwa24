@@ -56,7 +56,7 @@ onMounted(() => {
             :key="lantern.id"
             :style="lantern.style"
             class="lantern"
-        ></div>
+        />
       </div>
     </div>
     <!-- <FloatingButton /> -->
@@ -104,7 +104,7 @@ p {
 }
 
 .background-img {
-  background-image: url(~/assets/images/home-background-image.webp);
+  background-image: url(@/assets/images/home-background-image.webp);
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -115,7 +115,7 @@ p {
   right: 0;
   z-index: -100;
   @include sm {
-    background-image: url(~/assets/images/mobile-background-image.webp);
+    background-image: url(@/assets/images/mobile-background-image.webp);
   }
 }
 

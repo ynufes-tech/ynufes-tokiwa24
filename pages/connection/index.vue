@@ -10,14 +10,14 @@
             <div class="connection-content">
                 <div class="big-box">
                   <div class="box">
-                   <p class="child-title">■東京学芸大学　小金井祭　</p>  
-                   <p>【開催日程】<br>2024年　11/2(土)-11/4(月)</p>
-                   <p>【公式HP】<br><a href="https://www.koganeisai.com">ホーム | 第72回小金井祭<br>(koganeisai.com)</a></p>
+                   <p class="child-title">■東京学芸大学&emsp;小金井祭</p>
+                   <p>【開催日程】<br/>2024年&emsp;11/2(土)-11/4(月)</p>
+                   <p>【公式HP】<br/><a href="https://www.koganeisai.com">ホーム | 第72回小金井祭<br/>(koganeisai.com)</a></p>
                   </div>
                   <div class="box">
-                   <p class="child-title">■静岡大学　静大祭</p>
-                   <p>【開催日程】<br>2024年　11/1(金)-11/3(日)</p>
-                   <p>【公式HP】<br><a href="https://shizudaisai.jp/24/summer/">静大祭in静岡キャンパス<br>(shizudaisai.jp)</a></p>
+                   <p class="child-title">■静岡大学&emsp;静大祭</p>
+                   <p>【開催日程】<br/>2024年&emsp;11/1(金)-11/3(日)</p>
+                   <p>【公式HP】<br/><a href="https://shizudaisai.jp/24/summer/">静大祭in静岡キャンパス<br/>(shizudaisai.jp)</a></p>
                   </div>   
                </div>
             </div>

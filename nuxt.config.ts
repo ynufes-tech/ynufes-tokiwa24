@@ -25,7 +25,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['nuxt-gtag'],
+  modules: ['nuxt-gtag', "@nuxt/eslint"],
 
   gtag: {
     id: 'G-0DCQSG7Y00'

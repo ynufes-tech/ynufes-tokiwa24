@@ -18,7 +18,7 @@
     <div class="dark-frame">
       <h2>日時</h2>
       <p id="center">11月〇日（〇） ○○：○○～○○：○○</p>
-      <p id="right">（開場　○○：○○～）</p>
+      <p id="right">（開場&emsp;○○：○○～）</p>
       <h2>会場</h2>
       <p id="center">○○○○○○○○○○○○○○○○○○○○○○○</p>
       <h2>チケット代金</h2>
@@ -34,7 +34,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .page-root {
   display: flex;
   flex-direction: column;

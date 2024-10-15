@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import OverlapHeadline from "~/components/OverlapHeadline.vue";
+// import OverlapHeadline from "~/components/OverlapHeadline.vue";
 </script>
 
 <template>
@@ -220,7 +220,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .page-root {
   display: flex;
   flex-direction: column;

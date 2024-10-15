@@ -8,7 +8,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 <template>
   <a class="white-button" :href="link">
@@ -16,9 +16,9 @@ const props = defineProps({
   </a>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
-.white-button{
+.white-button {
   display: flex;
   align-items: center;
   border-radius: 2em;

@@ -4,7 +4,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 <template>
   <div class="subtitle-wrapper">
@@ -14,13 +14,13 @@ const props = defineProps({
   </div>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
-.subtitle-wrapper{
+.subtitle-wrapper {
   display: flex;
   justify-content: center;
 }
-.subtitle{
+.subtitle {
   border-radius: 2em;
   width: auto;
   height: 5em;
@@ -32,12 +32,11 @@ const props = defineProps({
   @include sm {
     height: 3.5em;
   }
-  h2{
+  h2 {
     margin: 1em 2.5em;
     @include sm {
       font-size: 16px;
     }
   }
 }
-
 </style>

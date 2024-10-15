@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const showMenu = ref(false);
+const showMenu = ref(false)
 const toggle = () => {
-  showMenu.value = !showMenu.value;
-};
+  showMenu.value = !showMenu.value
+}
 </script>
 
 <template>
@@ -26,7 +26,9 @@ const toggle = () => {
           <li><NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink></li>
           <li><NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink></li>
           <li><NuxtLink to="/staff" @click="toggle">STAFF</NuxtLink></li>
-          <li><NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink></li>
+          <li>
+            <NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink>
+          </li>
           <li><NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink></li>
           <li><NuxtLink to="/sponsor" @click="toggle">SPONSOR</NuxtLink></li>
         </ul>
@@ -36,7 +38,7 @@ const toggle = () => {
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .navigation-menu {
   position: absolute;
@@ -130,7 +132,9 @@ const toggle = () => {
   text-decoration: none;
   font-weight: 300;
   letter-spacing: 2px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
   line-height: 2.8rem;
   @include md {
     line-height: 2rem;

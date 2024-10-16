@@ -32,7 +32,7 @@ useHead({
                     <img
                         alt="how-to"
                         class="how-to-image"
-                        src="~/assets/images/noimage.webp"
+                        src="~/assets/images/contest-howto.webp"
                     />                    
                 </div>
             </div>
@@ -427,17 +427,22 @@ useHead({
 }
 .child-title{
   border-radius: 1em;
-  width: 20vw;
+  width: 30vw;
   text-align: center;
   text-decoration: none;
   color: #eee;
   background-color: #000000;
   opacity: 50%;
 
-  @include md {
+  @include sm{
     font-size: 12px;
+    width: 50vw;
+  }
+
+  @include md {
+    font-size: 13px;
+    width: 50vw;
     height: 3.5em;
-    width: 40vw;
   }
 }
 
@@ -471,7 +476,7 @@ useHead({
     border-radius: 2rem;
     margin-bottom: 10px;
 
-    @include md{
+    @include lg{
         width: 250px;
         height: 250px;
     }

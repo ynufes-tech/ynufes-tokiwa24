@@ -1,15 +1,12 @@
 <script setup lang="ts">
 useHead({
   title: "Contest | 24常盤祭の企画コンテスト",
-  meta: [
-    { name: "description", content: "24常盤祭の企画コンテスト" },
-  ],
+  meta: [{ name: "description", content: "24常盤祭の企画コンテスト" }],
 });
 </script>
 
 <template>
     <div class="page-root">
-        <div class="contest-page">
         <div class="title">
             <div class="title-name">
                 <h1>企画コンテスト</h1>
@@ -80,8 +77,7 @@ useHead({
                         <img
                             alt="王冠"
                             class="crown-image"
-                            src="~/assets/images/crown1.webp"
-                        >
+                            src="~/assets/images/crown1.webp"                         >
                     </div>
                     <div class="ranking-wrapper">
                         <div class="No2">
@@ -259,6 +255,7 @@ useHead({
                                 class="rank-image"
                                 src="~/assets/images/noimage.webp"
                             >
+
                             </div>
                             <div class="rank-box">
                                 <div class="rank">
@@ -273,9 +270,8 @@ useHead({
                 </div>
             </div>
         </div>
-        </div>
+        <FloatingButton />
     </div>
-    <FloatingButton />
 </template>
 
 <style lang="scss" scoped>
@@ -501,7 +497,8 @@ useHead({
 
 .rank{
   border-radius: 2em;
-  width: 8vw;
+  width: fit-content;
+  padding: 0 1em;
   height: 2em;
   background-color: #000000;
   opacity: 50%;
@@ -516,6 +513,51 @@ useHead({
 
   p{
     margin: 0.5rem 0 0 0;
+  }
+}
+
+
+.No1{
+    flex-direction: column;
+    display: flex;
+    justify-items: center;
+
+    @include md{
+        margin-top: 0;
+    }
+}
+
+.No2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    
+    @include md{
+        margin-top: 5vh;
+        order: 2;
+    }
+}
+
+.No3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+
+    @include md{
+        margin-top: 5vh;
+        order: 3;
+    }
+}
+
+p {
+    text-align: center;
+}
+
+h2{
+    font-size: 28px;
+}
+
+</style>: 0.5rem 0 0 0;
   }
 }
 

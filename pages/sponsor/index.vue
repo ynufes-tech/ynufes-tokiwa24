@@ -66,7 +66,6 @@ import companies from '~/public/sponsor.json';
       </div>
       <FloatingButton />
     </div>
-  </div>
 </template>
 
 <style lang="scss" scoped>

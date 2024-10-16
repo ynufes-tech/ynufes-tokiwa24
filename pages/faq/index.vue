@@ -1,14 +1,17 @@
 <script setup lang="ts">
 useHead({
-  title: "Faq | 24常盤祭公式HP~夢灯~",
+  title: 'Faq | 24常盤祭公式HP~夢灯~',
   meta: [
-    { name: "description", content: "大学祭に関するよくある質問を掲載しています" },
+    {
+      name: 'description',
+      content: '大学祭に関するよくある質問を掲載しています',
+    },
   ],
-});
+})
 </script>
 
 <template>
-   <div class="page-root">
+  <div class="page-root">
     <PageTitle :title="'FAQ'" :sub-title="'よくある質問'" />
     <!-- <div class="page-wrapper">
       <div class="faq-box">
@@ -41,13 +44,13 @@ useHead({
     </div>
     <FloatingButton /> -->
     <div class="prepare">
-        <h1>準備中</h1>
-      </div>
+      <h1>準備中</h1>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .page-root {
   display: flex;
@@ -62,31 +65,29 @@ useHead({
   }
 }
 .faq-box {
-  display: flex; 
-  margin-bottom: 3rem; 
+  display: flex;
+  margin-bottom: 3rem;
   @include md {
-    flex-direction: column; 
-    
+    flex-direction: column;
   }
-
 }
 .q-num {
-  margin-right: 2rem; 
-  font-size: 28px; 
+  margin-right: 2rem;
+  font-size: 28px;
   @include md {
-margin-bottom: 0;
-font-size: 24px;
-}
+    margin-bottom: 0;
+    font-size: 24px;
+  }
 }
 
 p {
-  margin-top: 0;        
-  margin-bottom: 2.5vw; 
+  margin-top: 0;
+  margin-bottom: 2.5vw;
   @include md {
-    margin-bottom: 4vw; 
- }
+    margin-bottom: 4vw;
+  }
 }
-.prepare{
+.prepare {
   display: flex;
   justify-content: center;
   margin-top: 8vw;

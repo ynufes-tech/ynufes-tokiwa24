@@ -13,7 +13,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .pamphlet-button {
   text-align: right;
   margin-right: 15vw;

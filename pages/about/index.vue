@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: "About | 24常盤祭公式HP~夢灯~",
+  title: 'About | 24常盤祭公式HP~夢灯~',
   meta: [
-    { name: "description", content: "24常盤祭についての情報を掲載しています" },
+    { name: 'description', content: '24常盤祭についての情報を掲載しています' },
   ],
-});
+})
 </script>
 
 <template>
@@ -24,9 +24,9 @@ useHead({
     <div class="date-box">
       <div class="inner-date-box">
         <p>開催日時</p>
-        <p>1日目：11月1日(金)　13:00 ― 20:30</p>
-        <p>2日目：11月2日(土)　09:00 ― 20:30</p>
-        <p>3日目：11月3日(日)　09:00 ― 15:30</p>
+        <p>1日目：11月1日(金)&emsp;13:00 ― 20:30</p>
+        <p>2日目：11月2日(土)&emsp;09:00 ― 20:30</p>
+        <p>3日目：11月3日(日)&emsp;09:00 ― 15:30</p>
       </div>
     </div>
     <FloatingButton />
@@ -34,7 +34,7 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .page-root {
   display: flex;

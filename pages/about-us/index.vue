@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import OverlapHeadline from "~/components/OverlapHeadline.vue";
+// import OverlapHeadline from "~/components/OverlapHeadline.vue";
 </script>
 
 <template>
@@ -20,11 +20,11 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         <img
           alt="chairman"
           class="chairman-img"
-          src="~/assets/images/chairman-tmp.webp"
+          src="~/assets/images/departments-img/chairman-img.webp"
         />
         <div class="chairman-message">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            皆さま、2024常盤祭にご来場いただき誠にありがとうございます。今年のテーマは『夢灯』です。常盤祭に関わる皆さまが、夢を灯す光を見つけられるよう、実行委員一同、準備を重ねてまいりました。2024常盤祭が、皆さまにとって笑顔あふれる特別な3日間となるよう、全力でおもてなしさせていただきます。どうぞ最後までお楽しみください！
           </p>
         </div>
       </div>
@@ -214,13 +214,13 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
     </div>
     <FloatingButton /> -->
     <div class="prepare">
-        <h1>準備中</h1>
-      </div>
+      <h1>準備中</h1>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .page-root {
   display: flex;
   flex-direction: column;
@@ -323,6 +323,7 @@ h1 {
   border-radius: 2rem;
   width: 35vw;
   margin: 0;
+  margin-top: 1rem;
   padding: 1rem;
   @include lg {
     margin-right: 1rem;
@@ -355,10 +356,10 @@ h1 {
     margin-left: 25vw;
   }
   @include sm {
-    margin-left: 13vw;
+    margin-left: 8vw;
   }
 }
-.prepare{
+.prepare {
   display: flex;
   justify-content: center;
   margin-top: 8vw;

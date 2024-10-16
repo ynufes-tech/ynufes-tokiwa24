@@ -1,5 +1,6 @@
 <script setup lang="ts">
 useHead({
+
   title: "Sponsor | 24常盤祭協賛企業紹介",
   meta: [
     { name: "description", content: "24常盤祭の協賛企業をご紹介します" },
@@ -7,7 +8,6 @@ useHead({
 });
 import companies from '~/public/sponsor.json';
 </script>
-
 <template>
     <div class="page-root">
       <PageTitle title="SPONSOR" sub-title="協賛企業一覧" />
@@ -57,6 +57,7 @@ import companies from '~/public/sponsor.json';
       </div>
       <div class="sponsor-box">
         <SectionTitle sectionTitle="その他のご協賛"/>
+
         <ul>
           <li v-for="(company, index) in companies.other" :key="'oth-' + index">
             {{ company }}
@@ -65,17 +66,17 @@ import companies from '~/public/sponsor.json';
       </div>
       <FloatingButton />
     </div>
-
+  </div>
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .page-root {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
-p{
+p {
   margin: 0 10%;
 }
 li{
@@ -84,7 +85,7 @@ li{
 .sponsor-box {
   margin-top: 3%;
 }
-.prepare{
+.prepare {
   display: flex;
   justify-content: center;
   margin-top: 8vw;

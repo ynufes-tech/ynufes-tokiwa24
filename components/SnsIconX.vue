@@ -4,7 +4,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const props = defineProps({
 </template>
 
 <style scoped lang="scss">
-.x-icon-holder{
+.x-icon-holder {
   width: 3em;
   height: 3em;
   background-color: black;
@@ -24,11 +24,11 @@ const props = defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
-  .x-icon{
+  .x-icon {
     width: 2em;
     height: 2em;
 
-    img{
+    img {
       width: 100%;
       height: 100%;
     }

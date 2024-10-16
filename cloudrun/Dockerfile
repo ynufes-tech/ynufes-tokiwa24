@@ -1,7 +1,7 @@
 FROM node:20-slim AS builder
 #nodeのイメージをベースにする
 
-ENV BASE_URL=/24/tokiwa/
+ENV NUXT_PUBLIC_BASE_URL=/24/tokiwa/
 
 WORKDIR /app
 #作業ディレクトリの指定
@@ -15,7 +15,7 @@ RUN yarn build
 
 FROM node:20-slim AS production
 
-ENV BASE_URL=/24/tokiwa/
+ENV NUXT_PUBLIC_BASE_URL=/24/tokiwa/
 
 WORKDIR /app
 

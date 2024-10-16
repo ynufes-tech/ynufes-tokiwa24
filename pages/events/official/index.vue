@@ -15,7 +15,7 @@ useHead({
     <PageTitle title="OFFICIAL" sub-title="本部企画一覧" />
     <div class="page-wrapper">
       <WhiteBubble
-        imagePath="~~/assets/images/official-event-imgs/seinen-img.webp"
+        imagePath=~/~/assets/images/official-event-imgs/seinen-img.webp
         title="企画名"
         mainscript="企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画詳細企画"
         place="図書館"

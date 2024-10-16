@@ -18,7 +18,7 @@ const props = defineProps({
   },
   imagePath: {
     type: String,
-    required: true, // 画像パスのプロップを追加
+    required: true,
   },
 });
 </script>
@@ -41,7 +41,7 @@ const props = defineProps({
   height: 500px;
   width: 500px;
   border-radius: 50%;
-  background-color: rgba(#EDD5FB, 0.7);
+  background-color: rgba(#edd5fb, 0.7);
   text-align: center;
   @include xl {
     height: 470px;

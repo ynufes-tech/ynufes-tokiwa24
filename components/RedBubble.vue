@@ -18,7 +18,7 @@ const props = defineProps({
   },
   imagePath: {
     type: String,
-    required: true, // 画像パスのプロップを追加
+    required: true,
   },
 });
 </script>

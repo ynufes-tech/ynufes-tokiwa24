@@ -109,10 +109,10 @@ const toggle = () => {
   cursor: pointer;
   color: #333333;
   transition: transform 0.3s ease;
-}
 
-.close-button:hover {
-  transform: scale(1.25);
+  &:hover {
+    transform: scale(1.25);
+  }
 }
 
 /* リストの上部に余白を追加 */

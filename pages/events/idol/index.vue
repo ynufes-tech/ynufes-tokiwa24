@@ -12,8 +12,9 @@ definePageMeta({
     />
     <div class="page-wrapper">
       <h1 id="info">INFORMATION</h1>
+      <hr />
       <h2>入場料</h2>
-      <p>無料</p>
+      <p id="space">無料</p>
       <h2>出演</h2>
       <div class="idol-shell">
         <img
@@ -49,7 +50,7 @@ definePageMeta({
       </div>
       <h2>日程</h2>
       <p>2024年11月3日(日) 11:00 - 12:00</p>
-      <p>（物販・特典企画 12:30 - 14:00）</p>
+      <p id="space">（物販・特典企画 12:30 - 14:00）</p>
       <h2>会場</h2>
       <p>横浜国立大学野外音楽堂</p>
       <p>【雨天時】横浜国立大学　経営2号館109教室</p>
@@ -63,9 +64,9 @@ definePageMeta({
           src="C:\Users\rns07\ynufesDev_d\ynufes-tokiwa24\assets\images\idol-images\cofes-img.webp"
         />
       </div>
-      <p>お問い合わせ</p>
+      <!-- <p>お問い合わせ</p>
       <p>会社名</p>
-      <p>URL</p>
+      <p>URL</p> -->
     </div>
   </div>
 </template>
@@ -89,8 +90,21 @@ h2 {
 p {
   text-align: center;
 }
+hr {
+  color: #be8ec1;
+  width: 150px;
+}
 #info {
   color: #e2b5c5;
+}
+#space {
+  margin-bottom: 6rem;
+}
+.idol-shell {
+  margin-bottom: 8rem;
+  @include md{
+    margin-bottom: 6rem;
+  }
 }
 .idol-img {
   width: 60vw;
@@ -102,5 +116,10 @@ p {
 }
 .cfc-img {
   width: 200px;
+}
+.black-flame {
+  width: 100vw;
+  background-color: #111111;
+  color: #eeeeee;
 }
 </style>

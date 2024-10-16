@@ -76,9 +76,9 @@
 }
 h1 {
   color: #ddd;
-  font-size: 60px;
+  font-size: 50px;
   @include md {
-    font-size: 40px;
+    font-size: 15px;
   }
 }
 h2 {

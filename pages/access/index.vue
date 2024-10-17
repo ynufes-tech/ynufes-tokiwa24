@@ -29,7 +29,7 @@
         />
         <div class="button-wrapper">
           <WhiteButton
-            text="三ツ沢上町駅からのルート"
+            text="詳しくはこちら"
             link="https://www.ynu.ac.jp/access/train_front.html"
           />
         </div>
@@ -41,7 +41,7 @@
         />
         <div class="button-wrapper">
           <WhiteButton
-            text="和田町駅からのルート"
+            text="詳しくはこちら"
             link="https://www.ynu.ac.jp/access/train_south.html"
           />
         </div>
@@ -53,7 +53,7 @@
         />
         <div class="button-wrapper">
           <WhiteButton
-            text="羽沢横浜国大駅からのルート"
+            text="詳しくはこちら"
             link="https://www.ynu.ac.jp/access/train_hazawa.html"
           />
         </div>
@@ -66,7 +66,7 @@
           （※平日のみ運行）
         </p>
         <WhiteButton
-          text="横浜駅からのルート"
+          text="詳しくはこちら"
           link="https://www.ynu.ac.jp/access/bus.html"
         />
       </div>

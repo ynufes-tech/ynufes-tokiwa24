@@ -8,7 +8,7 @@ const props = defineProps({
     type: Boolean,
     required: true,
   },
-});
+})
 </script>
 
 <template>

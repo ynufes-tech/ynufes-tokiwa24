@@ -19,7 +19,6 @@ function goClick() {
 @import 'assets/scss/_breakpoint.scss';
 
 .floating-button > a > img {
-  border: #0005 0.2px solid;
   width: 80px;
   aspect-ratio: 1;
   box-sizing: border-box;

@@ -39,7 +39,7 @@ jobs:
 
       - name: Download events.json from external url
         run: |
-          curl "${{ secrets.EVENTS_URL }}" -o ./public/events.json
+          curl "${{ vars.EVENTS_URL }}" -o ./public/events.json
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5

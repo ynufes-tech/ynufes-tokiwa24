@@ -83,6 +83,8 @@ useHead({
   height: min(25vh, 25vw);
   margin-top: calc(9vh + 6vw);
   margin-left: 20vw;
+  margin-right: auto;
+
   @include xl {
     margin-left: 15vw;
   }
@@ -95,8 +97,8 @@ useHead({
   @include sm {
     margin-left: 8vw;
   }
-  margin-right: auto;
 }
+
 .date {
   font-size: min(2.8rem, 5vw);
   box-sizing: border-box;
@@ -112,6 +114,7 @@ useHead({
     margin-top: 38vw;
   }
 }
+
 .in-production {
   line-height: 0.45em;
   text-align: center;
@@ -129,6 +132,7 @@ useHead({
     font-size: 0.93rem;
   }
 }
+
 .table-units {
   display: flex;
   flex-wrap: wrap;
@@ -143,12 +147,15 @@ useHead({
     width: 97%;
   }
 }
+
 hr {
   display: none;
 }
+
 .table-units hr {
   display: none;
 }
+
 .banner-holder {
   margin-top: 2rem;
   display: flex;

@@ -112,6 +112,7 @@ p {
   bottom: 0;
   right: 0;
   z-index: -100;
+
   @include sm {
     background-image: url(@/assets/images/mobile-background-image.webp);
   }
@@ -130,17 +131,16 @@ p {
 
 .lantern {
   position: absolute;
-  width: 100%;
-  height: 100%;
   width: 5vw;
   height: 7vw;
+  background-size: cover;
+  animation: moveUp linear infinite;
+  animation-delay: var(--animation-delay); /* 遅延を適用 */
+
   @include sm {
     width: 10vw;
     height: 14vw;
   }
-  background-size: cover;
-  animation: moveUp linear infinite;
-  animation-delay: var(--animation-delay); /* 遅延を適用 */
 }
 
 @keyframes moveUp {

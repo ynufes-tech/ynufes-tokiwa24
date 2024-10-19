@@ -1,27 +1,29 @@
 <script lang="ts" setup>
+import SelectButton from '~/components/SelectButton.vue'
+
 useHead({
-  title: "常盤祭 - タイムスケジュール",
+  title: '常盤祭 - タイムスケジュール',
   meta: [
     {
-      name: "description",
+      name: 'description',
       content:
-        "野外音楽堂や中央図書館など、特別な場所で行われる企画のスケジュールはこちらからご確認いただけます。",
+        '野外音楽堂や中央図書館など、特別な場所で行われる企画のスケジュールはこちらからご確認いただけます。',
     },
   ],
-});
-const placeId = ref(1);
-const route = useRoute();
-const place = Number(route.query.place);
+})
+const placeId = ref(1)
+const route = useRoute()
+const place = Number(route.query.place)
 if (place) {
-  placeId.value = place;
+  placeId.value = place
 }
 const changePlace = (id: number) => {
   useRouter().push({
-    path: "/time-table",
+    path: '/time-table',
     query: { place: String(id) },
-  });
-  placeId.value = id;
-};
+  })
+  placeId.value = id
+}
 </script>
 
 <template>
@@ -82,16 +84,16 @@ const changePlace = (id: number) => {
       <div class="time-table-wrapper">
         <!-- 1. 野外音楽堂 -->
         <div v-show="placeId == 1" class="time-table">
-          <SectionTitle sectionTitle="野外音楽堂" />
+          <SectionTitle section-title="野外音楽堂" />
           <h2 class="day-1">11/3 fri.</h2>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">17 : 00</span>
             <div class="item-text">
               <h2 class="item-title">
                 Mr & Ms YNU Contest 2023
-                <span class="item-subtitle"></span>
+                <span class="item-subtitle" />
               </h2>
               <p class="item-description">
                 「螺旋-RASEN-」というテーマで、4ヶ月間活動してきた10名のファイナリスト。このステージで10名の集大成をご覧ください。
@@ -104,9 +106,9 @@ const changePlace = (id: number) => {
             <span class="item-end-time">18 : 50</span>
           </div>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/4 sat.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">17 : 45</span>
             <div class="item-text">
@@ -126,9 +128,9 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">20 : 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/5 sun.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">12 : 30</span>
             <div class="item-text">
@@ -143,21 +145,21 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">14 : 10</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
         </div>
 
         <!-- 2. 中央図書館1階メディアホール -->
         <div v-show="placeId == 2" class="time-table">
-          <SectionTitle sectionTitle="中央図書館1階メディアホール" />
+          <SectionTitle section-title="中央図書館1階メディアホール" />
           <h2 class="day-1">11/3 fri.</h2>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
 
           <h2 class="day-2">11/4 sat.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-1">11/5 sun.</h2>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">10 : 30</span>
             <div class="item-text">
@@ -165,20 +167,20 @@ const changePlace = (id: number) => {
               <p class="item-description">
                 横国生のカラオケ王者を決定するのど自慢企画！あなたの歌声が1位に輝くかも!?飛び入り参加も受付中！
               </p>
-              <p class="item-warning"></p>
+              <p class="item-warning" />
             </div>
 
             <span class="item-end-time">12 : 30</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
         </div>
 
         <!-- 3. 経営学部2号館109教室 -->
         <div v-show="placeId == 3" class="time-table">
-          <SectionTitle sectionTitle="経営学部2号館109教室" />
+          <SectionTitle section-title="経営学部2号館109教室" />
           <h2 class="day-1">11/3 fri.</h2>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">14 : 10 (開場13 : 25〜)</span>
             <div class="item-text">
@@ -194,9 +196,9 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">15 : 20</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/4 sat.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">14 : 00 (開場13 : 15〜)</span>
             <div class="item-text">
@@ -212,18 +214,18 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">15 : 15</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-1">11/5 sun.</h2>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
         </div>
 
         <!-- 4. 教育6号館と7号館の間 -->
         <div v-show="placeId == 4" class="time-table">
-          <SectionTitle sectionTitle="教育6号館と7号館の間" />
+          <SectionTitle section-title="教育6号館と7号館の間" />
           <h2 class="day-1">11/3 fri.</h2>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">15 : 50</span>
             <div class="item-text">
@@ -238,10 +240,10 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">18 : 30</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
 
           <h2 class="day-2">11/4 sat.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">10 : 00</span>
             <div class="item-text">
@@ -256,8 +258,8 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">10 : 45</span>
           </div>
-          <div class="duration-box"></div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">12 : 00</span>
             <div class="item-text">
@@ -272,7 +274,7 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">14 : 30</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">15 : 50</span>
             <div class="item-text">
@@ -287,9 +289,9 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">18 : 30</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/5 sun.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">10 : 00</span>
             <div class="item-text">
@@ -304,7 +306,7 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">10 : 45</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">11: 30</span>
             <div class="item-text">
@@ -324,7 +326,7 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">11: 50</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">12: 30</span>
             <div class="item-text">
@@ -337,16 +339,16 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">15: 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
         </div>
 
         <!-- 5. 学生センター前のウッドデッキ -->
         <div v-show="placeId == 5" class="time-table">
-          <SectionTitle sectionTitle="学生センター前のウッドデッキ" />
+          <SectionTitle section-title="学生センター前のウッドデッキ" />
           <h2 class="day-1">11/3 fri.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/4 sat.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">14 : 30</span>
             <div class="item-text">
@@ -364,9 +366,9 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">17 : 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/5 sun.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">12 : 00</span>
             <div class="item-text">
@@ -383,15 +385,15 @@ const changePlace = (id: number) => {
             </div>
             <span class="item-end-time">13 : 30</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
         </div>
 
         <!-- 6. 多目的グラウンド -->
         <div v-show="placeId == 6" class="time-table">
-          <SectionTitle sectionTitle="多目的グラウンド" />
+          <SectionTitle section-title="多目的グラウンド" />
           <h2 class="day-1">11/3 fri.</h2>
 
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">13 : 00</span>
             <div class="item-text">
@@ -406,9 +408,9 @@ const changePlace = (id: number) => {
 
             <span class="item-end-time">16 : 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/4 sat.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">10 : 00</span>
             <div class="item-text">
@@ -419,21 +421,21 @@ const changePlace = (id: number) => {
               <p class="item-description">
                 多種多様な団体によるハイレベルなソフトボールが見られます⚾️
               </p>
-              <p class="item-warning"></p>
+              <p class="item-warning" />
             </div>
 
             <span class="item-end-time">13 : 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/5 sun.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
         </div>
 
         <!-- 7. 大学会館4階ホール -->
         <div v-show="placeId == 7" class="time-table">
-          <SectionTitle sectionTitle="大学会館4階ホール" />
+          <SectionTitle section-title="大学会館4階ホール" />
           <h2 class="day-1">11/3 fri.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">14 : 15</span>
             <div class="item-text">
@@ -444,9 +446,9 @@ const changePlace = (id: number) => {
             </div>
             <span class="item-end-time">16 : 45</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-2">11/4 sat.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">14 : 00 (開場13 : 30〜)</span>
             <div class="item-text">
@@ -457,13 +459,13 @@ const changePlace = (id: number) => {
               <p class="item-description">
                 吹奏楽曲からポップス曲までさまざまな曲を お届けします♪
               </p>
-              <p class="item-warning"></p>
+              <p class="item-warning" />
             </div>
             <span class="item-end-time">15 : 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <h2 class="day-1">11/5 sun.</h2>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">11 : 00 (開場10 : 30〜)</span>
             <div class="item-text">
@@ -471,11 +473,11 @@ const changePlace = (id: number) => {
               <p class="item-description">
                 一度は聞いたことがある様々な名曲を数多く楽しんでいただけます！
               </p>
-              <p class="item-warning"></p>
+              <p class="item-warning" />
             </div>
             <span class="item-end-time">12 : 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
           <div class="time-table-item">
             <span class="item-start-time">14 : 00 (開場13 : 30〜)</span>
             <div class="item-text">
@@ -483,11 +485,11 @@ const changePlace = (id: number) => {
               <p class="item-description">
                 一度は聞いたことがある様々な名曲を数多く楽しんでいただけます！
               </p>
-              <p class="item-warning"></p>
+              <p class="item-warning" />
             </div>
             <span class="item-end-time">15 : 00</span>
           </div>
-          <div class="duration-box"></div>
+          <div class="duration-box" />
         </div>
       </div>
 
@@ -541,7 +543,7 @@ const changePlace = (id: number) => {
 </template>
 
 <style lang="scss" scoped>
-@import "assets/scss/_breakpoint.scss";
+@import 'assets/scss/_breakpoint.scss';
 
 .section-title {
   margin: 0 auto;
@@ -641,7 +643,7 @@ const changePlace = (id: number) => {
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: -10px;
@@ -652,7 +654,7 @@ const changePlace = (id: number) => {
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: -10px;

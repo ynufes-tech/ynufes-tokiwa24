@@ -9,8 +9,9 @@ const props = defineProps<{
     // p_name: string;
   }
 }>()
+const conf = useRuntimeConfig()
 const showNoImage = function (e: SyntheticEvent<HTMLDivElement>) {
-  e.target.src = './assts/images/noimage.webp'
+  e.target.src = conf.app.baseURL + 'noimage.webp'
   e.target.onerror = null
 }
 const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eventData.id}.webp`

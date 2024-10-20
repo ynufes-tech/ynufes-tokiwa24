@@ -34,7 +34,7 @@ const props = defineProps({
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .white-bubble {
   position: relative;
   height: 500px;

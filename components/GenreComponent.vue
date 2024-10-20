@@ -4,7 +4,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 
 <template>
@@ -16,15 +16,15 @@ const props = defineProps({
 </template>
 
 <style scoped lang="scss">
-.genre-component{
+.genre-component {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  .genre-title{
+  .genre-title {
     background-color: #f6f6f6;
     border-radius: 0.3em;
     height: 1.2em;
-    .genre-text{
+    .genre-text {
       margin: 0;
     }
   }

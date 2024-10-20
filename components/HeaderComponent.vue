@@ -10,27 +10,31 @@
   </div>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
+
 .header-component {
   display: flex;
   z-index: 10000;
   position: absolute;
 }
+
 .logo-wrapper {
   width: fit-content;
   align-items: center;
   position: fixed;
-
   top: 3%;
   left: 5%;
+
   .header-icon {
     display: flex;
     text-decoration: none;
+
     > img {
       margin-right: 20px;
     }
   }
 }
+
 .header-img {
   width: 10rem;
   @include md {

@@ -8,7 +8,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 <template>
   <div class="overlap-headline">
@@ -17,7 +17,7 @@ const props = defineProps({
   </div>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .overlap-headline {
   display: flex;
   flex-direction: column;

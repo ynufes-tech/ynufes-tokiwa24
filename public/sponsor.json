@@ -1,0 +1,8 @@
+{
+  "advertise": ["企業A", "企業B", "企業C"],
+  "product": ["企業D", "企業E", "企業F"],
+  "individual": ["企業G", "企業H", "企業I"],
+  "booth": ["企業J", "企業K", "企業L"],
+  "donation": ["企業M", "企業N", "企業O"],
+  "other": ["企業P", "企業Q", "企業R"]
+}

@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const showMenu = ref(false);
+const showMenu = ref(false)
 const toggle = () => {
-  showMenu.value = !showMenu.value;
-};
+  showMenu.value = !showMenu.value
+}
 </script>
 
 <template>
@@ -22,13 +22,27 @@ const toggle = () => {
       <button class="close-button" @click="toggle">×</button>
       <nav>
         <ul class="nav-list">
-          <li><NuxtLink to="/" @click="toggle">TOP</NuxtLink></li>
-          <li><NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink></li>
-          <li><NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink></li>
-          <li><NuxtLink to="/staff" @click="toggle">STAFF</NuxtLink></li>
-          <li><NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink></li>
-          <li><NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink></li>
-          <li><NuxtLink to="/sponsor" @click="toggle">SPONSOR</NuxtLink></li>
+          <li>
+            <NuxtLink to="/" @click="toggle">TOP</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/staff" @click="toggle">STAFF</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/sponsor" @click="toggle">SPONSOR</NuxtLink>
+          </li>
         </ul>
       </nav>
     </div>
@@ -36,7 +50,7 @@ const toggle = () => {
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .navigation-menu {
   position: absolute;
@@ -53,6 +67,7 @@ const toggle = () => {
   transition: transform 0.3s ease;
   width: 96px;
   height: 54px;
+
   @include md {
     width: 64px;
     height: 36px;
@@ -69,9 +84,6 @@ const toggle = () => {
   top: calc(100% + 10px);
   right: 0;
   width: 350px;
-  @include md {
-    width: 200px;
-  }
   padding: 1rem;
   background: linear-gradient(
     to bottom,
@@ -80,6 +92,9 @@ const toggle = () => {
   );
   border-radius: 15px;
   z-index: 10000;
+  @include md {
+    width: 200px;
+  }
 }
 
 /* メニュー右上のバツ印ボタン - 線を細くする */
@@ -94,9 +109,10 @@ const toggle = () => {
   cursor: pointer;
   color: #333333;
   transition: transform 0.3s ease;
-}
-.close-button:hover {
-  transform: scale(1.25);
+
+  &:hover {
+    transform: scale(1.25);
+  }
 }
 
 /* リストの上部に余白を追加 */
@@ -113,10 +129,12 @@ const toggle = () => {
   margin-bottom: 10px;
   padding-right: 10px;
   padding-left: 20px;
+
   @include md {
     padding-right: 0;
     padding-left: 5px;
   }
+
   &:hover {
     transform: translateY(-2px) scale(1.1); /* ホバー時に文字が大きくなる */
     color: #666666;
@@ -130,8 +148,11 @@ const toggle = () => {
   text-decoration: none;
   font-weight: 300;
   letter-spacing: 2px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
   line-height: 2.8rem;
+
   @include md {
     line-height: 2rem;
   }

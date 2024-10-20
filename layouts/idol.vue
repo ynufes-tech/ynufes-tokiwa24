@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div class="layout-root">
-    <Header />
+    <HeaderComponentIdle />
     <slot />
     <FloatingButton />
   </div>
@@ -11,7 +11,9 @@
 </style>
 <style scoped lang="scss">
 @use '@/assets/scss/_breakpoint.scss' as *;
-
+body {
+  margin: 0;
+}
 .layout-root {
   font-family: 'Sawarabi Mincho', sans-serif;
   color: #000000;

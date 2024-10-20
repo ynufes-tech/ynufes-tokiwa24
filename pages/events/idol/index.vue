@@ -1,7 +1,5 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: 'idol',
-})
+definePageMeta({ layout: 'idol' })
 </script>
 <template>
   <div class="page-root">
@@ -72,13 +70,17 @@ definePageMeta({
 </template>
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
+body {
+  margin: 0;
+}
 .page-root {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 .topback-img {
-  width: 100vw;
+  width: 100%;
+  //margin: -0.5rem;
 }
 
 h1 {
@@ -98,17 +100,21 @@ hr {
   color: #e2b5c5;
 }
 #space {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 .idol-shell {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   @include md {
-    margin-bottom: 6rem;
+    n-bottom: 6rem;
   }
 }
 .idol-img {
-  width: 60vw;
-  margin-left: 20vw;
+  width: 50vw;
+  margin-left: 25vw;
+  @include md {
+    width: 80vw;
+    margin-left: 10vw;
+  }
 }
 
 .img-box {
@@ -118,7 +124,7 @@ hr {
   width: 200px;
 }
 .black-flame {
-  width: 100vw;
+  width: 100%;
   background-color: #111111;
   color: #eeeeee;
 }

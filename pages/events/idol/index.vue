@@ -1,14 +1,14 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: "idol",
-});
+  layout: 'idol',
+})
 </script>
 <template>
   <div class="page-root">
     <img
-      alt="chairman"
+      alt="topback"
       class="topback-img"
-      src="C:\Users\rns07\ynufesDev_d\ynufes-tokiwa24\assets\images\idol-images\idol-topback.webp"
+      src="~/assets/images/idol-images/idol-topback.webp"
     />
     <div class="page-wrapper">
       <h1 id="info">INFORMATION</h1>
@@ -18,33 +18,33 @@ definePageMeta({
       <h2>出演</h2>
       <div class="idol-shell">
         <img
-          alt="chairman"
+          alt="RiD179"
           class="idol-img"
-          src="C:\Users\rns07\ynufesDev_d\ynufes-tokiwa24\assets\images\idol-images\RiD179.webp"
+          src="~/assets/images/idol-images/RiD179.webp"
         />
         <p>RiD179日の物語</p>
       </div>
       <div class="idol-shell">
         <img
-          alt="chairman"
+          alt="suiseidroptune"
           class="idol-img"
-          src="C:\Users\rns07\ynufesDev_d\ynufes-tokiwa24\assets\images\idol-images\suiseidroptune.webp"
+          src="~/assets/images/idol-images/suiseidroptune.webp"
         />
         <p>彗星♩droptune°</p>
       </div>
       <div class="idol-shell">
         <img
-          alt="chairman"
+          alt="darlia"
           class="idol-img"
-          src="C:\Users\rns07\ynufesDev_d\ynufes-tokiwa24\assets\images\idol-images\darlia.webp"
+          src="~/assets/images/idol-images/darlia.webp"
         />
         <p>Darli'a</p>
       </div>
       <div class="idol-shell">
         <img
-          alt="chairman"
+          alt="sevendeuce"
           class="idol-img"
-          src="C:\Users\rns07\ynufesDev_d\ynufes-tokiwa24\assets\images\idol-images\sevendeuce.webp"
+          src="C:~/assets/images/idol-images/sevendeuce.webp"
         />
         <p>Seven Deuce</p>
       </div>
@@ -53,7 +53,7 @@ definePageMeta({
       <p id="space">（物販・特典企画 12:30 - 14:00）</p>
       <h2>会場</h2>
       <p>横浜国立大学野外音楽堂</p>
-      <p>【雨天時】横浜国立大学　経営2号館109教室</p>
+      <p>【雨天時】横浜国立大学 経営2号館109教室</p>
     </div>
     <div class="black-flame">
       <p>提供</p>
@@ -61,7 +61,7 @@ definePageMeta({
         <img
           alt="chairman"
           class="cfc-img"
-          src="C:\Users\rns07\ynufesDev_d\ynufes-tokiwa24\assets\images\idol-images\cofes-img.webp"
+          src="~/assets/images/idol-images/cofes-img.webp"
         />
       </div>
       <!-- <p>お問い合わせ</p>
@@ -71,7 +71,7 @@ definePageMeta({
   </div>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .page-root {
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ hr {
 }
 .idol-shell {
   margin-bottom: 8rem;
-  @include md{
+  @include md {
     margin-bottom: 6rem;
   }
 }

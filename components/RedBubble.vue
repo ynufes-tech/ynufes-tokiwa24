@@ -40,7 +40,7 @@ const props = defineProps({
   height: 500px;
   width: 500px;
   border-radius: 50%;
-  background-color: rgba(#edd5fb, 0.7);
+  background-color: rgba(#efd4ff, 0.8);
   text-align: center;
   @include xl {
     height: 470px;

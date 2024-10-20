@@ -43,6 +43,7 @@ const props = defineProps({
   border-radius: 50%;
   background-color: rgba(#edd5fb, 0.7);
   text-align: center;
+
   @include xl {
     height: 470px;
     width: 470px;

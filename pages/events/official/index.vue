@@ -15,11 +15,14 @@ useHead({
     <PageTitle title="OFFICIAL" sub-title="本部企画一覧" />
     <div class="page-wrapper">
       <WhiteBubble
-      imagePath=~/~/assets/images/official-event-imgs/seinen-img.webp
-      title="「飛べない人はただの人」杯"
-      mainscript="全6競技によるスポーツ大会を行います！出場者による熱戦をぜひ野外音楽堂にてお楽しみください！優勝予想のコーナーで見事的中した方は、景品のプレゼントも🎁
-      競技例　・早食い対決・気配切り対決・足ツボ耐久対決 " place="図書館"
-      day="11/1(土)15:00~16:00" class="right" />
+        imagepath="~/assets/images/official-event-imgs/seinen-img.webp"
+        title="「飛べない人はただの人」杯"
+        mainscript="全6競技によるスポーツ大会を行います！出場者による熱戦をぜひ野外音楽堂にてお楽しみください！優勝予想のコーナーで見事的中した方は、景品のプレゼントも🎁
+      競技例 ・早食い対決・気配切り対決・足ツボ耐久対決 "
+        place="図書館"
+        day="11/1(土)15:00~16:00"
+        class="right"
+      />
       <RedBubble
         title="ROCK IN TOKIWA FES.2024"
         mainscript="野音でロックフェス、今年も開幕！総勢13組のバンドから選ばれた4バンドのアツいパフォーマンスを見逃すな！常盤祭初日は野音でぶち上がりましょう！"
@@ -73,7 +76,7 @@ useHead({
         class="right"
       />
       <RedBubble
-        title="周遊謎解き　～囚われし浜の鳥～"
+        title="周遊謎解き ～囚われし浜の鳥～"
         mainscript="大変だ！かもめ先輩が何者かによってさらわれてしまった！そこで君たちには大学内の謎を解いて周り、かもめ先輩を助け出して欲しい！見事、かもめ先輩を救出できたら景品もあるぞ！図書館で待っている！"
         place="情報ラウンジ"
         day="11月1日(金)13:00～16:30

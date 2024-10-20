@@ -16,16 +16,16 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  imagePath: {
+  imagepath: {
     type: String,
     required: true,
   },
-});
+})
 </script>
 
 <template>
   <div class="white-bubble">
-    <img src="{{ props.imagePath }}" alt="Bubble Image" class="bubble-image" />
+    <img src="{{ props.imagepath }}" alt="Bubble Image" class="bubble-image" />
     <h1>{{ props.title }}</h1>
     <p>{{ props.mainscript }}</p>
     <p>{{ props.place }}</p>
@@ -34,7 +34,7 @@ const props = defineProps({
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .white-bubble {
   position: relative;

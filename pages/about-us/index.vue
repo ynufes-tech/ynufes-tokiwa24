@@ -5,7 +5,7 @@
 <template>
   <div class="page-root">
     <PageTitle title="ABOUT US" sub-title="大学祭実行委員会について" />
-    <!-- <div class="intro">
+    <div class="intro">
       <p id="first">
         横浜国立大学大学祭実行委員会は、年に二回の大学祭を企画・運営している組織です。
       </p>
@@ -57,26 +57,27 @@
         />
       </div>
     </div>
-    <div class="departments-wrapper" id="reverse">
+    <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/edi1.webp"
         />
         <img
           id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/edi2.webp"
         />
       </div>
       <div class="box">
         <OverlapHeadline title="Editional" sub-title="編集部" />
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            編集部では、構内を彩る装飾・看板や、大学祭をわかりやすく解説するパンフレット・リーフレットの製作を行っています！<br />
+            当日は案内所でパンフレットを配布し、皆さんをご案内します🙌
           </p>
         </div>
       </div>
@@ -90,7 +91,8 @@
       <div class="box">
         <div class="frame">
           <p>
-            会場部は、来場者の皆様の安全を守るために、大学祭の会場設営に携わったり、当日は様々な場所を巡回・パトロールしています。当日、なにかお困りのことなどございましたら、気兼ねなくお声がけください。
+            会場部は、来場者の皆様の安全を守るために、大学祭の会場設営に携わったり、当日は様々な場所を巡回・パトロールしています。<br />
+            当日、なにかお困りのことなどございましたら、気兼ねなくお声がけください。
           </p>
         </div>
       </div>
@@ -109,7 +111,7 @@
         />
       </div>
     </div>
-    <div class="departments-wrapper" id="reverse">
+    <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
           id="right-img"
@@ -128,7 +130,8 @@
         <OverlapHeadline title="Equipment" sub-title="物品部" />
         <div class="frame">
           <p>
-            物品部は企業とやり取りをして、テントや消火器をはじめとする団体の企画に必要な物品の管理をする部局です。直前期以外には団体に貸し出すテントの天幕を洗う活動をしています。表に立って活動することはあまりありませんが、学祭を支える縁の下の力持ちとして、円滑な運営や準備に尽力しています。
+            物品部は企業とやり取りをして、テントや消火器をはじめとする団体の企画に必要な物品の管理をする部局です。<br />
+            直前期以外には団体に貸し出すテントの天幕を洗う活動をしています。表に立って活動することはあまりありませんが、学祭を支える縁の下の力持ちとして、円滑な運営や準備に尽力しています。
           </p>
         </div>
       </div>
@@ -138,7 +141,8 @@
         <OverlapHeadline title="Technology" sub-title="技術部" />
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            今ご覧のこのサイト、実は私たち技術部が作りました✨<br />
+            デザインやプログラミングを学びながら、みんなで協力して、あなたにもっと楽しんでもらえる大学祭ホームページを作成しています。目が離せない最新情報をお知らせしますので、ご期待ください！
           </p>
         </div>
       </div>
@@ -147,17 +151,17 @@
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/teck24.webp"
         />
         <img
           id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/teck24-2.webp"
         />
       </div>
     </div>
-    <div class="departments-wrapper" id="reverse">
+    <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
           id="left-img"
@@ -193,7 +197,9 @@
       <div class="box">
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            総務部は、大学祭実行委員会の中で団体との窓口を担う部局です。<br />
+            説明会や企画の受付の開催に加え、団体向けに大学祭について伝える冊子を作成し、スムーズな大学祭運営をサポートしています。<br />
+            大学祭の全てと関わりをもちながら他部局と連携して活動する、大学祭運営の醍醐味を味わえる部局です。
           </p>
         </div>
       </div>
@@ -202,20 +208,20 @@
           id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/soumu1.webp"
         />
         <img
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/soumu2.webp"
         />
       </div>
     </div>
-    <FloatingButton /> -->
-    <div class="prepare">
+    <FloatingButton />
+    <!-- <div class="prepare">
       <h1>準備中</h1>
-    </div>
+    </div> -->
   </div>
 </template>
 

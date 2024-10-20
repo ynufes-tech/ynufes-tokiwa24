@@ -2,10 +2,12 @@
 <template>
   <div class="layout-root">
     <HeaderComponentIdle />
+
     <slot />
     <FloatingButton />
   </div>
 </template>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 </style>
@@ -16,6 +18,7 @@ body {
 }
 .layout-root {
   font-family: 'Sawarabi Mincho', sans-serif;
+
   color: #000000;
   background-color: #f6f6f6;
 

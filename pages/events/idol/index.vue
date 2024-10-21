@@ -68,6 +68,11 @@ definePageMeta({ layout: 'idol' })
     </div>
   </div>
 </template>
+<style lang="scss">
+body {
+  margin: 0;
+}
+</style>
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
 body {
@@ -80,7 +85,6 @@ body {
 }
 .topback-img {
   width: 100%;
-  //margin: -0.5rem;
 }
 
 h1 {
@@ -103,10 +107,7 @@ hr {
   margin-bottom: 4rem;
 }
 .idol-shell {
-  margin-bottom: 4rem;
-  @include md {
-    n-bottom: 6rem;
-  }
+  margin-bottom: 6rem;
 }
 .idol-img {
   width: 50vw;

@@ -50,4 +50,10 @@
     width: 7rem;
   }
 }
+.navigation-menu {
+  @include md {
+    transform: scale(0.85);
+    top: 0.6rem;
+  }
+}
 </style>

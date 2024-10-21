@@ -12,35 +12,40 @@ useHead({
 <template>
   <div class="page-root">
     <PageTitle title="PAMPHLET" sub-title="パンフレット紹介" />
-    <!--        <div class="big-box">-->
-    <!--            <div class="picture-holder">-->
-    <!--                <img-->
-    <!--                  alt="pamphlet"-->
-    <!--                  class="pamphlet-img"-->
-    <!--                  src="~/assets/images/pamphlet-tmp.png"-->
-    <!--                />-->
-    <!--            </div>-->
-    <!--        -->
-    <!--            <div class="box">-->
-    <!--                <div class="about">-->
-    <!--                    <p>下のボタンから電子版パンフレットをダウンロードいただけます。</p>-->
-    <!--                </div>-->
-    <!--                <div class="download">-->
-    <!--                    <p>通常版（ーーMB）</p>-->
-    <!--                    <div class="download-button">-->
-    <!--                      <WhiteButton text="ダウンロード" link=""/>-->
-    <!--                    </div>-->
-    <!--                    <p>軽量版（ーーMB）</p>-->
-    <!--                    <div class="download-button">-->
-    <!--                      <WhiteButton text="ダウンロード" link=""/>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
+    <div class="big-box">
+      <div class="picture-holder">
+        <img
+          alt="pamphlet"
+          class="pamphlet-img"
+          src="~/assets/images/poster.webp"
+        />
+      </div>
 
-    <!--        </div>-->
-    <div class="prepare">
-      <h1>準備中</h1>
+      <div class="box">
+        <div class="about">
+          <p>下のボタンから電子版パンフレットをダウンロードいただけます。</p>
+        </div>
+        <div class="download">
+          <p>通常版（ーーMB）</p>
+          <div class="download-button">
+            <WhiteButton
+              text="ダウンロード"
+              link="https://storage.googleapis.com/tokiwa24-assets/tokiwa24-pamphlet-high.pdf"
+            />
+          </div>
+          <p>軽量版（ーーMB）</p>
+          <div class="download-button">
+            <WhiteButton
+              text="ダウンロード"
+              link="https://storage.googleapis.com/tokiwa24-assets/tokiwa24-pamphlet-light.pdf"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- <div class="prepare"> -->
+    <!-- <h1>準備中</h1> -->
+    <!-- </div> -->
     <FloatingButton />
   </div>
 </template>

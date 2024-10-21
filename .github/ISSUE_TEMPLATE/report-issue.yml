@@ -2,13 +2,13 @@ name: 🐛 Report Issue
 description: 'Did you spot BIG cockroach running on the street? Try to catch it, freeze it, and then send it to us🐛'
 title: '🐛🔧 '
 labels: 'bug'
-assignees:
 body:
-  - type: markdown
+  - type: input
     id: scope
     attributes:
       label: 対象のページ
       description: 'どのページで問題が発生していますか? 例: /access'
+      placeholder: '/'
   - type: textarea
     id: summary
     attributes:

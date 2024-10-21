@@ -62,8 +62,8 @@ definePageMeta({ layout: 'idol' })
           src="~/assets/images/idol-images/cofes-img.webp"
         />
       </div>
-      <!-- <p>お問い合わせ</p>
-      <p>会社名</p>
+      <p id="space">お問い合わせ: <u>ynu24kikaku@gmail.com</u></p>
+      <!-- <p>会社名</p>
       <p>URL</p> -->
     </div>
   </div>

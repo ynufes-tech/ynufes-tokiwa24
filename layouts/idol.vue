@@ -8,9 +8,6 @@
   </div>
 </template>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
-</style>
 <style scoped lang="scss">
 @use '@/assets/scss/_breakpoint.scss' as *;
 body {

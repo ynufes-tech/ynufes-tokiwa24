@@ -283,8 +283,18 @@ h1 {
   text-align: center;
 }
 #the-seven-departments {
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: 25vw;
   text-align: center;
-  transform: translateX(10vw);
+  @include md {
+    margin-top: 3rem;
+    margin-right: 15vw;
+  }
+  @include sm {
+    margin-right: 8vw;
+  }
+  //transform: translateX(10vw);
   //margin-right: 20rem;
 }
 .departments-wrapper {

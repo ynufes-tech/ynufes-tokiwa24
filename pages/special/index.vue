@@ -6,19 +6,22 @@
       <h1>山崎怜奈のトークセッション in YNU 2024</h1>
     </div>
     <div class="img-frame">
-      <img alt="logo" class="img" src="~/assets/images/tokiwa_guest_logo.webp" />
+      <img
+        alt="logo"
+        class="img"
+        src="~/assets/images/tokiwa_guest_logo.webp"
+      />
       <img alt="logo" class="img" src="~/assets/images/tokiwa_gest_img2.webp" />
     </div>
     <div class="dark-frame">
       <h2>企画説明</h2>
       <p>
-       2024年常盤祭に人気タレントの山崎怜奈さんが登壇します!!<br />
+        2024年常盤祭に人気タレントの山崎怜奈さんが登壇します!!<br />
 
-       様々なコーナーで皆さまと楽しい時間を作っていきます！<br />
-       サイン入り色紙が貰えるチャンスも!?<br />
+        様々なコーナーで皆さまと楽しい時間を作っていきます！<br />
+        サイン入り色紙が貰えるチャンスも!?<br />
 
-       チケットの購入はお早めに！
-
+        チケットの購入はお早めに！
       </p>
     </div>
     <div class="dark-frame">
@@ -28,13 +31,19 @@
       <h2>会場</h2>
       <p id="center">横浜国立大学経営学部棟2号館109教室特設ステージ</p>
       <h2>チケット代金</h2>
-      <p id="center">S席5000円<br />
-                    A席4200円<br />
-                    B席2500円
-       </p>
-       <div style="display: flex; justify-content: center;">
-        <a href="https://eplus.jp/sf/detail/4195370001-P0030001" target="_blank" rel="noopener noreferrer">チケット購入ページはこちら</a>
-       </div>
+      <p id="center">
+        S席5000円<br />
+        A席4200円<br />
+        B席2500円
+      </p>
+      <div style="display: flex; justify-content: center">
+        <a
+          href="https://eplus.jp/sf/detail/4195370001-P0030001"
+          target="_blank"
+          rel="noopener noreferrer"
+          >チケット購入ページはこちら</a
+        >
+      </div>
     </div>
     <div class="dark-frame">
       <h2>注意事項</h2>
@@ -48,8 +57,7 @@
         4.参加の際、持ち物検査等安全に関わるお願いに従っていただけない場合、参加をお断りする場合がございます。お願いの内容につきましてはチケット購入ページを御覧ください。<br />
 
         5.お問い合わせにつきましては当該SNSでは対応いたしかねます。<br />
-          ynu24kikaku@gmail.comまでお問い合わせお願い致します。
-
+        ynu24kikaku@gmail.comまでお問い合わせお願い致します。
       </p>
     </div>
   </div>
@@ -105,7 +113,7 @@ p {
   @include sm {
     width: 150px;
   }
-object-fit: contain;
+  object-fit: contain;
 }
 .dark-frame {
   margin: 2rem auto;

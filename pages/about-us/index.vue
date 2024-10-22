@@ -227,32 +227,39 @@
 
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
+
 .page-root {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
+
 p {
   margin: 0;
 }
+
 #first {
   margin-bottom: 1rem;
 }
+
 .intro {
   margin: 0 15vw;
   @include md {
     margin: 0 8vw;
   }
 }
+
 #chairman-headline {
   margin-left: 20vw;
   margin-bottom: 0;
 }
+
 hr {
   margin-top: 0;
   margin-right: 20vw;
   border: solid 1px #000000;
 }
+
 .chairman-img {
   width: 300px;
   height: auto;
@@ -262,31 +269,37 @@ hr {
     margin: 1rem auto;
   }
 }
+
 .chairman-frame {
   display: flex;
   margin: 0 12vw;
   justify-content: space-between;
   @include md {
-    margin: 0 5vw;
+    margin: 0 5vw 2rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
   }
 }
+
 h1 {
   @include md {
     font-size: 30px;
   }
 }
+
 .chairman-message {
   width: 100%;
   text-align: center;
 }
+
 #the-seven-departments {
   margin-top: 8rem;
   margin-left: auto;
   margin-right: 25vw;
   text-align: center;
+  //transform: translateX(10vw);
+  //margin-right: 20rem;
+
   @include md {
     margin-top: 3rem;
     margin-right: 15vw;
@@ -294,16 +307,16 @@ h1 {
   @include sm {
     margin-right: 8vw;
   }
-  //transform: translateX(10vw);
-  //margin-right: 20rem;
 }
+
 .departments-wrapper {
   display: flex;
+  margin: 0 10vw 5rem;
+  padding-left: 2vw;
   @include md {
     display: flex;
     flex-direction: column;
   }
-  margin: 0 10vw;
   @include lg {
     margin: 0 8vw;
   }
@@ -311,35 +324,37 @@ h1 {
     margin: 0 4vw 3rem;
     padding: 0;
   }
-  padding-left: 2vw;
-  margin-bottom: 5rem;
 }
+
 #reverse {
   @include md {
     display: flex;
     flex-direction: column-reverse;
   }
 }
+
 #exception-headline {
   margin-left: 10vw;
 }
+
 .box {
   margin-right: 2rem;
   @include lg {
     margin-right: 0;
   }
 }
+
 .departments-img {
   width: 300px;
   margin: 1rem;
 }
+
 .frame {
   background-color: #eee;
   opacity: 60%;
   border-radius: 2rem;
   width: 35vw;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0 0;
   padding: 1rem;
   @include lg {
     margin-right: 1rem;
@@ -349,6 +364,7 @@ h1 {
     width: 85vw;
   }
 }
+
 .img-box {
   display: flex;
   flex-direction: column;
@@ -366,8 +382,9 @@ h1 {
     margin-left: 0;
   }
 }
+
 #right-img {
-  margin: 0 auto 0;
+  margin: 0 auto;
   @include md {
     margin-left: 25vw;
   }
@@ -375,6 +392,7 @@ h1 {
     margin-left: 8vw;
   }
 }
+
 .prepare {
   display: flex;
   justify-content: center;

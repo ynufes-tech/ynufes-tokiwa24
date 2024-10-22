@@ -414,6 +414,7 @@ useHead({
   text-align: center;
   color: #eee;
   background-color: #000000;
+
   @include md {
     height: 3.5em;
     font-size: 13px;
@@ -510,17 +511,16 @@ useHead({
   height: 2em;
   background-color: #000000;
   opacity: 50%;
-
-  @include md {
-    height: 2.5em;
-    width: 30vw;
-  }
-
   text-align: center;
   color: #eee;
 
   p {
     margin: 0.5rem 0 0 0;
+  }
+
+  @include md {
+    height: 2.5em;
+    width: 30vw;
   }
 }
 

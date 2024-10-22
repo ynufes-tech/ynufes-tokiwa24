@@ -10,7 +10,7 @@ import companies from '~/public/sponsor.json';
 
 <template>
     <div class="page-root">
-      <PageTitle title="SPONSOR" sub-title="協賛企業一覧" />
+      <PageTitle title="SPONSOR" sub-title="ご協賛企業一覧" />
       <p>「24常盤祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。
         この場をお借りいたしまして、心より感謝申し上げます。</p>
       <p>ご協賛いただきました企業を以下に掲載させていただきます。</p>
@@ -32,17 +32,9 @@ import companies from '~/public/sponsor.json';
         </ul>
       </div>
       <div class="sponsor-box">
-        <SectionTitle sectionTitle="個人協賛"/>
+        <SectionTitle sectionTitle="その他協賛・協力"/>
         <ul>
-          <li v-for="(company, index) in companies.individual" :key="'ind-' + index">
-            {{ company }}
-          </li>
-        </ul>
-      </div>
-      <div class="sponsor-box">
-        <SectionTitle sectionTitle="ブース協賛"/>
-        <ul>
-          <li v-for="(company, index) in companies.booth" :key="'boo-' + index">
+          <li v-for="(company, index) in companies.other" :key="'oth-' + index">
             {{ company }}
           </li>
         </ul>
@@ -55,14 +47,7 @@ import companies from '~/public/sponsor.json';
           </li>
         </ul>
       </div>
-      <div class="sponsor-box">
-        <SectionTitle sectionTitle="その他のご協賛"/>
-        <ul>
-          <li v-for="(company, index) in companies.other" :key="'oth-' + index">
-            {{ company }}
-          </li>
-        </ul>
-      </div>
+
       <FloatingButton />
     </div>
 

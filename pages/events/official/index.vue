@@ -15,7 +15,7 @@ useHead({
     <PageTitle title="OFFICIAL" sub-title="本部企画一覧" />
     <div class="page-wrapper">
       <WhiteBubble
-        imagepath="~/assets/images/official-event-imgs/seinen-img.webp"
+        imagepath="~/public/images/official-event-imgs/seinen-img.webp"
         title="「飛べない人はただの人」杯"
         mainscript="全6競技によるスポーツ大会を行います！出場者による熱戦をぜひ野外音楽堂にてお楽しみください！優勝予想のコーナーで見事的中した方は、景品のプレゼントも🎁
       競技例 ・早食い対決・気配切り対決・足ツボ耐久対決 "

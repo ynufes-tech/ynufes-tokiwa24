@@ -25,7 +25,7 @@ const props = defineProps({
 
 <template>
   <div class="white-bubble">
-    <img src="{{ props.imagepath }}" alt="Bubble Image" class="bubble-image" />
+    <img :src="props.imagepath" alt="Bubble Image" class="bubble-image" />
     <h1>{{ props.title }}</h1>
     <p>{{ props.mainscript }}</p>
     <p>{{ props.place }}</p>

@@ -3,6 +3,7 @@ definePageMeta({ layout: 'idol' })
 </script>
 <template>
   <div class="page-root">
+    <div id="header-blank" />
     <img
       alt="topback"
       class="topback-img"
@@ -75,14 +76,22 @@ body {
 </style>
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
+
+#header-blank {
+  height: 4rem;
+  background: #000;
+}
+
 body {
   margin: 0;
 }
+
 .page-root {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
+
 .topback-img {
   width: 100%;
 }
@@ -90,25 +99,32 @@ body {
 h1 {
   text-align: center;
 }
+
 h2 {
   text-align: center;
 }
+
 p {
   text-align: center;
 }
+
 hr {
   color: #be8ec1;
   width: 150px;
 }
+
 #info {
   color: #e2b5c5;
 }
+
 #space {
   margin-bottom: 4rem;
 }
+
 .idol-shell {
   margin-bottom: 6rem;
 }
+
 .idol-img {
   width: 50vw;
   margin-left: 25vw;
@@ -121,9 +137,11 @@ hr {
 .img-box {
   text-align: center;
 }
+
 .cfc-img {
   width: 200px;
 }
+
 .black-flame {
   width: 100%;
   background-color: #111111;

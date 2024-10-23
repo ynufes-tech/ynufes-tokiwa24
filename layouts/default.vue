@@ -60,6 +60,16 @@ onMounted(() => {
     <!-- <FloatingButton /> -->
   </div>
 </template>
+<style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+}
+.page-root {
+  // ページの先頭に余白を追加 (headerとの重なりを防ぐ)
+  padding-top: 4rem;
+}
+</style>
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
 

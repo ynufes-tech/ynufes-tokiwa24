@@ -9,7 +9,8 @@ useHead({
 <template>
   <div class="page-root">
     <PageTitle title="SPONSOR" sub-title="ご協賛企業一覧" />
-    <p>「24常盤祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。
+    <p>
+      「24常盤祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。
       この場をお借りいたしまして、心より感謝申し上げます。
     </p>
     <p>ご協賛いただきました企業を以下に掲載させていただきます。</p>
@@ -17,7 +18,10 @@ useHead({
     <div class="sponsor-box">
       <SectionTitle section-title="広告協賛" />
       <ul>
-        <li v-for="(company, index) in companies.advertise" :key="'adv-' + index">
+        <li
+          v-for="(company, index) in companies.advertise"
+          :key="'adv-' + index"
+        >
           {{ company }}
         </li>
       </ul>
@@ -41,7 +45,10 @@ useHead({
     <div class="sponsor-box">
       <SectionTitle section-title="寄付" />
       <ul>
-        <li v-for="(company, index) in companies.donation" :key="'don-' + index">
+        <li
+          v-for="(company, index) in companies.donation"
+          :key="'don-' + index"
+        >
           {{ company }}
         </li>
       </ul>

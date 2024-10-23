@@ -25,7 +25,9 @@ const props = defineProps({
 
 <template>
   <div class="white-bubble">
-    <img :src="props.imagepath" alt="Bubble Image" class="bubble-image" />
+    <div class="img-frame">
+      <img :src="props.imagepath" alt="Bubble Image" class="bubble-image" />
+    </div>
     <h1>{{ props.title }}</h1>
     <p>{{ props.mainscript }}</p>
     <p>{{ props.place }}</p>
@@ -58,12 +60,24 @@ const props = defineProps({
     height: 340px;
     width: 340px;
   }
-  .bubble-image {
+  .img-frame {
+    display: flex;
     position: absolute;
-    top: 200px; /* 少し上に移動 */
-    left: 500px; /* 左に移動 */
-    width: 100px; /* 画像のサイズを調整 */
-    z-index: 100; /* 重なりを確実に上に */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgba(#edd5fb, 0.7);
+    top: 190px; /* 少し上に移動 */
+    left: 435px; /* 左に移動 */
+    z-index: 400; /* 重なりを確実に上に */
+  }
+
+  .bubble-image {
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    width: 130px; /* 画像のサイズを調整 */
+    z-index: 500; /* 重なりを確実に上に */
   }
   > h1 {
     margin: 20px auto;
@@ -97,6 +111,16 @@ const props = defineProps({
     @include sm {
       width: 270px;
       padding: 0 15px;
+    }
+    font-size: 18px;
+    @include lg {
+      font-size: 16px;
+    }
+    @include md {
+      font-size: 14px;
+    }
+    @include sm {
+      font-size: 12px;
     }
   }
 }

@@ -81,6 +81,9 @@ onMounted(() => {
 
 p {
   font-size: 24px;
+  @include lg {
+    font-size: 22px;
+  }
   @include md {
     font-size: 20px;
   }

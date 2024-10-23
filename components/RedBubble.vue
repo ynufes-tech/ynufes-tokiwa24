@@ -62,7 +62,7 @@ const props = defineProps({
     position: absolute;
     top: 200px; /* 少し上に移動 */
     left: 500px; /* 左に移動 */
-    width: 150px; /* 画像のサイズを調整 */
+    width: 100px; /* 画像のサイズを調整 */
     z-index: 100; /* 重なりを確実に上に */
   }
   > h1 {

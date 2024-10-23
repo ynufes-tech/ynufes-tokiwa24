@@ -8,7 +8,7 @@ const toggle = () => {
 </script>
 
 <template>
-  <div class="navigation-menu">
+  <div class="navi-menu">
     <!-- メニューが展開されていないときのみボタンを表示 -->
     <img
       v-if="!showMenu"
@@ -52,21 +52,16 @@ const toggle = () => {
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
 
-.navigation-menu {
-  position: absolute;
+.navi-menu {
   z-index: 10000;
-  margin-left: 92vw;
-  transform: translateY(-50px);
+  position: relative;
 }
 
 .menu-button {
-  position: absolute;
-  top: 0;
   right: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  width: 96px;
-  height: 54px;
+  width: 80px;
 
   @include md {
     width: 64px;

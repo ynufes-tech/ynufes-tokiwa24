@@ -9,7 +9,12 @@ const props = defineProps({
 
 <template>
   <div class="fac-icon-holder">
-    <a class="fac-icon" :href="props.link">
+    <a
+      class="fac-icon"
+      :href="props.link"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <img src="~/assets/images/facebook-logo.webp" alt="sns-icon-x" />
     </a>
   </div>

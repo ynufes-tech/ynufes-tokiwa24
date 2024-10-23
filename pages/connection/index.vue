@@ -27,6 +27,15 @@
               >
             </p>
           </div>
+          <div class="box">
+            <p class="child-title">■防衛大学&emsp;開校記念祭</p>
+            <p>【開催日程】<br />2024年&emsp;11/9(土)-11/10(日)</p>
+            <p>
+              【公式HP】<br /><a href=" https://www.nda.ac.jp/Festival/"
+                >防衛大学開校記念祭<br />(nda.ac.jp)</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -75,6 +84,7 @@
 
 .box {
   margin: 1rem;
+  width: 18em;
 }
 
 .big-box {
@@ -86,7 +96,8 @@
   opacity: 70%;
   border-radius: 2rem;
   justify-content: space-between;
-
+  align-content: space-between;
+  flex-wrap: wrap;
   @include md {
     flex-direction: column;
     width: 50vw;

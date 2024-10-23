@@ -4,7 +4,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 <template>
   <div class="section-title-wrapper">
@@ -14,7 +14,7 @@ const props = defineProps({
   </div>
 </template>
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .section-title-wrapper {
   display: flex;

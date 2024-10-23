@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import BannerComponent from '~/components/BannerComponent.vue'
+
 useHead({
-  title: "Top | 24常盤祭公式HP~夢灯~",
+  title: 'Top | 24常盤祭公式HP~夢灯~',
   meta: [
     {
-      name: "description",
+      name: 'description',
       content:
-        "11/1,2,3に開催される24常盤祭 公式HPです!! 最新情報を随時更新していきます!!",
+        '11/1,2,3に開催される24常盤祭 公式HPです!! 最新情報を随時更新していきます!!',
     },
   ],
-});
+})
 </script>
 
 <template>
@@ -25,7 +27,7 @@ useHead({
       <p>このサイトはただいま制作中です。</p>
       <p>常盤祭に関する最新情報は随時更新します。</p>
       <div class="banner-holder">
-        <Banner />
+        <BannerComponent />
       </div>
     </div>
     <div class="table-units">
@@ -50,29 +52,29 @@ useHead({
         page-link="/connection"
       />
       <TableOfContents
-          title="EVENTS"
-          sub-title="企画一覧"
-          page-link="/events"
+        title="EVENTS"
+        sub-title="企画一覧"
+        page-link="/events"
       />
       <TableOfContents
-          title="SPONSOR"
-          sub-title="ご協賛団体一覧"
-          page-link="/sponsor"
+        title="SPONSOR"
+        sub-title="ご協賛団体一覧"
+        page-link="/sponsor"
       />
     </div>
     <SNS />
-  <MapButton />
-    <FloatingButton/>
+    <MapButton />
+    <FloatingButton />
   </div>
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .page-root {
   position: relative;
   z-index: 10; /* コンテンツを最前面に配置 */
-  }
+}
 
 #top-title {
   display: flex;
@@ -81,6 +83,8 @@ useHead({
   height: min(25vh, 25vw);
   margin-top: calc(9vh + 6vw);
   margin-left: 20vw;
+  margin-right: auto;
+
   @include xl {
     margin-left: 15vw;
   }
@@ -93,8 +97,8 @@ useHead({
   @include sm {
     margin-left: 8vw;
   }
-  margin-right: auto;
 }
+
 .date {
   font-size: min(2.8rem, 5vw);
   box-sizing: border-box;
@@ -110,6 +114,7 @@ useHead({
     margin-top: 38vw;
   }
 }
+
 .in-production {
   line-height: 0.45em;
   text-align: center;
@@ -127,6 +132,7 @@ useHead({
     font-size: 0.93rem;
   }
 }
+
 .table-units {
   display: flex;
   flex-wrap: wrap;
@@ -141,12 +147,15 @@ useHead({
     width: 97%;
   }
 }
+
 hr {
   display: none;
 }
+
 .table-units hr {
   display: none;
 }
+
 .banner-holder {
   margin-top: 2rem;
   display: flex;

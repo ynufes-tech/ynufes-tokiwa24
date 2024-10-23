@@ -17,11 +17,11 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           class="university-map"
-        ></iframe>
+        />
         <div class="subtitle-wrapper">
-          <Sub-title subTitle="電車でのアクセス" />
+          <Sub-title sub-title="電車でのアクセス" />
         </div>
-        <SectionTitle sectionTitle="三ツ沢上駅からお越しの方" />
+        <SectionTitle section-title="三ツ沢上駅からお越しの方" />
         <img
           class="horizontal-maps"
           src="~/assets/images/access-images/mitsusawakamityo.webp"
@@ -29,11 +29,11 @@
         />
         <div class="button-wrapper">
           <WhiteButton
-            text="三ツ沢上町駅からのルート"
+            text="詳しくはこちら"
             link="https://www.ynu.ac.jp/access/train_front.html"
           />
         </div>
-        <SectionTitle sectionTitle="和田町駅からお越しの方" />
+        <SectionTitle section-title="和田町駅からお越しの方" />
         <img
           class="vertical-maps"
           src="~/assets/images/access-images/wadamachi.webp"
@@ -41,11 +41,11 @@
         />
         <div class="button-wrapper">
           <WhiteButton
-            text="和田町駅からのルート"
+            text="詳しくはこちら"
             link="https://www.ynu.ac.jp/access/train_south.html"
           />
         </div>
-        <SectionTitle sectionTitle="羽沢横浜国大駅からお越しの方" />
+        <SectionTitle section-title="羽沢横浜国大駅からお越しの方" />
         <img
           class="horizontal-maps"
           src="~/assets/images/access-images/hazawayokohamakokudai.webp"
@@ -53,20 +53,20 @@
         />
         <div class="button-wrapper">
           <WhiteButton
-            text="羽沢横浜国大駅からのルート"
+            text="詳しくはこちら"
             link="https://www.ynu.ac.jp/access/train_hazawa.html"
           />
         </div>
         <div class="subtitle-wrapper">
-          <SubTitle subTitle="バスでのアクセス" />
+          <SubTitle sub-title="バスでのアクセス" />
         </div>
-        <SectionTitle sectionTitle="横浜駅から約20分" />
+        <SectionTitle section-title="横浜駅から約20分" />
         <p>
           相鉄バスと横浜市営バスは大学内へ乗り入れを行っています。
           （※平日のみ運行）
         </p>
         <WhiteButton
-          text="横浜駅からのルート"
+          text="詳しくはこちら"
           link="https://www.ynu.ac.jp/access/bus.html"
         />
       </div>
@@ -76,7 +76,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 img {
   background-color: #ffffff;
@@ -129,7 +129,7 @@ p {
     margin: 1em 5vw 3em;
   }
 }
-.contents{
+.contents {
   display: flex;
   justify-content: center;
   padding-bottom: 0.3em;

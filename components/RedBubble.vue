@@ -16,7 +16,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 
 <template>
@@ -29,18 +29,18 @@ const props = defineProps({
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 .white-bubble {
   height: 500px;
   width: 500px;
   border-radius: 50%;
-  background-color: rgba(#EDD5FB, 0.7);
+  background-color: rgba(#edd5fb, 0.7);
   text-align: center;
-  @include xl{
+  @include xl {
     height: 470px;
     width: 470px;
   }
-  @include lg{
+  @include lg {
     height: 440px;
     width: 440px;
   }

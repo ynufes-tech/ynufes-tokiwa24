@@ -1,19 +1,20 @@
 <script lang="ts" setup>
 const props = defineProps<{
   eventData: {
-    id: number;
-    e_name: string;
+    id: number
+    e_name: string
     // e_genre: Genre;
-    o_name: string;
+    o_name: string
     // area: Area;
     // p_name: string;
-  };
-}>();
-const showNoImage = function (e: any) {
-  e.target.src = "./assts/images/noimage.webp";
-  e.target.onerror = null;
-};
-const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eventData.id}.webp`;
+  }
+}>()
+const conf = useRuntimeConfig()
+const showNoImage = function (e: SyntheticEvent<HTMLDivElement>) {
+  e.target.src = conf.app.baseURL + 'noimage.webp'
+  e.target.onerror = null
+}
+const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eventData.id}.webp`
 </script>
 
 <template>
@@ -21,10 +22,10 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
     <div class="project-card">
       <div class="card-photo">
         <img
-            :src="iconURL"
-            alt="project-icon"
-            class="project-icon"
-            @error="showNoImage"
+          :src="iconURL"
+          alt="project-icon"
+          class="project-icon"
+          @error="showNoImage"
         />
       </div>
       <div class="card-script">
@@ -34,7 +35,7 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
           {{ props.eventData.genre }}
         </p>
         <p>
-          {{ props.eventData.place}}
+          {{ props.eventData.place }}
         </p>
       </div>
     </div>
@@ -42,7 +43,7 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icos/${props.eve
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .project-card {
   position: absolute;

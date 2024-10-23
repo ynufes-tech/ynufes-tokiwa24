@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import OverlapHeadline from "~/components/OverlapHeadline.vue";
+// import OverlapHeadline from "~/components/OverlapHeadline.vue";
 </script>
 
 <template>
   <div class="page-root">
     <PageTitle title="ABOUT US" sub-title="大学祭実行委員会について" />
-    <!-- <div class="intro">
+    <div class="intro">
       <p id="first">
         横浜国立大学大学祭実行委員会は、年に二回の大学祭を企画・運営している組織です。
       </p>
@@ -57,26 +57,27 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         />
       </div>
     </div>
-    <div class="departments-wrapper" id="reverse">
+    <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/edi1.webp"
         />
         <img
           id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/edi2.webp"
         />
       </div>
       <div class="box">
         <OverlapHeadline title="Editional" sub-title="編集部" />
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            編集部では、構内を彩る装飾・看板や、大学祭をわかりやすく解説するパンフレット・リーフレットの製作を行っています！<br />
+            当日は案内所でパンフレットを配布し、皆さんをご案内します🙌
           </p>
         </div>
       </div>
@@ -90,7 +91,8 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
       <div class="box">
         <div class="frame">
           <p>
-            会場部は、来場者の皆様の安全を守るために、大学祭の会場設営に携わったり、当日は様々な場所を巡回・パトロールしています。当日、なにかお困りのことなどございましたら、気兼ねなくお声がけください。
+            会場部は、来場者の皆様の安全を守るために、大学祭の会場設営に携わったり、当日は様々な場所を巡回・パトロールしています。<br />
+            当日、なにかお困りのことなどございましたら、気兼ねなくお声がけください。
           </p>
         </div>
       </div>
@@ -109,7 +111,7 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         />
       </div>
     </div>
-    <div class="departments-wrapper" id="reverse">
+    <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
           id="right-img"
@@ -128,7 +130,8 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         <OverlapHeadline title="Equipment" sub-title="物品部" />
         <div class="frame">
           <p>
-            物品部は企業とやり取りをして、テントや消火器をはじめとする団体の企画に必要な物品の管理をする部局です。直前期以外には団体に貸し出すテントの天幕を洗う活動をしています。表に立って活動することはあまりありませんが、学祭を支える縁の下の力持ちとして、円滑な運営や準備に尽力しています。
+            物品部は企業とやり取りをして、テントや消火器をはじめとする団体の企画に必要な物品の管理をする部局です。<br />
+            直前期以外には団体に貸し出すテントの天幕を洗う活動をしています。表に立って活動することはあまりありませんが、学祭を支える縁の下の力持ちとして、円滑な運営や準備に尽力しています。
           </p>
         </div>
       </div>
@@ -138,7 +141,8 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
         <OverlapHeadline title="Technology" sub-title="技術部" />
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            今ご覧のこのサイト、実は私たち技術部が作りました✨<br />
+            デザインやプログラミングを学びながら、みんなで協力して、あなたにもっと楽しんでもらえる大学祭ホームページを作成しています。目が離せない最新情報をお知らせしますので、ご期待ください！
           </p>
         </div>
       </div>
@@ -147,17 +151,17 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/teck24.webp"
         />
         <img
           id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/teck24-2.webp"
         />
       </div>
     </div>
-    <div class="departments-wrapper" id="reverse">
+    <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
           id="left-img"
@@ -193,7 +197,9 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
       <div class="box">
         <div class="frame">
           <p>
-            あいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつメッセージメッセージあいさつあいさつメッセージメッセージ
+            総務部は、大学祭実行委員会の中で団体との窓口を担う部局です。<br />
+            説明会や企画の受付の開催に加え、団体向けに大学祭について伝える冊子を作成し、スムーズな大学祭運営をサポートしています。<br />
+            大学祭の全てと関わりをもちながら他部局と連携して活動する、大学祭運営の醍醐味を味わえる部局です。
           </p>
         </div>
       </div>
@@ -202,51 +208,58 @@ import OverlapHeadline from "~/components/OverlapHeadline.vue";
           id="right-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/soumu1.webp"
         />
         <img
           id="left-img"
           alt="紹介画像"
           class="departments-img"
-          src="~/assets/images/rectangle-tmp.webp"
+          src="~/assets/images/departments-img/soumu2.webp"
         />
       </div>
     </div>
-    <FloatingButton /> -->
-    <div class="prepare">
+    <FloatingButton />
+    <!-- <div class="prepare">
       <h1>準備中</h1>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
+
 .page-root {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
+
 p {
   margin: 0;
 }
+
 #first {
   margin-bottom: 1rem;
 }
+
 .intro {
   margin: 0 15vw;
   @include md {
     margin: 0 8vw;
   }
 }
+
 #chairman-headline {
   margin-left: 20vw;
   margin-bottom: 0;
 }
+
 hr {
   margin-top: 0;
   margin-right: 20vw;
   border: solid 1px #000000;
 }
+
 .chairman-img {
   width: 300px;
   height: auto;
@@ -256,38 +269,54 @@ hr {
     margin: 1rem auto;
   }
 }
+
 .chairman-frame {
   display: flex;
   margin: 0 12vw;
   justify-content: space-between;
   @include md {
-    margin: 0 5vw;
+    margin: 0 5vw 2rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
   }
 }
+
 h1 {
   @include md {
     font-size: 30px;
   }
 }
+
 .chairman-message {
   width: 100%;
   text-align: center;
 }
+
 #the-seven-departments {
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: 25vw;
   text-align: center;
-  transform: translateX(10vw);
+  //transform: translateX(10vw);
   //margin-right: 20rem;
+
+  @include md {
+    margin-top: 3rem;
+    margin-right: 15vw;
+  }
+  @include sm {
+    margin-right: 8vw;
+  }
 }
+
 .departments-wrapper {
   display: flex;
+  margin: 0 10vw 5rem;
+  padding-left: 2vw;
   @include md {
     display: flex;
     flex-direction: column;
   }
-  margin: 0 10vw;
   @include lg {
     margin: 0 8vw;
   }
@@ -295,35 +324,37 @@ h1 {
     margin: 0 4vw 3rem;
     padding: 0;
   }
-  padding-left: 2vw;
-  margin-bottom: 5rem;
 }
+
 #reverse {
   @include md {
     display: flex;
     flex-direction: column-reverse;
   }
 }
+
 #exception-headline {
   margin-left: 10vw;
 }
+
 .box {
   margin-right: 2rem;
   @include lg {
     margin-right: 0;
   }
 }
+
 .departments-img {
   width: 300px;
   margin: 1rem;
 }
+
 .frame {
   background-color: #eee;
   opacity: 60%;
   border-radius: 2rem;
   width: 35vw;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0 0;
   padding: 1rem;
   @include lg {
     margin-right: 1rem;
@@ -333,6 +364,7 @@ h1 {
     width: 85vw;
   }
 }
+
 .img-box {
   display: flex;
   flex-direction: column;
@@ -350,8 +382,9 @@ h1 {
     margin-left: 0;
   }
 }
+
 #right-img {
-  margin: 0 auto 0;
+  margin: 0 auto;
   @include md {
     margin-left: 25vw;
   }
@@ -359,6 +392,7 @@ h1 {
     margin-left: 8vw;
   }
 }
+
 .prepare {
   display: flex;
   justify-content: center;

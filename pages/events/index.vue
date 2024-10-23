@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import events from "public/events.json";
+import events from 'public/events.json'
 
 useHead({
-  title: "Events | 24常盤祭公式HP~夢灯~",
+  title: 'Events | 24常盤祭公式HP~夢灯~',
   meta: [
-    { name: "description", content: "24常盤祭についての情報を掲載しています" },
+    { name: 'description', content: '24常盤祭についての情報を掲載しています' },
   ],
 })
 </script>
@@ -15,10 +15,10 @@ useHead({
     <div class="inner-events-page">
       <div class="events-list">
         <NuxtLink
-            v-for="event in events"
-            :key="event.id"
-            :to="`/events/${event.id}`"
-            class="events-elements"
+          v-for="event in events"
+          :key="event.id"
+          :to="`/events/${event.id}`"
+          class="events-elements"
         >
           <EventsComponent :event-data="event" />
         </NuxtLink>
@@ -29,8 +29,7 @@ useHead({
 </template>
 
 <style scoped lang="scss">
-
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .inner-events-page {
   position: relative;
@@ -76,9 +75,7 @@ useHead({
     }
     @include sm {
       width: 45svw;
-
     }
   }
 }
-
 </style>

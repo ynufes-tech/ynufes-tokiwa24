@@ -1,59 +1,64 @@
 <script setup lang="ts">
-import WhiteButton from "~/components/WhiteButton.vue";
+// import WhiteButton from "~/components/WhiteButton.vue";
 
 useHead({
-  title: "Pamphlet | 24常盤祭のパンフレット紹介",
+  title: 'Pamphlet | 24常盤祭のパンフレット紹介',
   meta: [
-    { name: "description", content: "24常盤祭のパンフレットをご紹介します" },
+    { name: 'description', content: '24常盤祭のパンフレットをご紹介します' },
   ],
-});
+})
 </script>
 
 <template>
-    <div class="page-root">
-     <PageTitle title="PAMPHLET" sub-title="パンフレット紹介"/>
-<!--        <div class="big-box">-->
-<!--            <div class="picture-holder">-->
-<!--                <img-->
-<!--                  alt="pamphlet"-->
-<!--                  class="pamphlet-img"-->
-<!--                  src="~/assets/images/pamphlet-tmp.png"-->
-<!--                />-->
-<!--            </div>-->
-<!--        -->
-<!--            <div class="box">-->
-<!--                <div class="about">-->
-<!--                    <p>下のボタンから電子版パンフレットをダウンロードいただけます。</p>-->
-<!--                </div>-->
-<!--                <div class="download">-->
-<!--                    <p>通常版（ーーMB）</p>-->
-<!--                    <div class="download-button">-->
-<!--                      <WhiteButton text="ダウンロード" link=""/>-->
-<!--                    </div>-->
-<!--                    <p>軽量版（ーーMB）</p>-->
-<!--                    <div class="download-button">-->
-<!--                      <WhiteButton text="ダウンロード" link=""/>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--        </div>-->
-      <div class="prepare">
-        <h1>準備中</h1>
+  <div class="page-root">
+    <PageTitle title="PAMPHLET" sub-title="パンフレット紹介" />
+    <div class="big-box">
+      <div class="picture-holder">
+        <img
+          alt="pamphlet"
+          class="pamphlet-img"
+          src="~/assets/images/poster.webp"
+        />
       </div>
-      <FloatingButton />   
+
+      <div class="box">
+        <div class="about">
+          <p>下のボタンから電子版パンフレットをダウンロードいただけます。</p>
+        </div>
+        <div class="download">
+          <p>通常版（ーーMB）</p>
+          <div class="download-button">
+            <WhiteButton
+              text="ダウンロード"
+              link="https://storage.googleapis.com/tokiwa24-assets/tokiwa24-pamphlet-high.pdf"
+            />
+          </div>
+          <p>軽量版（ーーMB）</p>
+          <div class="download-button">
+            <WhiteButton
+              text="ダウンロード"
+              link="https://storage.googleapis.com/tokiwa24-assets/tokiwa24-pamphlet-light.pdf"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- <div class="prepare"> -->
+    <!-- <h1>準備中</h1> -->
+    <!-- </div> -->
+    <FloatingButton />
+  </div>
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/_breakpoint.scss" as *;
+@use '@/assets/scss/_breakpoint.scss' as *;
 
 .page-root {
   display: flex;
   flex-direction: column;
 }
 
-.big-box{
+.big-box {
   display: flex;
   position: relative;
   top: 0;
@@ -68,7 +73,7 @@ useHead({
   }
 }
 
-.picture-holder{
+.picture-holder {
   width: max(50%, 500px);
 
   img {
@@ -82,18 +87,18 @@ useHead({
     flex-direction: column;
     width: 100%;
     top: 0;
-    img{
+    img {
       max-width: 350px;
     }
   }
 }
 
-.about{
+.about {
   padding: 0 1em;
   display: flex;
   width: fit-content;
   justify-content: end;
- 
+
   @include md {
     display: flex;
     flex-direction: column;
@@ -101,7 +106,7 @@ useHead({
   }
 }
 
-.download{
+.download {
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -113,13 +118,13 @@ useHead({
 }
 
 p {
-    font-size: 21px;
+  font-size: 21px;
 
-    @include md {
-      font-size: 16px;
-    }
- }
-.prepare{
+  @include md {
+    font-size: 16px;
+  }
+}
+.prepare {
   display: flex;
   justify-content: center;
   margin-top: 5%;

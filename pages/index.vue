@@ -11,6 +11,7 @@ useHead({
     },
   ],
 })
+//v3.0.0 released on 2024.10.24
 </script>
 
 <template>

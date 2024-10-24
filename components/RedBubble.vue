@@ -42,8 +42,9 @@ const props = defineProps({
   height: 500px;
   width: 500px;
   border-radius: 50%;
-  background-color: rgba(#efd4ff, 0.8);
+  background-color: rgba(#ff9af0, 0.7);
   text-align: center;
+  justify-content: center;
   @include xl {
     height: 470px;
     width: 470px;
@@ -57,6 +58,7 @@ const props = defineProps({
     width: 380px;
   }
   @include sm {
+    transform: scale(0.85);
     height: 340px;
     width: 340px;
   }
@@ -66,10 +68,21 @@ const props = defineProps({
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: rgba(#edd5fb, 0.7);
+    background-color: rgba(#ff9af0, 0.7);
     top: 190px; /* 少し上に移動 */
     left: 435px; /* 左に移動 */
     z-index: 400; /* 重なりを確実に上に */
+    @include lg {
+      left: 380px;
+    }
+    @include md {
+      height: 125px;
+      width: 125px;
+      left: 320px;
+    }
+    @include sm {
+      left: 280px;
+    }
   }
 
   .bubble-image {
@@ -78,6 +91,9 @@ const props = defineProps({
     margin: auto;
     width: 130px; /* 画像のサイズを調整 */
     z-index: 500; /* 重なりを確実に上に */
+    @include md {
+      width: 80px;
+    }
   }
   > h1 {
     margin: 20px auto;
@@ -120,7 +136,7 @@ const props = defineProps({
       font-size: 14px;
     }
     @include sm {
-      font-size: 12px;
+      font-size: 13px;
     }
   }
 }

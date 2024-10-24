@@ -26,7 +26,7 @@ useHead({
         <p>開催日時</p>
         <p>1日目：11月1日(金)&emsp;<span class="break">13:00 ― 20:30</span></p>
         <p>2日目：11月2日(土)&emsp;<span class="break">09:00 ― 20:30</span></p>
-        <p>3日目：11月3日(日)&emsp;<span class="break">09:00 ― 15:30</span></p>
+        <p>3日目：11月3日(日)&emsp;<span class="break">09:00 ― 15:00</span></p>
       </div>
     </div>
     <FloatingButton />
@@ -66,24 +66,18 @@ useHead({
   }
   @include lg {
     width: 50vw;
-    padding: 2vh 2vw;
   }
   @include md {
     width: 72vw;
-    padding: 2vh 2vw;
   }
   @include sm {
     width: 75vw;
-    padding: 2vh 2vw;
   }
 }
 
 .break {
   display: inline;
-}
-
-@media (max-width: 385px) {
-  .break {
+  @media (max-width: 385px) {
     display: block;
   }
 }

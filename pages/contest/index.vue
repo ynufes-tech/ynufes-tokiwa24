@@ -76,7 +76,7 @@ useHead({
         </div>
       </div>
       <div class="results-table">
-        <div class="food&#38;drink">
+        <div class="group-box">
           <div class="child-title-wrapper">
             <div class="child-title">
               <p>飲食部門</p>
@@ -143,7 +143,7 @@ useHead({
             </div>
           </div>
         </div>
-        <div class="display&#38;goods">
+        <div class="group-box">
           <div class="child-title-wrapper">
             <div class="child-title">
               <p>展示・体験・物販部門</p>
@@ -210,7 +210,7 @@ useHead({
             </div>
           </div>
         </div>
-        <div class="performance">
+        <div class="group-box">
           <div class="child-title-wrapper">
             <div class="child-title">
               <p>パフォーマンス部門</p>
@@ -562,5 +562,14 @@ p {
 
 h2 {
   font-size: 28px;
+}
+.results-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .group-box {
+    width: 100vw;
+    max-width: 1500px;
+  }
 }
 </style>

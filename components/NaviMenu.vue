@@ -41,9 +41,6 @@ const toggle = () => {
             <NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/sponsor" @click="toggle">SPONSOR</NuxtLink>
-          </li>
-          <li>
             <NuxtLink to="/contest" @click="toggle">CONTEST</NuxtLink>
           </li>
         </ul>

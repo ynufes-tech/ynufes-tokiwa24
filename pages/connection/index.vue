@@ -5,7 +5,7 @@
     <PageTitleCnct title="CONNECTION" sub-title="他大学の学祭HP" />
     <div class="inner-connection-page">
       <div class="connection-about">
-        <p>他大学の学園祭をご紹介させていただきます。</p>
+        <p>他大学の大学祭をご紹介させていただきます。</p>
       </div>
       <div class="connection-content">
         <div class="big-box">
@@ -31,7 +31,10 @@
             <p class="child-title">■防衛大学&emsp;開校記念祭</p>
             <p>【開催日程】<br />2024年&emsp;11/9(土)-11/10(日)</p>
             <p>
-              【公式HP】<br /><a href=" https://www.nda.ac.jp/Festival/"
+              【公式HP】<br /><a
+                href="https://www.nda.ac.jp/Festival/"
+                rel="noopener noreferrer"
+                target="_blank"
                 >防衛大学開校記念祭<br />(nda.ac.jp)</a
               >
             </p>
@@ -50,6 +53,7 @@
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
+
   > p {
     margin: 1rem 14vw;
   }
@@ -100,9 +104,13 @@
   flex-wrap: wrap;
   @include md {
     flex-direction: column;
-    width: 50vw;
+    width: 80vw;
+  }
+  @include sm {
+    width: min(80vw, 120vh);
   }
 }
+
 .child-title {
   font-size: 28px;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.247);

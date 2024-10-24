@@ -187,18 +187,18 @@ const conf = useRuntimeConfig()
   white-space: pre-wrap;
 }
 .page-wrapper {
-  margin: 10rem 15vw 0;
+  margin: 8rem 15vw 0;
   @include xl {
-    margin: 8rem 12vw 0;
+    margin: 6rem 12vw 0;
   }
   @include lg {
-    margin: 4rem 10vw 0;
+    margin: 2rem 10vw 0;
   }
   @include md {
     margin: 0 4vw;
   }
   @include sm {
-    margin: 0 2vw;
+    margin: 1rem 2vw;
   }
 }
 .right {

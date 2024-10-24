@@ -148,7 +148,7 @@ const conf = useRuntimeConfig()
         :imagepath="
           conf.app.baseURL + 'images/official-event-imgs/kick-img.webp'
         "
-        title="シューティングキッカー～"
+        title="シューティングキッカー"
         mainscript="横に動くターゲットをボールで倒せ！あなたは何点獲得できるかな？景品を狙ってゲームに参加しよう！小さなお子様から大人の方まで楽しめるゲームとなっております！ぜひ遊びに来てください～"
         place="Shoca."
         day="11月1日(金)13:00～16:30

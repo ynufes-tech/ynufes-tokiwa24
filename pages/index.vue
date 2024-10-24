@@ -61,6 +61,11 @@ useHead({
         sub-title="ご協賛団体一覧"
         page-link="/sponsor"
       />
+      <TableOfContents
+        title="CONTEST"
+        sub-title="企画コンテスト"
+        page-link="/contest"
+      />
     </div>
     <SNS />
     <MapButton />

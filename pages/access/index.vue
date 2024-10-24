@@ -21,7 +21,7 @@
         <div class="subtitle-wrapper">
           <Sub-title sub-title="電車でのアクセス" />
         </div>
-        <SectionTitle section-title="三ツ沢上駅からお越しの方" />
+        <SectionTitle section-title="三ツ沢上町駅からお越しの方" />
         <img
           class="horizontal-maps"
           src="~/assets/images/access-images/mitsusawakamityo.webp"

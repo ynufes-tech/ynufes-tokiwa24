@@ -632,4 +632,9 @@ h2 {
     max-width: 1500px;
   }
 }
+.voting-1,
+.voting-2,
+.voting-3 {
+  color: black;
+}
 </style>

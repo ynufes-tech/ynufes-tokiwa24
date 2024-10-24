@@ -69,7 +69,7 @@ useHead({
             </p>
           </div>
           <div class="table">
-            <h2>～ 展示・体験・物販部門 ～</h2>
+            <h2>～ 展示・販売・体験部門 ～</h2>
           </div>
           <div class="content">
             <p>
@@ -179,7 +179,7 @@ useHead({
       <!--        <div class="group-box">-->
       <!--          <div class="child-title-wrapper">-->
       <!--            <div class="child-title">-->
-      <!--              <p>展示・体験・物販部門</p>-->
+      <!--              <p>展示・販売・体験部門</p>-->
       <!--            </div>-->
       <!--          </div>-->
       <!--          <div class="crown">-->
@@ -193,7 +193,7 @@ useHead({
       <!--            <NuxtLink class="No2" :to="'/events/' + Exhibit2nd">-->
       <!--              <div class="img-holder">-->
       <!--                <img-->
-      <!--                  alt="展示・体験・物販部門第2位"-->
+      <!--                  alt="展示・販売・体験部門第2位"-->
       <!--                  class="rank-image"-->
       <!--                  :src="-->
       <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
@@ -214,7 +214,7 @@ useHead({
       <!--            <NuxtLink class="No1" :to="'/events/' + Exhibit1st">-->
       <!--              <div class="img-holder">-->
       <!--                <img-->
-      <!--                  alt="展示・体験・物販部門第1位"-->
+      <!--                  alt="展示・販売・体験部門第1位"-->
       <!--                  class="rank-image"-->
       <!--                  :src="-->
       <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->

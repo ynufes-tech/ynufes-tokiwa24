@@ -24,9 +24,9 @@ useHead({
     <div class="date-box">
       <div class="inner-date-box">
         <p>開催日時</p>
-        <p>1日目：11月1日(金)&emsp;13:00 ― 20:30</p>
-        <p>2日目：11月2日(土)&emsp;09:00 ― 20:30</p>
-        <p>3日目：11月3日(日)&emsp;09:00 ― 15:30</p>
+        <p>1日目：11月1日(金)&emsp;<span class="break">13:00 ― 20:30</span></p>
+        <p>2日目：11月2日(土)&emsp;<span class="break">09:00 ― 20:30</span></p>
+        <p>3日目：11月3日(日)&emsp;<span class="break">09:00 ― 15:00</span></p>
       </div>
     </div>
     <FloatingButton />
@@ -56,19 +56,29 @@ useHead({
   background-color: #eee;
   opacity: 70%;
   border-radius: 2rem;
-  margin: 5rem auto 0;
+  margin: 5vh auto 4vh;
   width: 42.5vw;
   @include xl {
-    width: 55vw;
+    width: 45vw;
+    padding: 2vh 2vw;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
   }
   @include lg {
-    width: 67vw;
+    width: 50vw;
   }
   @include md {
     width: 72vw;
   }
   @include sm {
     width: 75vw;
+  }
+}
+
+.break {
+  display: inline;
+  @media (max-width: 385px) {
+    display: block;
   }
 }
 </style>

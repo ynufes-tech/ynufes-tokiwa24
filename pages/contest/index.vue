@@ -3,6 +3,27 @@ useHead({
   title: 'Contest | 24常盤祭の企画コンテスト',
   meta: [{ name: 'description', content: '24常盤祭の企画コンテスト' }],
 })
+
+const Food1st = 900
+const Food2nd = 900
+const Food3rd = 900
+const Food1stStar = 1
+const Food2ndStar = 1
+const Food3rdStar = 1
+
+const Exhibit1st = 900
+const Exhibit2nd = 900
+const Exhibit3rd = 900
+const Exhibit1stStar = 1
+const Exhibit2ndStar = 1
+const Exhibit3rdStar = 1
+
+const Performance1st = 900
+const Performance2nd = 900
+const Performance3rd = 900
+const Performance1stStar = 1
+const Performance2ndStar = 1
+const Performance3rdStar = 1
 </script>
 
 <template>
@@ -90,12 +111,16 @@ useHead({
             />
           </div>
           <div class="ranking-wrapper">
-            <div class="No2">
+            <NuxtLink class="No2" :to="'/events/' + Food2nd">
               <div class="img-holder">
                 <img
                   alt="飲食部門第2位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Food2nd +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -104,15 +129,19 @@ useHead({
                 </div>
               </div>
               <div class="voting-2">
-                <p>星○○</p>
+                <p>星{{ Food2ndStar }}</p>
               </div>
-            </div>
-            <div class="No1">
+            </NuxtLink>
+            <NuxtLink class="No1" :to="'/events/' + Food1st">
               <div class="img-holder">
                 <img
                   alt="飲食部門第1位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Food1st +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -121,15 +150,19 @@ useHead({
                 </div>
               </div>
               <div class="voting-1">
-                <p>星○○</p>
+                <p>星{{ Food1stStar }}</p>
               </div>
-            </div>
-            <div class="No3">
+            </NuxtLink>
+            <NuxtLink class="No3" :to="'/events/' + Food3rd">
               <div class="img-holder">
                 <img
                   alt="飲食部門第3位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Food3rd +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -138,9 +171,9 @@ useHead({
                 </div>
               </div>
               <div class="voting-3">
-                <p>星○○</p>
+                <p>星{{ Food3rdStar }}</p>
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
         <div class="group-box">
@@ -157,12 +190,16 @@ useHead({
             />
           </div>
           <div class="ranking-wrapper">
-            <div class="No2">
+            <NuxtLink class="No2" :to="'/events/' + Exhibit2nd">
               <div class="img-holder">
                 <img
                   alt="展示・体験・物販部門第2位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Exhibit2nd +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -171,15 +208,19 @@ useHead({
                 </div>
               </div>
               <div class="voting-2">
-                <p>星○○</p>
+                <p>星{{ Exhibit2ndStar }}</p>
               </div>
-            </div>
-            <div class="No1">
+            </NuxtLink>
+            <NuxtLink class="No1" :to="'/events/' + Exhibit1st">
               <div class="img-holder">
                 <img
                   alt="展示・体験・物販部門第1位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Exhibit1st +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -188,15 +229,19 @@ useHead({
                 </div>
               </div>
               <div class="voting-1">
-                <p>星○○</p>
+                <p>星{{ Exhibit1stStar }}</p>
               </div>
-            </div>
-            <div class="No3">
+            </NuxtLink>
+            <NuxtLink class="No3" :to="'/events/' + Exhibit3rd">
               <div class="img-holder">
                 <img
                   alt="展示・販売・体験部門第3位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Exhibit3rd +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -205,9 +250,9 @@ useHead({
                 </div>
               </div>
               <div class="voting-3">
-                <p>星○○</p>
+                <p>星{{ Exhibit3rdStar }}</p>
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
         <div class="group-box">
@@ -224,12 +269,16 @@ useHead({
             />
           </div>
           <div class="ranking-wrapper">
-            <div class="No2">
+            <NuxtLink class="No2" :to="'/events/' + Performance2nd">
               <div class="img-holder">
                 <img
                   alt="パフォーマンス部門第2位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Performance2nd +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -238,15 +287,19 @@ useHead({
                 </div>
               </div>
               <div class="voting-2">
-                <p>星○○</p>
+                <p>星{{ Performance2ndStar }}</p>
               </div>
-            </div>
-            <div class="No1">
+            </NuxtLink>
+            <NuxtLink class="No1" :to="'/events/' + Performance1st">
               <div class="img-holder">
                 <img
                   alt="パフォーマンス部門第1位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Performance1st +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -255,15 +308,19 @@ useHead({
                 </div>
               </div>
               <div class="voting-1">
-                <p>星○○</p>
+                <p>星{{ Performance1stStar }}</p>
               </div>
-            </div>
-            <div class="No3">
+            </NuxtLink>
+            <NuxtLink class="No3" :to="'/events/' + Performance3rd">
               <div class="img-holder">
                 <img
                   alt="パフォーマンス部門第3位"
                   class="rank-image"
-                  src="~/assets/images/noimage.webp"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Performance3rd +
+                    '.webp'
+                  "
                 />
               </div>
               <div class="rank-box">
@@ -272,9 +329,9 @@ useHead({
                 </div>
               </div>
               <div class="voting-3">
-                <p>星○○</p>
+                <p>星{{ Performance3rdStar }}</p>
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -298,7 +355,7 @@ useHead({
   justify-content: center;
   margin: 10rem 0 1rem 0;
   font-size: 30px;
-  opacity: 60%;
+  opacity: 80%;
 
   h1 {
     font-weight: lighter;
@@ -438,7 +495,7 @@ useHead({
   text-decoration: none;
   color: #eee;
   background-color: #000000;
-  opacity: 50%;
+  opacity: 80%;
 
   @include sm {
     font-size: 12px;
@@ -510,7 +567,7 @@ useHead({
   padding: 0 1em;
   height: 2em;
   background-color: #000000;
-  opacity: 50%;
+  opacity: 80%;
   text-align: center;
   color: #eee;
 
@@ -528,6 +585,7 @@ useHead({
   flex-direction: column;
   display: flex;
   justify-items: center;
+  text-decoration: none;
 
   @include md {
     margin-top: 0;
@@ -538,6 +596,7 @@ useHead({
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
+  text-decoration: none;
 
   @include md {
     margin-top: 5vh;
@@ -549,6 +608,7 @@ useHead({
   display: flex;
   flex-direction: column;
   margin-top: 20vh;
+  text-decoration: none;
 
   @include md {
     margin-top: 5vh;

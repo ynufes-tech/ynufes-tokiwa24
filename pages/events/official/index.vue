@@ -216,6 +216,7 @@ const conf = useRuntimeConfig()
   }
   @include sm {
     left: 20px;
+    margin-top: -3.5rem;
   }
 }
 .left {
@@ -233,6 +234,7 @@ const conf = useRuntimeConfig()
   }
   @include sm {
     left: -7vw;
+    margin-top: -3.5rem;
   }
 }
 </style>

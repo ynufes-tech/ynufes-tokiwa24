@@ -56,7 +56,11 @@ const showNoImage = function (e: SyntheticEvent<HTMLDivElement>) {
           <SnsIconFac v-if="event?.fac_id" :link="event.fac_id" />
         </div>
         <div class="hp-holder">
-          <a v-if="event?.hp_id" :href="event?.hp_id || ''"
+          <a
+            v-if="event?.hp_id"
+            :href="event?.hp_id || ''"
+            rel="noopener noreferrer"
+            target="_blank"
             >公式HP:{{ event?.hp_id }}</a
           >
         </div>

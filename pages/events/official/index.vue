@@ -15,6 +15,10 @@ const conf = useRuntimeConfig()
   <div class="page-root">
     <PageTitle title="OFFICIAL" sub-title="本部企画一覧" />
     <div class="page-wrapper">
+      <div class="stage">
+        <h1 id="headline">ステージ</h1>
+        <hr />
+      </div>
       <WhiteBubble
         :imagepath="
           conf.app.baseURL + 'images/official-event-imgs/tobenai-img.webp'
@@ -74,6 +78,10 @@ const conf = useRuntimeConfig()
         day="11月2日(土)18:30～20:00"
         class="right"
       />
+      <div class="library">
+        <h1 id="headline">図書館</h1>
+        <hr />
+      </div>
       <RedBubble
         :imagepath="
           conf.app.baseURL + 'images/official-event-imgs/mome-world-img.webp'
@@ -199,6 +207,47 @@ const conf = useRuntimeConfig()
   }
   @include sm {
     margin: 1rem 2vw;
+  }
+}
+#headline {
+  margin: -10rem auto 0;
+  text-align: center;
+}
+hr {
+  margin: 0 auto;
+  width: calc(25vw + 8rem);
+  border: solid 1px #000000;
+}
+.stage {
+  margin-top: 4rem;
+  margin-bottom: 9rem;
+  @include xl {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+  }
+  @include lg {
+    margin-top: 10rem;
+    margin-bottom: 4.5rem;
+  }
+  @include md {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+  }
+  @include sm {
+    margin-top: 9rem;
+    margin-bottom: 4.5rem;
+  }
+}
+.library {
+  margin: 13rem 0 8.5rem;
+  @include lg {
+    margin: 13rem 0 4rem;
+  }
+  @include md {
+    margin: 13rem 0 1rem;
+  }
+  @include sm {
+    margin: 12rem 0 3rem;
   }
 }
 .right {

@@ -335,9 +335,9 @@ const Performance3rdStar = 1
           </div>
         </div>
       </div>
-      <div class="pre-message">
-        <h2>常盤祭当日の更新をお待ちください</h2>
-      </div>
+      <!--      <div class="pre-message">-->
+      <!--        <h2>常盤祭当日の更新をお待ちください</h2>-->
+      <!--      </div>-->
     </div>
     <FloatingButton />
   </div>

@@ -66,6 +66,18 @@ useHead({
         sub-title="企画コンテスト"
         page-link="/contest"
       />
+      <TableOfContents
+        title="ABOUT-US"
+        sub-title="実行委員会紹介"
+        page-link="/about-us"
+      />
+      <TableOfContents title="FAQ" sub-title="よくある質問" page-link="/faq" />
+      <TableOfContents
+        title="OFFICIAL  EVENTS"
+        sub-title="本部企画一覧"
+        page-link="/events/official"
+        class="of"
+      />
     </div>
     <SNS />
     <MapButton />
@@ -165,5 +177,8 @@ hr {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+}
+.of {
+  margin-top: 10rem;
 }
 </style>

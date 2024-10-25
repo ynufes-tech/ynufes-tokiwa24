@@ -76,7 +76,6 @@ useHead({
         title="OFFICIAL  EVENTS"
         sub-title="本部企画一覧"
         page-link="/events/official"
-        class="of"
       />
     </div>
     <SNS />
@@ -177,8 +176,5 @@ hr {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-}
-.of {
-  margin-top: 10rem;
 }
 </style>

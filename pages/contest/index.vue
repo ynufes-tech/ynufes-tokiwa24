@@ -4,26 +4,26 @@ useHead({
   meta: [{ name: 'description', content: '24常盤祭の企画コンテスト' }],
 })
 
-// const Food1st = 900
-// const Food2nd = 900
-// const Food3rd = 900
-// const Food1stStar = 1
-// const Food2ndStar = 1
-// const Food3rdStar = 1
-//
-// const Exhibit1st = 900
-// const Exhibit2nd = 900
-// const Exhibit3rd = 900
-// const Exhibit1stStar = 1
-// const Exhibit2ndStar = 1
-// const Exhibit3rdStar = 1
-//
-// const Performance1st = 900
-// const Performance2nd = 900
-// const Performance3rd = 900
-// const Performance1stStar = 1
-// const Performance2ndStar = 1
-// const Performance3rdStar = 1
+const Food1st = 900
+const Food2nd = 900
+const Food3rd = 900
+const Food1stStar = 1
+const Food2ndStar = 1
+const Food3rdStar = 1
+
+const Exhibit1st = 900
+const Exhibit2nd = 900
+const Exhibit3rd = 900
+const Exhibit1stStar = 1
+const Exhibit2ndStar = 1
+const Exhibit3rdStar = 1
+
+const Performance1st = 900
+const Performance2nd = 900
+const Performance3rd = 900
+const Performance1stStar = 1
+const Performance2ndStar = 1
+const Performance3rdStar = 1
 </script>
 
 <template>
@@ -96,248 +96,248 @@ useHead({
           <p>結果発表</p>
         </div>
       </div>
-      <!--      <div class="results-table">-->
-      <!--        <div class="group-box">-->
-      <!--          <div class="child-title-wrapper">-->
-      <!--            <div class="child-title">-->
-      <!--              <p>飲食部門</p>-->
-      <!--            </div>-->
-      <!--          </div>-->
-      <!--          <div class="crown">-->
-      <!--            <img-->
-      <!--              alt="王冠"-->
-      <!--              class="crown-image"-->
-      <!--              src="~/assets/images/crown1.webp"-->
-      <!--            />-->
-      <!--          </div>-->
-      <!--          <div class="ranking-wrapper">-->
-      <!--            <NuxtLink class="No2" :to="'/events/' + Food2nd">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="飲食部門第2位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Food2nd +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第二位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-2">-->
-      <!--                <p>星{{ Food2ndStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--            <NuxtLink class="No1" :to="'/events/' + Food1st">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="飲食部門第1位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Food1st +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第一位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-1">-->
-      <!--                <p>星{{ Food1stStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--            <NuxtLink class="No3" :to="'/events/' + Food3rd">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="飲食部門第3位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Food3rd +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第三位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-3">-->
-      <!--                <p>星{{ Food3rdStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--        <div class="group-box">-->
-      <!--          <div class="child-title-wrapper">-->
-      <!--            <div class="child-title">-->
-      <!--              <p>展示・販売・体験部門</p>-->
-      <!--            </div>-->
-      <!--          </div>-->
-      <!--          <div class="crown">-->
-      <!--            <img-->
-      <!--              alt="王冠"-->
-      <!--              class="crown-image"-->
-      <!--              src="~/assets/images/crown1.webp"-->
-      <!--            />-->
-      <!--          </div>-->
-      <!--          <div class="ranking-wrapper">-->
-      <!--            <NuxtLink class="No2" :to="'/events/' + Exhibit2nd">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="展示・販売・体験部門第2位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Exhibit2nd +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第二位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-2">-->
-      <!--                <p>星{{ Exhibit2ndStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--            <NuxtLink class="No1" :to="'/events/' + Exhibit1st">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="展示・販売・体験部門第1位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Exhibit1st +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第一位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-1">-->
-      <!--                <p>星{{ Exhibit1stStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--            <NuxtLink class="No3" :to="'/events/' + Exhibit3rd">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="展示・販売・体験部門第3位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Exhibit3rd +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第三位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-3">-->
-      <!--                <p>星{{ Exhibit3rdStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--        <div class="group-box">-->
-      <!--          <div class="child-title-wrapper">-->
-      <!--            <div class="child-title">-->
-      <!--              <p>パフォーマンス部門</p>-->
-      <!--            </div>-->
-      <!--          </div>-->
-      <!--          <div class="crown">-->
-      <!--            <img-->
-      <!--              alt="王冠"-->
-      <!--              class="crown-image"-->
-      <!--              src="~/assets/images/crown1.webp"-->
-      <!--            />-->
-      <!--          </div>-->
-      <!--          <div class="ranking-wrapper">-->
-      <!--            <NuxtLink class="No2" :to="'/events/' + Performance2nd">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="パフォーマンス部門第2位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Performance2nd +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第二位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-2">-->
-      <!--                <p>星{{ Performance2ndStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--            <NuxtLink class="No1" :to="'/events/' + Performance1st">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="パフォーマンス部門第1位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Performance1st +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第一位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-1">-->
-      <!--                <p>星{{ Performance1stStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--            <NuxtLink class="No3" :to="'/events/' + Performance3rd">-->
-      <!--              <div class="img-holder">-->
-      <!--                <img-->
-      <!--                  alt="パフォーマンス部門第3位"-->
-      <!--                  class="rank-image"-->
-      <!--                  :src="-->
-      <!--                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +-->
-      <!--                    Performance3rd +-->
-      <!--                    '.webp'-->
-      <!--                  "-->
-      <!--                />-->
-      <!--              </div>-->
-      <!--              <div class="rank-box">-->
-      <!--                <div class="rank">-->
-      <!--                  <p>第三位</p>-->
-      <!--                </div>-->
-      <!--              </div>-->
-      <!--              <div class="voting-3">-->
-      <!--                <p>星{{ Performance3rdStar }}</p>-->
-      <!--              </div>-->
-      <!--            </NuxtLink>-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <div class="pre-message">
-        <h2>常盤祭当日の更新をお待ちください</h2>
+      <div class="results-table">
+        <div class="group-box">
+          <div class="child-title-wrapper">
+            <div class="child-title">
+              <p>飲食部門</p>
+            </div>
+          </div>
+          <div class="crown">
+            <img
+              alt="王冠"
+              class="crown-image"
+              src="~/assets/images/crown1.webp"
+            />
+          </div>
+          <div class="ranking-wrapper">
+            <NuxtLink class="No2" :to="'/events/' + Food2nd">
+              <div class="img-holder">
+                <img
+                  alt="飲食部門第2位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Food2nd +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第二位</p>
+                </div>
+              </div>
+              <div class="voting-2">
+                <p>星{{ Food2ndStar }}</p>
+              </div>
+            </NuxtLink>
+            <NuxtLink class="No1" :to="'/events/' + Food1st">
+              <div class="img-holder">
+                <img
+                  alt="飲食部門第1位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Food1st +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第一位</p>
+                </div>
+              </div>
+              <div class="voting-1">
+                <p>星{{ Food1stStar }}</p>
+              </div>
+            </NuxtLink>
+            <NuxtLink class="No3" :to="'/events/' + Food3rd">
+              <div class="img-holder">
+                <img
+                  alt="飲食部門第3位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Food3rd +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第三位</p>
+                </div>
+              </div>
+              <div class="voting-3">
+                <p>星{{ Food3rdStar }}</p>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="group-box">
+          <div class="child-title-wrapper">
+            <div class="child-title">
+              <p>展示・販売・体験部門</p>
+            </div>
+          </div>
+          <div class="crown">
+            <img
+              alt="王冠"
+              class="crown-image"
+              src="~/assets/images/crown1.webp"
+            />
+          </div>
+          <div class="ranking-wrapper">
+            <NuxtLink class="No2" :to="'/events/' + Exhibit2nd">
+              <div class="img-holder">
+                <img
+                  alt="展示・販売・体験部門第2位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Exhibit2nd +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第二位</p>
+                </div>
+              </div>
+              <div class="voting-2">
+                <p>星{{ Exhibit2ndStar }}</p>
+              </div>
+            </NuxtLink>
+            <NuxtLink class="No1" :to="'/events/' + Exhibit1st">
+              <div class="img-holder">
+                <img
+                  alt="展示・販売・体験部門第1位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Exhibit1st +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第一位</p>
+                </div>
+              </div>
+              <div class="voting-1">
+                <p>星{{ Exhibit1stStar }}</p>
+              </div>
+            </NuxtLink>
+            <NuxtLink class="No3" :to="'/events/' + Exhibit3rd">
+              <div class="img-holder">
+                <img
+                  alt="展示・販売・体験部門第3位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Exhibit3rd +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第三位</p>
+                </div>
+              </div>
+              <div class="voting-3">
+                <p>星{{ Exhibit3rdStar }}</p>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="group-box">
+          <div class="child-title-wrapper">
+            <div class="child-title">
+              <p>パフォーマンス部門</p>
+            </div>
+          </div>
+          <div class="crown">
+            <img
+              alt="王冠"
+              class="crown-image"
+              src="~/assets/images/crown1.webp"
+            />
+          </div>
+          <div class="ranking-wrapper">
+            <NuxtLink class="No2" :to="'/events/' + Performance2nd">
+              <div class="img-holder">
+                <img
+                  alt="パフォーマンス部門第2位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Performance2nd +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第二位</p>
+                </div>
+              </div>
+              <div class="voting-2">
+                <p>星{{ Performance2ndStar }}</p>
+              </div>
+            </NuxtLink>
+            <NuxtLink class="No1" :to="'/events/' + Performance1st">
+              <div class="img-holder">
+                <img
+                  alt="パフォーマンス部門第1位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Performance1st +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第一位</p>
+                </div>
+              </div>
+              <div class="voting-1">
+                <p>星{{ Performance1stStar }}</p>
+              </div>
+            </NuxtLink>
+            <NuxtLink class="No3" :to="'/events/' + Performance3rd">
+              <div class="img-holder">
+                <img
+                  alt="パフォーマンス部門第3位"
+                  class="rank-image"
+                  :src="
+                    'https://storage.googleapis.com/tokiwa24-assets/icos/' +
+                    Performance3rd +
+                    '.webp'
+                  "
+                />
+              </div>
+              <div class="rank-box">
+                <div class="rank">
+                  <p>第三位</p>
+                </div>
+              </div>
+              <div class="voting-3">
+                <p>星{{ Performance3rdStar }}</p>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
       </div>
+      <!--      <div class="pre-message">-->
+      <!--        <h2>常盤祭当日の更新をお待ちください</h2>-->
+      <!--      </div>-->
     </div>
     <FloatingButton />
   </div>

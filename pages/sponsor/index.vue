@@ -53,7 +53,7 @@ useHead({
         </li>
       </ul>
     </div>
-
+    <P>敬称略</P>
     <FloatingButton />
   </div>
 </template>

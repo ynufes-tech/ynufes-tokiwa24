@@ -5,9 +5,10 @@ useHead({
   meta: [{ name: 'description', content: '24常盤祭の協賛企業をご紹介します' }],
 })
 </script>
+
 <template>
   <div class="page-root">
-    <PageTitle title="SPONSOR" sub-title="協賛企業一覧" />
+    <PageTitle title="SPONSOR" sub-title="ご協賛企業一覧" />
     <p>
       「24常盤祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。
       この場をお借りいたしまして、心より感謝申し上げます。
@@ -34,20 +35,9 @@ useHead({
       </ul>
     </div>
     <div class="sponsor-box">
-      <SectionTitle section-title="個人協賛" />
+      <SectionTitle section-title="その他の協賛・協力" />
       <ul>
-        <li
-          v-for="(company, index) in companies.individual"
-          :key="'ind-' + index"
-        >
-          {{ company }}
-        </li>
-      </ul>
-    </div>
-    <div class="sponsor-box">
-      <SectionTitle section-title="ブース協賛" />
-      <ul>
-        <li v-for="(company, index) in companies.booth" :key="'boo-' + index">
+        <li v-for="(company, index) in companies.other" :key="'oth-' + index">
           {{ company }}
         </li>
       </ul>
@@ -63,15 +53,7 @@ useHead({
         </li>
       </ul>
     </div>
-    <div class="sponsor-box">
-      <SectionTitle section-title="その他のご協賛" />
-
-      <ul>
-        <li v-for="(company, index) in companies.other" :key="'oth-' + index">
-          {{ company }}
-        </li>
-      </ul>
-    </div>
+    <P>敬称略</P>
     <FloatingButton />
   </div>
 </template>

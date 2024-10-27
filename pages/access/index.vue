@@ -169,5 +169,13 @@ p {
   display: flex;
   justify-content: center;
   padding-bottom: 0.3em;
+
+  h2 {
+    font-weight: lighter;
+  }
+
+  @include md {
+    font-size: 14px;
+  }
 }
 </style>

@@ -33,6 +33,7 @@ const props = defineProps({
     height: 3.5em;
   }
   h2 {
+    font-weight: lighter;
     margin: 1em 2.5em;
     @include sm {
       font-size: 16px;

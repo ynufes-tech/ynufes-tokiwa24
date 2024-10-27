@@ -38,14 +38,14 @@ const showNoImage = function (e: SyntheticEvent<HTMLDivElement>) {
           <SectionTitle section-title="企画詳細" />
         </div>
         <div class="description-holder">
-          <p>{{ event?.e_description || '企画が見つかりません' }}</p>
+          <p v-html="event.e_description.replace(/\/n/g, '<br>')" />
         </div>
         <SubTitle :sub-title="`${event?.o_name || '企画が見つかりません'}`" />
         <div v-if="event?.o_description" class="section-title-holder">
           <SectionTitle section-title="団体説明" />
         </div>
         <div v-if="event?.o_description" class="description-holder">
-          <p>{{ event?.o_description || '' }}</p>
+          <p v-html="event.o_description.replace(/\/n/g, '<br>')" />
         </div>
         <div class="section-title-holder">
           <SectionTitle section-title="各種リンク" />

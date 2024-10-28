@@ -541,9 +541,21 @@ const Performance3rdStar = 1
   border-radius: 2rem;
   margin-bottom: 10px;
 
-  @include lg {
+  @media (max-width: 1000px) {
     width: 250px;
     height: 250px;
+  }
+  @media (max-width: 800px) {
+    width: 170px;
+    height: 170px;
+  }
+  @media (max-width: 530px) {
+    width: 140px;
+    height: 140px;
+  }
+  @include sm {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -554,7 +566,6 @@ const Performance3rdStar = 1
 
   @include md {
     display: flex;
-    flex-direction: column;
     justify-items: center;
   }
 }
@@ -579,8 +590,12 @@ const Performance3rdStar = 1
   }
 
   @include md {
+    font-size: 16px;
     height: 2.5em;
-    width: 30vw;
+    width: 15vw;
+  }
+  @include sm {
+    font-size: 14px;
   }
 }
 
@@ -603,7 +618,6 @@ const Performance3rdStar = 1
 
   @include md {
     margin-top: 5vh;
-    order: 2;
   }
 }
 
@@ -615,7 +629,6 @@ const Performance3rdStar = 1
 
   @include md {
     margin-top: 5vh;
-    order: 3;
   }
 }
 

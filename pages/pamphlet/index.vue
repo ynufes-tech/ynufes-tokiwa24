@@ -26,14 +26,14 @@ useHead({
           <p>下のボタンから電子版パンフレットをダウンロードいただけます。</p>
         </div>
         <div class="download">
-          <p>通常版（ーーMB）</p>
+          <p>通常版（68.8MB）</p>
           <div class="download-button">
             <WhiteButton
               text="ダウンロード"
               link="https://storage.googleapis.com/tokiwa24-assets/tokiwa24-pamphlet-high.pdf"
             />
           </div>
-          <p>軽量版（ーーMB）</p>
+          <p>軽量版（22.9MB）</p>
           <div class="download-button">
             <WhiteButton
               text="ダウンロード"

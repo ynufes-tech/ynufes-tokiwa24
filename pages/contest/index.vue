@@ -380,10 +380,10 @@ const Performance3rdStar = 1
   }
 
   @include md {
-    font-size: 12px;
+    font-size: 17px;
     h2 {
       font-weight: lighter;
-      font-size: 12px;
+      font-size: 18px;
     }
   }
 }
@@ -424,7 +424,7 @@ const Performance3rdStar = 1
   @include md {
     h2 {
       font-weight: lighter;
-      font-size: 12px;
+      font-size: 18px;
     }
   }
 }
@@ -434,12 +434,12 @@ const Performance3rdStar = 1
   margin: 0 auto;
 
   @include md {
-    font-size: 12px;
+    font-size: 17px;
     margin-bottom: 5vh;
 
     h2 {
       font-weight: lighter;
-      font-size: 12px;
+      font-size: 18px;
     }
   }
 }
@@ -454,7 +454,7 @@ const Performance3rdStar = 1
     margin-bottom: 0;
 
     @include md {
-      font-size: 15px;
+      font-size: 18px;
     }
   }
 }
@@ -477,7 +477,7 @@ const Performance3rdStar = 1
 
   @include md {
     height: 3.5em;
-    font-size: 13px;
+    font-size: 18px;
     width: 50vw;
   }
 }
@@ -488,7 +488,7 @@ const Performance3rdStar = 1
   margin: 5rem 0 3rem 0;
 
   @include md {
-    margin: 3vh 0 3vh 0;
+    margin: 7vh 0 3vh 0;
   }
 }
 .child-title {
@@ -501,13 +501,13 @@ const Performance3rdStar = 1
   opacity: 80%;
 
   @include sm {
-    font-size: 12px;
-    width: 50vw;
+    font-size: 16px;
+    width: 58vw;
   }
 
   @include md {
-    font-size: 13px;
-    width: 50vw;
+    font-size: 17px;
+    width: 60vw;
     height: 3.5em;
   }
 }

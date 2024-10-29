@@ -20,12 +20,12 @@ const props = defineProps({
       <div class="table-box">
         <div class="text-box">
           <h1>{{ props.title }}</h1>
+          <div class="underline" />
           <h2>{{ props.subTitle }}</h2>
         </div>
       </div>
     </NuxtLink>
   </div>
-  <hr size="1px" color="#333333" />
 </template>
 <style lang="scss" scoped>
 @use '@/assets/scss/_breakpoint.scss' as *;
@@ -69,13 +69,18 @@ const props = defineProps({
   @include md {
     padding-top: 3.1rem;
   }
+  .underline {
+    background-color: black;
+    width: 65%;
+    margin: 0 auto;
+    height: 1.5px;
+  }
 }
 h1 {
   font-size: 1.8rem;
   text-align: center;
   justify-content: center;
-  border-bottom: solid 1.5px #000;
-  margin: 0 30px;
+  margin: 0;
   @include md {
     font-size: 0.85rem;
   }
@@ -90,6 +95,6 @@ h2 {
   }
 }
 hr {
-  display: none;
+  // display: ;
 }
 </style>

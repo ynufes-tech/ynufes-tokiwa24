@@ -62,6 +62,11 @@ useHead({
         sub-title="企画コンテスト"
         page-link="/contest"
       />
+      <TableOfContents
+        title="PAMPHLET"
+        sub-title="パンフレット"
+        page-link="/pamphlet"
+      />
     </div>
     <SNS />
     <MapButton />

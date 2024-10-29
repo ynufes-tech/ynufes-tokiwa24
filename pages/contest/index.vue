@@ -657,5 +657,10 @@ h2 {
   display: flex;
   justify-content: center;
   padding-bottom: 2em;
+  h2 {
+    @include md {
+      font-size: 12px;
+    }
+  }
 }
 </style>

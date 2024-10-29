@@ -127,4 +127,7 @@ const showNoImage = function (e: SyntheticEvent<HTMLDivElement>) {
     margin-right: 2em;
   }
 }
+.hp-holder {
+  padding-bottom: 2em;
+}
 </style>

@@ -87,9 +87,7 @@ useHead({
         </div>
     </div>
     <FloatingButton /> 
-    <div class="prepare">
-      <h1>準備中</h1>
-    </div>
+   
   </div>
 </template>
 

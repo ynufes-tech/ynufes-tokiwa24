@@ -6,7 +6,7 @@
     <div class="page-wrapper">
       <div class="page-contents">
         <div class="contents">
-          <h2>大学推奨ルートでの来場をお願いいたします。</h2>
+          <h2>大学推奨ルートでの来場をお願いします。</h2>
         </div>
         <div class="iframe-wrapper">
           <iframe

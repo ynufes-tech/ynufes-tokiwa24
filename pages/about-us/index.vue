@@ -13,6 +13,19 @@
         企画部、編集部、会場部、物品部、技術部、経理部、総務部という７つの部局から成り立っています。
       </p>
     </div>
+    <nav class="toc">
+      <h2>目次</h2>
+      <ul>
+        <li><a href="#chairman-headline">委員長メッセージ</a></li>
+        <li><a href="#sec1">企画部</a></li>
+        <li><a href="#sec2">編集部</a></li>
+        <li><a href="#sec3">会場部</a></li>
+        <li><a href="#sec4">物品部</a></li>
+        <li><a href="#sec5">技術部</a></li>
+        <li><a href="#sec6">経理部</a></li>
+        <li><a href="#sec7">総務部</a></li>
+      </ul>
+    </nav>
     <div class="chairman-sec">
       <h1 id="chairman-headline">委員長メッセージ</h1>
       <hr />
@@ -30,7 +43,7 @@
       </div>
     </div>
     <h1 id="the-seven-departments">7つの部局について</h1>
-    <div class="departments-wrapper">
+    <div id="sec1" class="departments-wrapper">
       <div class="box">
         <OverlapHeadline title="Planning" sub-title="企画部" />
         <div class="frame">
@@ -58,7 +71,7 @@
       </div>
     </div>
     <div id="reverse" class="departments-wrapper">
-      <div class="img-box">
+      <div id="sec2" class="img-box">
         <img
           id="left-img"
           alt="紹介画像"
@@ -87,7 +100,7 @@
       title="Peace Preservation"
       sub-title="会場部"
     />
-    <div class="departments-wrapper">
+    <div id="sec3" class="departments-wrapper">
       <div class="box">
         <div class="frame">
           <p>
@@ -112,7 +125,7 @@
       </div>
     </div>
     <div id="reverse" class="departments-wrapper">
-      <div class="img-box">
+      <div id="sec4" class="img-box">
         <img
           id="right-img"
           alt="紹介画像"
@@ -136,7 +149,7 @@
         </div>
       </div>
     </div>
-    <div class="departments-wrapper">
+    <div id="sec5" class="departments-wrapper">
       <div class="box">
         <OverlapHeadline title="Technology" sub-title="技術部" />
         <div class="frame">
@@ -162,7 +175,7 @@
       </div>
     </div>
     <div id="reverse" class="departments-wrapper">
-      <div class="img-box">
+      <div id="sec6" class="img-box">
         <img
           id="left-img"
           alt="紹介画像"
@@ -193,7 +206,7 @@
       title="General Affairs"
       sub-title="総務部"
     />
-    <div class="departments-wrapper">
+    <div id="sec7" class="departments-wrapper">
       <div class="box">
         <div class="frame">
           <p>
@@ -248,7 +261,34 @@ p {
     margin: 0 8vw;
   }
 }
+.toc {
+  background-color: #eee;
+  // padding: 1% 4%;
+  opacity: 70%;
+  border-radius: 2rem;
+  //margin: 0 8vw;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin: 2rem auto;
+  padding: 0rem 5rem;
+  //margin-bottom: 2em;
+  //border-radius: 5px;
 
+  ul {
+    //list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: 0.2em 0;
+  }
+  a {
+    text-decoration: none;
+    color: #1e0a62;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
 #chairman-headline {
   margin-left: 20vw;
   margin-bottom: 0;

@@ -70,28 +70,30 @@
         />
       </div>
     </div>
-    <div id="reverse" class="departments-wrapper">
-      <div id="sec2" class="img-box">
-        <img
-          id="left-img"
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/departments-img/edi1.webp"
-        />
-        <img
-          id="right-img"
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/departments-img/edi2.webp"
-        />
-      </div>
-      <div class="box">
-        <OverlapHeadline title="Editional" sub-title="編集部" />
-        <div class="frame">
-          <p>
-            編集部では、構内を彩る装飾・看板や、大学祭をわかりやすく解説するパンフレット・リーフレットの製作を行っています！<br />
-            当日は案内所でパンフレットを配布し、皆さんをご案内します🙌
-          </p>
+    <div id="sec2">
+      <div id="reverse" class="departments-wrapper">
+        <div class="img-box">
+          <img
+            id="left-img"
+            alt="紹介画像"
+            class="departments-img"
+            src="~/assets/images/departments-img/edi1.webp"
+          />
+          <img
+            id="right-img"
+            alt="紹介画像"
+            class="departments-img"
+            src="~/assets/images/departments-img/edi2.webp"
+          />
+        </div>
+        <div class="box">
+          <OverlapHeadline title="Editional" sub-title="編集部" />
+          <div class="frame">
+            <p>
+              編集部では、構内を彩る装飾・看板や、大学祭をわかりやすく解説するパンフレット・リーフレットの製作を行っています！<br />
+              当日は案内所でパンフレットを配布し、皆さんをご案内します🙌
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -124,8 +126,9 @@
         />
       </div>
     </div>
+    <div id="sec4" />
     <div id="reverse" class="departments-wrapper">
-      <div id="sec4" class="img-box">
+      <div class="img-box">
         <img
           id="right-img"
           alt="紹介画像"
@@ -174,8 +177,9 @@
         />
       </div>
     </div>
+    <div id="sec6" />
     <div id="reverse" class="departments-wrapper">
-      <div id="sec6" class="img-box">
+      <div class="img-box">
         <img
           id="left-img"
           alt="紹介画像"

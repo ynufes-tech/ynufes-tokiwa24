@@ -13,7 +13,7 @@ useHead({
 <template>
   <div class="page-root">
     <PageTitle :title="'FAQ'" :sub-title="'よくある質問'" />
-    <!-- <div class="page-wrapper">
+     <div class="page-wrapper">
       <div class="faq-box">
         <p class="q-num">Q1</p>
         <div class="p-box">
@@ -86,7 +86,7 @@ useHead({
           </p>
         </div>
     </div>
-    <FloatingButton /> -->
+    <FloatingButton /> 
     <div class="prepare">
       <h1>準備中</h1>
     </div>

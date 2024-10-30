@@ -46,6 +46,6 @@ p {
   padding: 0% 4%;
   opacity: 70%;
   border-radius: 2rem;
-  margin: 0 8vw;
+  margin: 0 8vw 4vh 8vw;
 }
 </style>

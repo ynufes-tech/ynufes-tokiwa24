@@ -9,7 +9,12 @@ const props = defineProps({
 
 <template>
   <div class="ins-icon-holder">
-    <a class="ins-icon" :href="props.link">
+    <a
+      class="ins-icon"
+      :href="props.link"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <img src="~/assets/images/instagram-logo.webp" alt="sns-icon-x" />
     </a>
   </div>

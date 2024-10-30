@@ -11,7 +11,12 @@ const props = defineProps({
 })
 </script>
 <template>
-  <a class="white-button" :href="link">
+  <a
+    class="white-button"
+    :href="link"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
     <p>{{ props.text }}</p>
   </a>
 </template>

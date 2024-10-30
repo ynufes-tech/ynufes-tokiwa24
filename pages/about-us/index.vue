@@ -263,16 +263,10 @@ p {
 }
 .toc {
   background-color: #eee;
-  // padding: 1% 4%;
   opacity: 70%;
   border-radius: 2rem;
-  //margin: 0 8vw;
-  // margin-left: auto;
-  // margin-right: auto;
   margin: 2rem auto;
   padding: 0rem 5rem;
-  //margin-bottom: 2em;
-  //border-radius: 5px;
 
   ul {
     //list-style-type: none;

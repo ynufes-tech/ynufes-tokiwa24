@@ -1,4 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'アクセス | 24常盤祭公式HP~夢灯~',
+  meta: [
+    {
+      name: 'description',
+      content: '横浜国立大学までのアクセスをご紹介します',
+    },
+  ],
+})
+</script>
 
 <template>
   <div class="page-root">

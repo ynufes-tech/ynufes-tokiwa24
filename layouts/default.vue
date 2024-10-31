@@ -22,7 +22,7 @@ function createLantern() {
   // URLを用いてbaseURLを追加
   const style = {
     left: `${Math.random() * 100}vw`,
-    animationDuration: `${8 + Math.random() * 4}s`,
+    animationDuration: `${18 + Math.random() * 8}s`,
     //animationDelay: `${Math.random() * 5}s`, // ランダムな遅延を追加
     backgroundImage: `url(${conf.app.baseURL}${image})`,
   }
@@ -30,7 +30,7 @@ function createLantern() {
 }
 
 function checkLanterns() {
-  while (lanterns.value.length < 7) {
+  while (lanterns.value.length < 10) {
     // ランタンの数を2倍に増やす
     createLantern()
   }

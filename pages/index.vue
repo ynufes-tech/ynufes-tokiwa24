@@ -24,8 +24,6 @@ useHead({
       <p>&nbsp;&nbsp;To&emsp;&nbsp;&nbsp;2024.11.03 Sun</p>
     </div>
     <div class="in-production">
-      <p>このサイトはただいま制作中です。</p>
-      <p>常盤祭に関する最新情報は随時更新します。</p>
       <div class="banner-holder">
         <BannerComponent />
       </div>

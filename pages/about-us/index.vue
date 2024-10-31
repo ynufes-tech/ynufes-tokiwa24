@@ -1,5 +1,11 @@
 <script setup lang="ts">
 // import OverlapHeadline from "~/components/OverlapHeadline.vue";
+useHead({
+  title: '常盤祭実行委員会紹介 | 24常盤祭公式HP~夢灯~',
+  meta: [
+    { name: 'description', content: '24常盤祭実行委員会についてご紹介します' },
+  ],
+})
 </script>
 
 <template>

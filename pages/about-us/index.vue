@@ -97,12 +97,13 @@
         </div>
       </div>
     </div>
+    <div id="sec3" />
     <OverlapHeadlinePP
       id="exception-headline"
       title="Peace Preservation"
       sub-title="会場部"
     />
-    <div id="sec3" class="departments-wrapper">
+    <div class="departments-wrapper">
       <div class="box">
         <div class="frame">
           <p>
@@ -205,12 +206,13 @@
         </div>
       </div>
     </div>
+    <div id="sec7" />
     <OverlapHeadlinePP
       id="exception-headline"
       title="General Affairs"
       sub-title="総務部"
     />
-    <div id="sec7" class="departments-wrapper">
+    <div class="departments-wrapper">
       <div class="box">
         <div class="frame">
           <p>

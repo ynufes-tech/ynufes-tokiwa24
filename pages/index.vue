@@ -73,6 +73,11 @@ useHead({
       />
       <TableOfContents title="FAQ" sub-title="よくある質問" page-link="/faq" />
       <TableOfContents
+        title="PAMPHLET"
+        sub-title="パンフレット"
+        page-link="/pamphlet"
+      />
+      <TableOfContents
         title="OFFICIAL  EVENTS"
         sub-title="本部企画一覧"
         page-link="/events/official"

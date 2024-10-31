@@ -13,6 +13,19 @@
         企画部、編集部、会場部、物品部、技術部、経理部、総務部という７つの部局から成り立っています。
       </p>
     </div>
+    <nav class="toc">
+      <h2>目次</h2>
+      <ul>
+        <li><a href="#chairman-headline">委員長メッセージ</a></li>
+        <li><a href="#sec1">企画部</a></li>
+        <li><a href="#sec2">編集部</a></li>
+        <li><a href="#sec3">会場部</a></li>
+        <li><a href="#sec4">物品部</a></li>
+        <li><a href="#sec5">技術部</a></li>
+        <li><a href="#sec6">経理部</a></li>
+        <li><a href="#sec7">総務部</a></li>
+      </ul>
+    </nav>
     <div class="chairman-sec">
       <h1 id="chairman-headline">委員長メッセージ</h1>
       <hr />
@@ -30,7 +43,7 @@
       </div>
     </div>
     <h1 id="the-seven-departments">7つの部局について</h1>
-    <div class="departments-wrapper">
+    <div id="sec1" class="departments-wrapper">
       <div class="box">
         <OverlapHeadline title="Planning" sub-title="企画部" />
         <div class="frame">
@@ -57,31 +70,34 @@
         />
       </div>
     </div>
-    <div id="reverse" class="departments-wrapper">
-      <div class="img-box">
-        <img
-          id="left-img"
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/departments-img/edi1.webp"
-        />
-        <img
-          id="right-img"
-          alt="紹介画像"
-          class="departments-img"
-          src="~/assets/images/departments-img/edi2.webp"
-        />
-      </div>
-      <div class="box">
-        <OverlapHeadline title="Editional" sub-title="編集部" />
-        <div class="frame">
-          <p>
-            編集部では、構内を彩る装飾・看板や、大学祭をわかりやすく解説するパンフレット・リーフレットの製作を行っています！<br />
-            当日は案内所でパンフレットを配布し、皆さんをご案内します🙌
-          </p>
+    <div id="sec2">
+      <div id="reverse" class="departments-wrapper">
+        <div class="img-box">
+          <img
+            id="left-img"
+            alt="紹介画像"
+            class="departments-img"
+            src="~/assets/images/departments-img/edi1.webp"
+          />
+          <img
+            id="right-img"
+            alt="紹介画像"
+            class="departments-img"
+            src="~/assets/images/departments-img/edi2.webp"
+          />
+        </div>
+        <div class="box">
+          <OverlapHeadline title="Editional" sub-title="編集部" />
+          <div class="frame">
+            <p>
+              編集部では、構内を彩る装飾・看板や、大学祭をわかりやすく解説するパンフレット・リーフレットの製作を行っています！<br />
+              当日は案内所でパンフレットを配布し、皆さんをご案内します🙌
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <div id="sec3" />
     <OverlapHeadlinePP
       id="exception-headline"
       title="Peace Preservation"
@@ -111,6 +127,7 @@
         />
       </div>
     </div>
+    <div id="sec4" />
     <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
@@ -136,7 +153,7 @@
         </div>
       </div>
     </div>
-    <div class="departments-wrapper">
+    <div id="sec5" class="departments-wrapper">
       <div class="box">
         <OverlapHeadline title="Technology" sub-title="技術部" />
         <div class="frame">
@@ -161,6 +178,7 @@
         />
       </div>
     </div>
+    <div id="sec6" />
     <div id="reverse" class="departments-wrapper">
       <div class="img-box">
         <img
@@ -188,6 +206,7 @@
         </div>
       </div>
     </div>
+    <div id="sec7" />
     <OverlapHeadlinePP
       id="exception-headline"
       title="General Affairs"
@@ -248,7 +267,28 @@ p {
     margin: 0 8vw;
   }
 }
+.toc {
+  background-color: #eee;
+  opacity: 70%;
+  border-radius: 2rem;
+  margin: 2rem auto;
+  padding: 0rem 5rem;
 
+  ul {
+    //list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: 0.2em 0;
+  }
+  a {
+    text-decoration: none;
+    color: #1e0a62;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
 #chairman-headline {
   margin-left: 20vw;
   margin-bottom: 0;

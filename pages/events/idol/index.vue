@@ -1,5 +1,11 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'idol' })
+useHead({
+  title: 'アイドル企画 | 24常盤祭公式HP~夢灯~',
+  meta: [
+    { name: 'description', content: '24常盤祭アイドル企画をご紹介します' },
+  ],
+})
 </script>
 <template>
   <div class="page-root">

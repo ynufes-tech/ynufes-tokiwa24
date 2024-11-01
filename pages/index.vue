@@ -23,9 +23,14 @@ useHead({
       <p>&emsp;&emsp;&emsp;&nbsp;2024.11.02 Sat</p>
       <p>&nbsp;&nbsp;To&emsp;&nbsp;&nbsp;2024.11.03 Sun</p>
     </div>
+    <div class="announce-wrapper">
+      <div class="annouce-text">
+        <NuxtLink to="/news" class="news-link">
+          <p>最新の運営情報はこちら</p>
+        </NuxtLink>
+      </div>
+    </div>
     <div class="in-production">
-      <p>このサイトはただいま制作中です。</p>
-      <p>常盤祭に関する最新情報は随時更新します。</p>
       <div class="banner-holder">
         <BannerComponent />
       </div>
@@ -73,9 +78,19 @@ useHead({
       />
       <TableOfContents title="FAQ" sub-title="よくある質問" page-link="/faq" />
       <TableOfContents
+        title="PAMPHLET"
+        sub-title="パンフレット"
+        page-link="/pamphlet"
+      />
+      <TableOfContents
         title="OFFICIAL  EVENTS"
         sub-title="本部企画一覧"
         page-link="/events/official"
+      />
+      <TableOfContents
+        title="NEWS"
+        sub-title="最新情報はこちら"
+        page-link="/news"
       />
     </div>
     <SNS />
@@ -130,6 +145,14 @@ useHead({
     margin-top: 38vw;
   }
 }
+.announce-wrapper {
+  margin: 1rem auto 0;
+  text-align: center;
+  @include md {
+    font-size: 3vw;
+    margin: 1rem auto -7rem;
+  }
+}
 
 .in-production {
   line-height: 0.45em;
@@ -176,5 +199,15 @@ hr {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+}
+.news-link {
+  color: #000;
+  font-size: 64px;
+  @include md {
+    font-size: 32px;
+  }
+  @include sm {
+    font-size: 24px;
+  }
 }
 </style>

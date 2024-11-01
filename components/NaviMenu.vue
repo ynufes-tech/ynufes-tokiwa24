@@ -26,6 +26,9 @@ const toggle = () => {
             <NuxtLink to="/" @click="toggle">TOP</NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/news" @click="toggle">NEWS</NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink>
           </li>
           <li>
@@ -51,6 +54,9 @@ const toggle = () => {
           </li>
           <li>
             <NuxtLink to="/faq" @click="toggle">FAQ</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/pamphlet" @click="toggle">PAMPHLET</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/events/official" @click="toggle"
@@ -135,11 +141,12 @@ const toggle = () => {
 }
 
 .nav-list li {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding-right: 10px;
   padding-left: 20px;
 
   @include md {
+    margin-bottom: 5px;
     padding-right: 0;
     padding-left: 5px;
   }

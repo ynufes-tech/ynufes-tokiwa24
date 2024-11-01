@@ -1,4 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'connection | 24常盤祭公式HP~夢灯~',
+  meta: [
+    {
+      name: 'description',
+      content: '他大学の大学祭をご紹介させていただきます',
+    },
+  ],
+})
+</script>
 
 <template>
   <div class="page-root">
@@ -62,22 +72,18 @@
 .inner-connection-page {
   position: relative;
   top: 0;
-  padding-left: 8%;
-  width: 84%;
+}
 
-  @include md {
-    top: 0;
-  }
-  @include sm {
-    top: 0;
-  }
+.connection-content {
+  display: flex;
+  justify-content: center;
 }
 
 .connection-about {
   font-size: 27px;
   width: fit-content;
   text-shadow: 2px 2px 10px #eee;
-  padding-left: 3%;
+  padding-left: 8vw;
   @include md {
     font-size: 21px;
   }
@@ -94,7 +100,7 @@
 .big-box {
   display: flex;
   width: min(80vw, 120vh);
-  margin: 2rem auto 0;
+  margin: 2rem auto 4vh;
   background-color: #eee;
   padding: 0 4%;
   opacity: 70%;

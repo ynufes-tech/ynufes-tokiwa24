@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'ゲスト企画 | 24常盤祭公式HP~夢灯~',
+  meta: [
+    { name: 'description', content: '24常盤祭の特別ゲスト企画をご紹介します' },
+  ],
+})
+</script>
 
 <template>
   <div class="page-root">

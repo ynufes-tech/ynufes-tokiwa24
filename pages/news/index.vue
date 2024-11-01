@@ -16,7 +16,9 @@ useHead({
     <div class="news-contents">
       <div class="about-news">
         <div class="inner-news">
-          <p>現在、常盤祭は通常通り運営しています。</p>
+          <p>
+            本日は通常通りの運営となります。開催時間中に縮小する場合もございます。
+          </p>
         </div>
         <div class="update"><p>11/1 15:10 更新</p></div>
       </div>

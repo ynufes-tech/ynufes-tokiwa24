@@ -28,20 +28,21 @@
 .map-button-img {
   width: 8rem;
   @include md {
-    width: 4rem;
-    position: fixed;
-    top: 120px;
-    right: 20px;
+    width: 5rem;
+    position: absolute;
+    top: -60px;
+    right: -30px;
   }
   @include sm {
-    width: 3rem;
-    position: fixed;
-    top: 100px;
-    right: 20px;
+    width: 4rem;
+    position: absolute;
+    top: -70px;
+    right: -50px;
   }
 }
 
 .map-button:hover {
+  transition: transform 0.3s ease;
   transform: scale(1.1);
 }
 </style>

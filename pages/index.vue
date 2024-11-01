@@ -23,6 +23,11 @@ useHead({
       <p>&emsp;&emsp;&emsp;&nbsp;2024.11.02 Sat</p>
       <p>&nbsp;&nbsp;To&emsp;&nbsp;&nbsp;2024.11.03 Sun</p>
     </div>
+    <div class="announce-wrapper">
+      <div class="annouce-text">
+        <h1>本日は平常通り運営しています</h1>
+      </div>
+    </div>
     <div class="in-production">
       <div class="banner-holder">
         <BannerComponent />
@@ -131,6 +136,14 @@ useHead({
   transform: translateX(13%);
   @include sm {
     margin-top: 38vw;
+  }
+}
+.announce-wrapper {
+  margin: 1rem auto 0rem;
+  text-align: center;
+  @include md {
+    font-size: 3vw;
+    margin: 1rem auto -7rem;
   }
 }
 

@@ -26,6 +26,9 @@ const toggle = () => {
             <NuxtLink to="/" @click="toggle">TOP</NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/news" @click="toggle">NEWS</NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink>
           </li>
           <li>
@@ -138,11 +141,12 @@ const toggle = () => {
 }
 
 .nav-list li {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding-right: 10px;
   padding-left: 20px;
 
   @include md {
+    margin-bottom: 5px;
     padding-right: 0;
     padding-left: 5px;
   }

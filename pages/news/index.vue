@@ -16,7 +16,9 @@ useHead({
     <div class="news-contents">
       <div class="about-news">
         <div class="inner-news">
-          <p>現在、常盤祭は通常通り運営しています。</p>
+          <p>
+            本日は講義棟内企画と図書館企画のみの開催となります。屋外の企画は中止です。<br />今後開催規模を縮小する場合もありますのでご注意ください
+          </p>
         </div>
         <div class="update"><p>11/1 15:10 更新</p></div>
       </div>

@@ -25,7 +25,9 @@ useHead({
     </div>
     <div class="announce-wrapper">
       <div class="annouce-text">
-        <h1>本日は平常通り運営しています</h1>
+        <NuxtLink to="/news" class="news-link">
+          <p>最新の運営情報はこちら</p>
+        </NuxtLink>
       </div>
     </div>
     <div class="in-production">
@@ -139,7 +141,7 @@ useHead({
   }
 }
 .announce-wrapper {
-  margin: 1rem auto 0rem;
+  margin: 1rem auto 0;
   text-align: center;
   @include md {
     font-size: 3vw;
@@ -192,5 +194,15 @@ hr {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+}
+.news-link {
+  color: #000;
+  font-size: 64px;
+  @include md {
+    font-size: 32px;
+  }
+  @include sm {
+    font-size: 24px;
+  }
 }
 </style>

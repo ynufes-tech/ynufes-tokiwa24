@@ -87,6 +87,11 @@ useHead({
         sub-title="本部企画一覧"
         page-link="/events/official"
       />
+      <TableOfContents
+        title="NEWS"
+        sub-title="最新情報はこちら"
+        page-link="/news"
+      />
     </div>
     <SNS />
     <MapButton />

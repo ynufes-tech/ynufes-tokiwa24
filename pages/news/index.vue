@@ -16,9 +16,7 @@ useHead({
     <div class="news-contents">
       <div class="about-news">
         <div class="inner-news">
-          <p>
-            本日は20:00まで一部講義棟内企画と図書館企画のみの開催です。屋外の企画は中止です。<br /><br />明日は通常開催の予定です。
-          </p>
+          <p>本日は通常開催です。開催時間は9:00～15:00です。</p>
         </div>
         <div class="update"><p>11/2 15:30 更新</p></div>
       </div>

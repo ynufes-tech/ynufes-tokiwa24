@@ -7,23 +7,23 @@ useHead({
 const Food1st = 103
 const Food2nd = 63
 const Food3rd = 83
-const Food1stStar = 834
+const Food1stStar = 838
 const Food2ndStar = 261
-const Food3rdStar = 84
+const Food3rdStar = 89
 
 const Exhibit1st = 45
 const Exhibit2nd = 28
-const Exhibit3rd = 54
-const Exhibit1stStar = 105
-const Exhibit2ndStar = 80
-const Exhibit3rdStar = 70
+const Exhibit3rd = 27
+const Exhibit1stStar = 251
+const Exhibit2ndStar = 244
+const Exhibit3rdStar = 195
 
 const Performance1st = 6
 const Performance2nd = 76
 const Performance3rd = 94
-const Performance1stStar = 336
-const Performance2ndStar = 115
-const Performance3rdStar = 40
+const Performance1stStar = 614
+const Performance2ndStar = 120
+const Performance3rdStar = 45
 </script>
 
 <template>

@@ -16,9 +16,9 @@ useHead({
     <div class="news-contents">
       <div class="about-news">
         <div class="inner-news">
-          <p>本日は通常開催です。開催時間は9:00～15:00です。</p>
+          <p>24常盤祭は終了しました。</p>
         </div>
-        <div class="update"><p>11/3 6:30 更新</p></div>
+        <div class="update"><p>11/13 19:00 更新</p></div>
       </div>
     </div>
   </div>

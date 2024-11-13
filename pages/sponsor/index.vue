@@ -35,7 +35,7 @@ useHead({
       </ul>
     </div>
     <div class="sponsor-box">
-      <SectionTitle section-title="その他の協賛・協力" />
+      <SectionTitle section-title="その他協賛・協力" />
       <ul>
         <li v-for="(company, index) in companies.other" :key="'oth-' + index">
           {{ company }}

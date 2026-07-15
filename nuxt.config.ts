@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   app: {
-    baseURL: process.env.NUXT_PUBLIC_BASE_URL,
+    baseURL: process.env.NUXT_PUBLIC_BASE_URL ?? '/24/tokiwa/',
     runtimeConfig: {
       baseURL: '/', // NUXT_PUBLIC_BASE_URL によって上書きされる 公式ドキュメント参照
     },

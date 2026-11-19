@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // Preserve the existing layout while using the patched Nuxt 4 runtime.
+  srcDir: ".",
+  dir: { app: "app" },
+  experimental: { defaults: { useAsyncData: { deep: true } } },
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   app: {
     baseURL: process.env.NUXT_PUBLIC_BASE_URL,
     runtimeConfig: {
